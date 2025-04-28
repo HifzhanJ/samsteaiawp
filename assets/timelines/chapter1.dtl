@@ -1,2 +1,72 @@
+[background arg="res://assets/backgrounds/Screenshot (4).png" fade="0.0"]
 Cahaya matahari menyelinap lewat jendela, membangunkan MC dari tidurnya.
 join mc leftmost
+mc: Ugh...
+mc: Ugh... kenapa rasanya aneh? Tapi...
+mc: Ugh... kenapa rasanya aneh? Tapi... badan malah berasa lebih enteng.
+mc: Meteor...
+mc: Meteor... cahaya itu...
+mc: Meteor... cahaya itu... rumah sakit...
+mc: Meteor... cahaya itu... rumah sakit... dan...
+mc: Meteor... cahaya itu... rumah sakit... dan... layar aneh itu...
+mc: Udahlah... mungkin cuma mimpi aneh.
+[background fade="0.0"]
+Dalam perjalanan ke sekolah, {namauser} mulai memperhatikan sesuatu yang ganjil.
+[background fade="0.0"]
+[background fade="0.0"]
+mc: Hmm? Kenapa banyak orang keliatan sakit, ya?
+[background fade="0.0"]
+Di sekolah, suasana terasa berbeda. {namauser} mencari sosok yang biasa menyapanya setiap pagi.\
+mc: Mana dia? Biasanya juga udah teriak-teriak dari tadi...
+audio -
+*Bel masuk.
+*Setelah pelajaran pertama selesai.
+mc: Eh, lo liat Aika?
+andri: Oh, dia sakit katanya. Dari semalem udah nggak enak badan.
+andri: Tapi keliatan nya parah banget kata ibunya.
+mc: Hmm...
+mc: Gue harus cek ke rumahnya.
+[background fade="0.0"]
+*Mengetuk pintu
+ibuaika: Oh, kamu... Makasih udah mau datang. Dia lagi istirahat di kamar.
+mc: Saya boleh lihat?
+ibuaika: Hati-hati ya. Dia masih lemas banget.
+[background fade="0.0"]
+mc: Aika...
+aika_vanya: *Batuk
+aika_vanya: eh {namauser}… ada apa?
+mc: Ku dengar kamu sakit, jadi aku datang berkunjung.
+aika_vanya: Cuma sakit biasa kok, nanti juga sembuh.
+mc: *Melihat gelas air diatas meja.
+[clear time="1.0"]
+[background fade="0.0"]
+mc: Lagi... status window itu...
+mc: Kalau ini beneran bisa... gue harus coba.
+- PURIFY!
+Dalam hitungan detik, air dalam gelas itu tampak lebih jernih.
+aika_vanya: *Bingung
+aika_vanya: Apa yang baru saja kamu lakukan?
+*Memberikan gelas air minum.
+mc: Minum dikit, ya.
+aika_vanya: *Minum air yang diberikan {namauser}
+Waktu seolah berjalan lambat... hingga perlahan, warna di wajah Aika mulai kembali, napasnya membaik.
+aika_vanya: Aku... tidak sakit lagi?
+mc: Ini... berhasil?!
+mc: Kalau air di rumahnya kotor... berarti seluruh desa...
+mc: Ada hal yang harus ku lakukan, nanti akan ku jelaskan!
+mc: *Bergegas menuju mata air desa
+[background fade="0.0"]
+{namauser} sampai di mata air desa.
+[background fade="0.0"]
+mc: Gila... kayak racun...
+- PURIFY
+mc: Gila... ini lebih susah!
+mc: Akhirnya!
+status_window: Mata Air Telah Dipurifikasi.
+Cahaya hijau menyelimuti mata air, perlahan membersihkan warna hitam dan membuatnya jernih kembali.
+mc: Satu masalah selesai... Tapi ini... baru awalnya.
+[background fade="0.0"]
+Keesokan paginya, suasana desa berubah. Warga yang sebelumnya sakit mulai sembuh.
+warga1: Aneh ya, airnya tiba-tiba jernih lagi!
+warga2: Kayaknya mujizat deh, hahaha!
+mc: Mereka nggak perlu tahu... Tapi gue harus siap. Ini baru permulaan.

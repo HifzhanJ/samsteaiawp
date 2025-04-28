@@ -22,8 +22,13 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "aika_vanya": "res://assets/characters/aika_vanya.dch",
+"andri": "res://assets/characters/andri.dch",
+"ibuaika": "res://assets/characters/ibuaika.dch",
 "mc": "res://assets/characters/mc.dch",
-"unit_test_character": "res://Tests/Resources/unit_test_character.dch"
+"status_window": "res://assets/characters/status_window.dch",
+"unit_test_character": "res://Tests/Resources/unit_test_character.dch",
+"warga1": "res://assets/characters/warga1.dch",
+"warga2": "res://assets/characters/warga2.dch"
 }
 directories/dtl_directory={
 "chapter1": "res://assets/timelines/chapter1.dtl",
@@ -62,7 +67,9 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
-variables={}
+variables={
+"namauser": "Rio Bagaskara"
+}
 layout/style_list=[]
 layout/default_style="Default"
 glossary/default_case_sensitive=true
