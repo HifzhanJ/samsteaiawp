@@ -21,9 +21,12 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"aika_vanya": "res://assets/characters/aika_vanya.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
-directories/dtl_directory={}
+directories/dtl_directory={
+"prolog": "res://assets/timelines/prolog.dtl"
+}
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
@@ -58,8 +61,8 @@ audio/channel_defaults={
 }
 }
 variables={}
-layout/style_list=[]
-layout/default_style="Default"
+layout/style_list=["res://assets/styles/visualnovel.tres"]
+layout/default_style="res://assets/styles/visualnovel.tres"
 glossary/default_case_sensitive=true
 
 [editor_plugins]
