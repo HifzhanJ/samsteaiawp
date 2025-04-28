@@ -26,6 +26,7 @@ directories/dch_directory={
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
+"chapter1": "res://assets/timelines/chapter1.dtl",
 "prolog": "res://assets/timelines/prolog.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"
@@ -61,11 +62,9 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
-variables={
-"namauser": ""
-}
-layout/style_list=["res://assets/styles/visualnovel.tres"]
-layout/default_style="res://assets/styles/visualnovel.tres"
+variables={}
+layout/style_list=[]
+layout/default_style="Default"
 glossary/default_case_sensitive=true
 
 [editor_plugins]
