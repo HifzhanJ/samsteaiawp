@@ -12,28 +12,19 @@
 },
 &"default_portrait": "normal",
 &"description": "",
-&"display_name": "Aika Vanya",
+&"display_name": "{namauser}",
 &"mirror": false,
-&"nicknames": ["Aika"],
+&"nicknames": ["{namauser}"],
 &"offset": Vector2(0, 0),
 &"portraits": {
 "normal": {
-"export_overrides": {
-"image": "\"res://assets/char_img/petcare1.jpg\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1.0,
-"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
-},
-"sedih": {
 "export_overrides": {
 "image": "\"res://assets/char_img/download (4).jpeg\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
-"scene": ""
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
 }
 },
 &"scale": 1.0

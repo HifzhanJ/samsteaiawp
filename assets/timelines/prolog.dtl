@@ -1,8 +1,0 @@
-join aika_vanya leftmost [animation="Bounce In"]
-label aikamasuk
-aika_vanya: halo
-aika_vanya: asdasdasd
-join unit_test_character center
-- iya
-	jump 
-- tidak

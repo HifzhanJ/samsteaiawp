@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=13 format=3 uid="uid://b86hdb1k8u2vn"]
+
+[ext_resource type="Resource" uid="uid://bkenrix655fcd" path="res://assets/styles/visualnovel.tres" id="1_hat8l"]
+[ext_resource type="Script" uid="uid://bwg6yncmh2cml" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_7hafy"]
+[ext_resource type="Script" uid="uid://dv08k6ljua6fm" path="res://addons/dialogic/Resources/dialogic_style.gd" id="3_76gvo"]
+
+[sub_resource type="Resource" id="Resource_hkvkq"]
+script = ExtResource("2_7hafy")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_rew6t"]
+script = ExtResource("2_7hafy")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_5syac"]
+script = ExtResource("2_7hafy")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_y0vx3"]
+script = ExtResource("2_7hafy")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_2vdov"]
+script = ExtResource("2_7hafy")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_phooc"]
+script = ExtResource("2_7hafy")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_dqdeq"]
+script = ExtResource("2_7hafy")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_kmh0a"]
+script = ExtResource("2_7hafy")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_ym1j6"]
+script = ExtResource("2_7hafy")
+overrides = {}
+
+[resource]
+script = ExtResource("3_76gvo")
+name = "tes"
+inherits = ExtResource("1_hat8l")
+layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16", "17"])
+layer_info = {
+"": SubResource("Resource_hkvkq"),
+"10": SubResource("Resource_rew6t"),
+"11": SubResource("Resource_5syac"),
+"12": SubResource("Resource_y0vx3"),
+"13": SubResource("Resource_2vdov"),
+"14": SubResource("Resource_phooc"),
+"15": SubResource("Resource_dqdeq"),
+"16": SubResource("Resource_kmh0a"),
+"17": SubResource("Resource_ym1j6")
+}
+base_overrides = {}
+layers = Array[ExtResource("2_7hafy")]([])
+metadata/_latest_layer = "13"
