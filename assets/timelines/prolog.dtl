@@ -1,0 +1,17 @@
+[text_input text="Tolong masukkan nama anda:" var="namauser"]
+[wait time="2.0"]
+label [Scene: Luar angkasa - Meteor Tabrakan] 
+[background arg="res://assets/backgrounds/How to see a double meteor shower on Tuesday night with a chance of fireballs.jpeg" fade="0.5" transition="Simple Fade"]
+ Di tengah kehampaan luar angkasa, dua benda langit bertabrakan. 
+Batu meteor dan batu misterius menghantam satu sama lain, menghasilkan ledakan energi yang luar biasa.
+label [Scene: Kota - Malam Hari - Minimarket]
+[background arg="res://assets/backgrounds/☆.jpeg" fade="0.5"]
+Suatu malam yang tenang, angin berhembus lembut menyusuri jalanan kota kecil.
+{namauser} seorang remaja biasa, tengah berbelanja kebutuhan makan malamnya.\
+
+[background arg="res://assets/backgrounds/永辉.jpeg" fade="0.0"]
+join mc center
+mc: Hmm... kayaknya udah cukup buat makan malam.
+[MC berdiri di antrean kasir. Di sudut ruangan, televisi menyala menampilkan berita.]
+join reportertv leftmost
+reportertv: Krisis pencemaran air semakin parah. Banyak sumber air utama kini terkontaminasi oleh limbah dan bakteri.
