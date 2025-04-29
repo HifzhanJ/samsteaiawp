@@ -1,17 +1,52 @@
 [text_input text="Tolong masukkan nama anda:" var="namauser"]
 [wait time="2.0"]
-label [Scene: Luar angkasa - Meteor Tabrakan] 
-[background arg="res://assets/backgrounds/How to see a double meteor shower on Tuesday night with a chance of fireballs.jpeg" fade="0.5" transition="Simple Fade"]
- Di tengah kehampaan luar angkasa, dua benda langit bertabrakan. 
+label [Scene: Luar angkasa - Meteor Tabrakan]
+[background arg="res://assets/backgrounds/How to see a double meteor shower on Tuesday night with a chance of fireballs.jpeg" fade="1.0" transition="Simple Fade"]
+[wait time="3.1"]
+Di tengah kehampaan luar angkasa, dua benda langit bertabrakan.
 Batu meteor dan batu misterius menghantam satu sama lain, menghasilkan ledakan energi yang luar biasa.
 label [Scene: Kota - Malam Hari - Minimarket]
-[background arg="res://assets/backgrounds/☆.jpeg" fade="0.5"]
+audio -
+[background arg="res://assets/backgrounds/☆.jpeg" fade="1.0"]
+[wait time="2.0"]
 Suatu malam yang tenang, angin berhembus lembut menyusuri jalanan kota kecil.
-{namauser} seorang remaja biasa, tengah berbelanja kebutuhan makan malamnya.\
-
-[background arg="res://assets/backgrounds/永辉.jpeg" fade="0.0"]
+ {namauser} seorang remaja biasa, tengah berbelanja kebutuhan makan malamnya.
+[background arg="res://assets/backgrounds/永辉.jpeg" fade="1.0"]
+[wait time="2.0"]
 join mc center
 mc: Hmm... kayaknya udah cukup buat makan malam.
-[MC berdiri di antrean kasir. Di sudut ruangan, televisi menyala menampilkan berita.]
+[{namauser} berdiri di antrean kasir. Di sudut ruangan, televisi menyala menampilkan berita.]
+join mc right
 join reportertv leftmost
 reportertv: Krisis pencemaran air semakin parah. Banyak sumber air utama kini terkontaminasi oleh limbah dan bakteri.
+reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa
+reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa
+reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa
+leave reportertv
+mc: Hah... berita beginian lagi. Nggak ada yang baru. [{namauser} monolog dengan perasaan acuh ]
+leave mc
+[MC membayar dan keluar dari minimarket]
+[background arg="res://assets/backgrounds/☆.jpeg" fade="0.5"]
+ {namauser} berjalan sambil memakan snack, menikmati ketenangan malam. Ia menatap langit malam yang cerah.
+join mc right
+mc: Bintang malam ini keren juga...
+({namauser}  melempar bungkus snack ke selokan sembarangan)
+Ah, bodo amat
+({namauser} melihat bintang jatuh. Semakin lama semakin besar...)
+Eh...? Tunggu, itu... kok makin gede?!
+(Flash putih terang menyelimuti layar. Transisi ke hitam)
+(Keesokan harinya. MC membuka mata, terbaring di ranjang rumah sakit)
+Ugh... Di mana ini...?
+(Suster masuk ke dalam ruangan)
+Syukurlah, kamu sudah sadar! Kamu ditemukan tak sadarkan diri semalam di pinggir jalan. Bajumu agak terbakar, tapi anehnya tubuhmu nggak terluka sama sekali
+Aku... ngelihat meteor... lalu... gelap.
+(Suster tersenyum dan meletakkan segelas air di meja. Lalu keluar ruangan)
+({namauser} mengambil gelas air. Tiba-tiba layar status transparan muncul di atasnya)
+Hah?! Apaan ini?!
+Apa-apaan ini... kayak... game? Tapi nyata?!
+({namauser} menekan tombol PURIFY. Tampilan layar berubah, muncul bakteri-bakteri animasi)
+bisa disentuh...
+(MC menyentuh bakteri → mati satu per satu. Setelah selesai, status berubah\: "AIR TELAH DIMURNIKAN)
+Gila... Apa yang sebenarnya terjadi sama aku...?
+({namauser} menatap gelas, lalu meminumnya perlahan)
+({namauser} menyadari kekuatan barunya dan masih tidak percaya dengan apa yang dialaminya)
