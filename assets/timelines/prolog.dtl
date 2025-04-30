@@ -6,11 +6,10 @@ label [Scene: Luar angkasa - Meteor Tabrakan]
 Di tengah kehampaan luar angkasa, dua benda langit bertabrakan.
 Batu meteor dan batu misterius menghantam satu sama lain, menghasilkan ledakan energi yang luar biasa.
 label [Scene: Kota - Malam Hari - Minimarket]
-audio -
 [background arg="res://assets/backgrounds/☆.jpeg" fade="1.0"]
 [wait time="2.0"]
 Suatu malam yang tenang, angin berhembus lembut menyusuri jalanan kota kecil.
- {namauser} seorang remaja biasa, tengah berbelanja kebutuhan makan malamnya.
+{namauser} seorang remaja biasa, tengah berbelanja kebutuhan makan malamnya.
 [background arg="res://assets/backgrounds/永辉.jpeg" fade="1.0"]
 [wait time="2.0"]
 join mc center
@@ -26,8 +25,9 @@ leave reportertv
 mc: Hah... berita beginian lagi. Nggak ada yang baru. [{namauser} monolog dengan perasaan acuh ]
 leave mc
 [MC membayar dan keluar dari minimarket]
+label [Scene: Jalanan Malam - Langit Berbintang]
 [background arg="res://assets/backgrounds/☆.jpeg" fade="0.5"]
- {namauser} berjalan sambil memakan snack, menikmati ketenangan malam. Ia menatap langit malam yang cerah.
+{namauser} berjalan sambil memakan snack, menikmati ketenangan malam. Ia menatap langit malam yang cerah.
 join mc right
 mc: Bintang malam ini keren juga...
 ({namauser}  melempar bungkus snack ke selokan sembarangan)
@@ -35,6 +35,7 @@ Ah, bodo amat
 ({namauser} melihat bintang jatuh. Semakin lama semakin besar...)
 Eh...? Tunggu, itu... kok makin gede?!
 (Flash putih terang menyelimuti layar. Transisi ke hitam)
+label [Scene: Rumah Sakit - Kamar Rawat]
 (Keesokan harinya. MC membuka mata, terbaring di ranjang rumah sakit)
 Ugh... Di mana ini...?
 (Suster masuk ke dalam ruangan)
@@ -42,9 +43,11 @@ Syukurlah, kamu sudah sadar! Kamu ditemukan tak sadarkan diri semalam di pinggir
 Aku... ngelihat meteor... lalu... gelap.
 (Suster tersenyum dan meletakkan segelas air di meja. Lalu keluar ruangan)
 ({namauser} mengambil gelas air. Tiba-tiba layar status transparan muncul di atasnya)
+label [STATUS WINDOW]
 Hah?! Apaan ini?!
 Apa-apaan ini... kayak... game? Tapi nyata?!
 ({namauser} menekan tombol PURIFY. Tampilan layar berubah, muncul bakteri-bakteri animasi)
+label [Minigames dimulai]
 bisa disentuh...
 (MC menyentuh bakteri → mati satu per satu. Setelah selesai, status berubah\: "AIR TELAH DIMURNIKAN)
 Gila... Apa yang sebenarnya terjadi sama aku...?
