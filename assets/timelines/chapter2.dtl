@@ -1,85 +1,100 @@
+[background fade="0.0"]
 label [Scene: Kelas Baru - Pagi Hari]
 Tahun ajaran baru dimulai. Suasana kelas penuh dengan wajah-wajah baru dan bisik-bisik penuh rasa ingin tahu.
 Guru berdiri di depan, tersenyum.
-Baik, sebelum kita mulai pelajaran, mari kita berkenalan satu per satu.
-{namauser} berdiri dari kursinya.
-MC\: "Nama saya [Nama MC]. Senang bertemu dengan kalian semua. Mohon bimbingannya."
+guru: Baik, sebelum kita mulai pelajaran, mari kita berkenalan satu per satu.
+mc: (Berdiri dari kursinya.)
+guru: Nama saya [Nama MC]. Senang bertemu dengan kalian semua. Mohon bimbingannya.
 Siswa-siswa lain mengangguk ramah. MC duduk kembali.
-MC merasa biasa saja... sampai giliran orang di sebelahnya.
-Revana berdiri. Semua mata di kelas tertuju padanya.
-Aku Revana. Senang berkenalan dengan kalian semua. [senyum]
-Dengan wajah yang begitu cantik dan aura yang lembut, Revana langsung menarik perhatian semua orang... termasuk MC.
-Wah... cantik banget... Tapi... mana mungkin ada hubungannya sama gue. (berbicara di dalam hati)
-MC menggeleng pelan, mencoba fokus kembali.
+mc: Merasa biasa saja... sampai giliran orang di sebelahnya.
+Seorang gadis berparah cantik berdiri. Semua mata di kelas tertuju padanya.
+revana: Aku Revana Putri. 
+revana: Senang berkenalan dengan kalian semua. 
+Dengan wajah yang begitu cantik dan aura yang lembut, Revana langsung menarik perhatian semua orang... termasuk {namauser},
+mc: Wah... cantik banget... Tapi... mana mungkin ada hubungannya sama gue. 
+mc: (Menggeleng pelan, mencoba fokus kembali.)
+[background fade="0.0"]
 label [Scene: Jalanan Kota - Sore Hari]
-Setelah sekolah berakhir, MC berjalan santai di tepi jembatan.
+Setelah sekolah berakhir, {namauser} berjalan santai di tepi jembatan.
 Tiba-tiba terdengar suara ribut dari arah sungai.
-Hei! Jangan buang sampah sembarangan ke sungai! [emote marah]
+revana: Hei! Jangan buang sampah sembarangan ke sungai!
 Seorang pria dewasa membuang kantong plastik ke sungai, lalu membentak Revana.
-Urusan gue! Anak kecil nggak usah sok tahu!
-Revana tidak mundur. Pria itu mengangkat tangan, siap memukul.
-Refleks, MC berlari mendekat.
-MC memegang tangan pria itu, menghentikannya.
-Lo pikir bisa seenaknya mukul orang?! Apa lo nggak mikir, air sungai ini buat siapa?! [serius]
-aighhhhh
-Pria itu ketakutan, melepaskan diri, lalu kabur.
-Revana menatap MC, matanya melebar karena terkejut.
-T-Terima kasih... Tapi... lihat, sampahnya… [kaget]
+wargasampah: Urusan gue! Anak kecil nggak usah sok tahu!
+revana: (Tidak mundur.)
+Pria itu mengangkat tangan, siap memukul.
+mc: (Berlari mendekat.)
+label Minigame tap tap
+label Minigame keluar
+mc: (Memegang tangan pria itu, menghentikannya.)
+mc: Lo pikir bisa seenaknya mukul orang?! Apa lo nggak mikir, air sungai ini buat siapa?!
+wargasampah: Aighhhhh
+wargasampah: (Ketakutan, melepaskan diri, lalu kabur.)
+revana: (Menatap {namauser}, matanya melebar karena terkejut.)
+revana: T-Terima kasih... 
+revana: Tapi... lihat, sampahnya…
+[background fade="0.0"]
 label [CHOICE]
 - Biar aku bersihkan.
-	Mc menatap ke arah sungai
+	mc: (Menatap ke arah sungai.)
+	[background fade="0.0"]
 	label [Scene: Sungai - Bawah Jembatan]
-	MC memperhatikan air sungai yang keruh. Tiba-tiba, sebuah status window berwarna merah menyala di hadapannya.
+	mc: (Memperhatikan air sungai yang keruh. Tiba-tiba, sebuah status window berwarna merah menyala di hadapannya.)
 	label [STATUS WINDOW]
-	Terkunci...? Karena sampah itu?!
-	Revana berdiri di samping MC, mendesah pelan.
-	Sungai ini... beberapa bagian kota pakai buat sumber air minum. Kalau makin parah... bisa bahaya.  [sedih]
-	MC teringat wajah teman masa kecilnya yang sakit
-	Gue nggak bisa diem aja.
-	MC melompat turun ke tepian sungai.
-	H-Hey! Kamu ngapain?! [kaget]
+	mc: Terkunci...? Karena sampah itu?!
+	revana: (Berdiri di samping MC, mendesah pelan.)
+	revana: Sungai ini... beberapa bagian kota pakai buat sumber air minum. Kalau makin parah... bisa bahaya. 
+	mc: (Teringat wajah teman masa kecilnya yang sakit.)
+	mc: Gue nggak bisa diem aja.
+	mc: (Melompat turun ke tepian sungai.)
+	revana: H-Hey! Kamu ngapain?! 
+	[background fade="0.0"]
 	label [Scene: Sungai - Air Keruh]
-	MC berusaha mengumpulkan sampah-sampah plastik yang mengapung.
-	Lumpur menodai pakaiannya, namun ia tetap bergerak.
-	Revana menatap MC dari atas jembatan, matanya membesar penuh rasa kagum.
-	Orang ini... aneh. Tapi... hatinya tulus.
+	label Minigame kumpul sampah
+	mc: (Berusaha mengumpulkan sampah-sampah plastik yang mengapung.)
+	mc: (Lumpur menodai pakaiannya, namun ia tetap bergerak.)
+	label Minigame keluar
+	revana: (Menatap {namauser} dari atas jembatan, matanya membesar penuh rasa kagum.
+	revana: Orang ini... aneh. Tapi... hatinya tulus.
 - Kita bisa bersihin bareng kalau kamu mau.
-	Mc menatap ke arah sungai
+	mc: (Menatap ke arah sungai.)
 	label [Scene: Sungai - Bawah Jembatan]
-	MC memperhatikan air sungai yang keruh. Tiba-tiba, sebuah status window berwarna merah menyala di hadapannya.
+	[background fade="0.0"]
+	mc: (Memperhatikan air sungai yang keruh. Tiba-tiba, sebuah status window berwarna merah menyala di hadapannya.)
 	label [STATUS WINDOW]
-	Terkunci...? Karena sampah itu?!
-	Revana berdiri di samping MC, mendesah pelan.
-	Sungai ini... beberapa bagian kota pakai buat sumber air minum. Kalau makin parah... bisa bahaya.  [sedih]
-	MC teringat wajah teman masa kecilnya yang sakit
-	Gue nggak bisa diem aja.
-	MC melompat turun ke tepian sungai.
-	H-Hey! Kamu ngapain?! [kaget]
+	mc: Terkunci...? Karena sampah itu?!
+	revana: (Berdiri di samping MC, mendesah pelan.)
+	revana: Sungai ini... beberapa bagian kota pakai buat sumber air minum. Kalau makin parah... bisa bahaya. 
+	mc: (Teringat wajah teman masa kecilnya yang sakit.)
+	mc: Gue nggak bisa diem aja.
+	mc: (Melompat turun ke tepian sungai.)
+	revana: H-Hey! Kamu ngapain?! [kaget]
 	label [Scene: Sungai - Air Keruh]
-	MC berusaha mengumpulkan sampah-sampah plastik yang mengapung.
-	Tanpa pikir panjang... Revana ikut lompat turun dari atas jembatan, membantu mc semampunya.
+	label Minigame kumpul sampah
+	[background fade="0.0"]
+	mc: (Berusaha mengumpulkan sampah-sampah plastik yang mengapung.)
+	mc: (Tanpa pikir panjang... Revana ikut lompat turun dari atas jembatan, membantu mc semampunya.)
 	Lumpur menodai pakaian mereka, namun mereka berdua tetap bergerak.
-	Orang ini... aneh. Tapi... hatinya tulus.
+	label Minigame keluar
+	revana: Orang ini... aneh. Tapi... hatinya tulus.
 Setelah semua sampah dikumpulkan dan diangkat, status window berbunyi.
 label [STATUS WINDOW]
-Sekarang... waktunya.
-MC menekan tombol PURIFY.
+mc: Sekarang... waktunya.
+- PURIFY
 label Minigame dimulai
-bakteri-bakteri berevolusi muncul, lebih besar dan cepat dari sebelumnya.
+Bakteri-bakteri berevolusi muncul, lebih besar dan cepat dari sebelumnya.
 Lebih kuat... Tapi gue juga udah siap!
-MC men-slash baktaeri berkali-kali, menghancurkan satu demi satu.
-Revana di atas jembatan menatap MC bingung.
-Kenapa dia... geser-geser udara...? [emote bingung] (berbicara di dalam hati)
+revana: (Menatap {namauser} bingung.)
+revana: Kenapa dia... geser-geser udara...?
 label [Scene: Sungai - Setelah Purifikasi]
 Setelah semua bakteri musnah, sungai berubah perlahan. Airnya menjadi jernih, memantulkan cahaya sore.
-MC menghela napas lega.
-K-Kamu... barusan... apa yang kamu lakukan?
-U-uh, ini... gimana jelasinnya ya... (panik)
-MC berusaha menjelaskan tentang status window, bakteri, dan kemampuannya memurnikan air
-Kamu... serius? (setengah percaya)
-MC menunjuk ke sungai yang kini jernih.
-Kalau nggak percaya... liat sendiri, kan?
-Revana terdiam, menatap air sungai yang sekarang jauh lebih bersih dan mengalir jernih.
-Kamu aneh. (tersenyum kecil)
-Revana menatap MC, ada sedikit rasa kagum di matanya.
+mc: (Menghela napas lega.)
+revana: K-Kamu... barusan... apa yang kamu lakukan?
+mc: U-uh, ini... gimana jelasinnya ya...
+mc: (Berusaha menjelaskan tentang status window, bakteri, dan kemampuannya memurnikan air.)
+revana: Kamu... serius? 
+mc: (Menunjuk ke sungai yang kini jernih.)
+mc: Kalau nggak percaya... liat sendiri, kan?
+revana: (Terdiam, menatap air sungai yang sekarang jauh lebih bersih dan mengalir jernih.)
+revana: Kamu aneh. 
+revana: (Menatap {namauser}, ada sedikit rasa kagum di matanya.)
 Di bawah sinar matahari sore, tanpa sadar sebuah ikatan kecil mulai tumbuh di antara dua orang yang sama-sama "berbeda."
