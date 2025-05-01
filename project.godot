@@ -28,6 +28,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "chapter1": "res://assets/timelines/chapter1.dtl",
+"chapter2": "res://assets/timelines/chapter2.dtl",
 "prolog": "res://assets/timelines/prolog.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"
