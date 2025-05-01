@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://orokrhj1u63"]
+
+[ext_resource type="FontFile" uid="uid://dpyoxp0s1gi7x" path="res://assets/fonts/Gravity-Regular.otf" id="1_5jkyv"]
+
+[resource]
+Button/colors/font_hover_color = Color(0, 0.894118, 0.807843, 1)
+Button/fonts/font = ExtResource("1_5jkyv")

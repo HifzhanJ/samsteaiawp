@@ -1,8 +1,9 @@
 [gd_resource type="Resource" script_class="DialogicStyle" load_steps=13 format=3 uid="uid://b86hdb1k8u2vn"]
 
-[ext_resource type="Resource" uid="uid://bkenrix655fcd" path="res://assets/styles/visualnovel.tres" id="1_hat8l"]
+[ext_resource type="Resource" uid="uid://bkenrix655fcd" path="res://assets/styles/dialogic_styles/visualnovel.tres" id="1_hat8l"]
 [ext_resource type="Script" uid="uid://bwg6yncmh2cml" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_7hafy"]
 [ext_resource type="Script" uid="uid://dv08k6ljua6fm" path="res://addons/dialogic/Resources/dialogic_style.gd" id="3_76gvo"]
+
 
 [sub_resource type="Resource" id="Resource_hkvkq"]
 script = ExtResource("2_7hafy")

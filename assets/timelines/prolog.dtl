@@ -1,3 +1,4 @@
+audio music "res://assets/sounds/music/chill night.mp3"
 [text_input text="Tolong masukkan nama anda:" var="namauser"]
 [wait time="2.0"]
 label [Scene: Luar angkasa - Meteor Tabrakan]

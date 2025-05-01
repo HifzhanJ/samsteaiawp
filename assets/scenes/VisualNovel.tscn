@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://1kn13opyeo67"]
+
+[ext_resource type="Script" uid="uid://lhlhvngbyyr2" path="res://assets/scripts/VisualNovel.gd" id="1_3jsea"]
+[ext_resource type="PackedScene" uid="uid://coqkfvrkmk7wm" path="res://assets/scenes/AudioManager.tscn" id="2_7127q"]
+[ext_resource type="PackedScene" uid="uid://b0l3eblj4pj2o" path="res://assets/scenes/Setting.tscn" id="2_br4us"]
+[ext_resource type="PackedScene" uid="uid://b6niiik6tafh8" path="res://assets/scenes/SavePanel.tscn" id="4_vu3i3"]
+[ext_resource type="PackedScene" uid="uid://c0vosddejbfhe" path="res://assets/scenes/LoadPanel.tscn" id="5_u1qf8"]
+
+[node name="VisualNovel" type="CanvasLayer"]
+script = ExtResource("1_3jsea")
+
+[node name="AudioManager" parent="." instance=ExtResource("2_7127q")]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="Save" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save"
+
+[node name="Load" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Load"
+
+[node name="Setting" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Pengaturan"
+
+[node name="Setting" parent="." instance=ExtResource("2_br4us")]
+visible = false
+
+[node name="SavePanel" parent="." instance=ExtResource("4_vu3i3")]
+visible = false
+
+[node name="LoadPanel" parent="." instance=ExtResource("5_u1qf8")]
+visible = false
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Setting" to="." method="_on_setting_pressed"]

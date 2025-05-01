@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://baoqqxwfb7tkb"
+path="res://.godot/imported/cozy night.mp3-136435736e140a5c7f2e185e8f0da4c5.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music/cozy night.mp3"
+dest_files=["res://.godot/imported/cozy night.mp3-136435736e140a5c7f2e185e8f0da4c5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
