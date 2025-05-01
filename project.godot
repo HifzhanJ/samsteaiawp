@@ -21,6 +21,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"Cashier": "res://assets/characters/Cashier.dch",
 "aika_vanya": "res://assets/characters/aika_vanya.dch",
 "andri": "res://assets/characters/andri.dch",
 "ibuaika": "res://assets/characters/ibuaika.dch",
@@ -32,10 +33,11 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "chapter1": "res://assets/timelines/chapter1.dtl",
+"chapter2": "res://assets/timelines/chapter2.dtl",
 "prolog": "res://assets/timelines/prolog.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"
-text/letter_speed=0.01
+text/letter_speed=0.04
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
 text/advance_delay=0.1
@@ -60,9 +62,27 @@ audio/channel_defaults={
 "loop": false,
 "volume": 0.0
 },
-"music": {
+"Music": {
+"audio_bus": "",
+"fade_length": 0.2,
+"loop": true,
+"volume": 0.0
+},
+"Sfx_fade": {
+"audio_bus": "",
+"fade_length": 2.0,
+"loop": false,
+"volume": 0.0
+},
+"comet_explosive_sfx": {
 "audio_bus": "",
 "fade_length": 0.0,
+"loop": false,
+"volume": 0.0
+},
+"music_fade": {
+"audio_bus": "",
+"fade_length": 1.0,
 "loop": true,
 "volume": 0.0
 }
