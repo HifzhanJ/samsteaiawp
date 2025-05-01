@@ -108,10 +108,14 @@ audio/channel_defaults={
 variables={
 "namauser": "Rio Bagaskara"
 }
-layout/style_list=[]
-layout/default_style="Default"
+layout/style_list=["res://assets/styles/dialogic_styles/visualnovel.tres"]
+layout/default_style="res://assets/styles/visualnovel.tres"
 glossary/default_case_sensitive=true
 audio/type_sound_bus="SFX"
+
+[display]
+
+window/size/mode=3
 
 [editor_plugins]
 
