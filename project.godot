@@ -113,10 +113,6 @@ layout/default_style="res://assets/styles/visualnovel.tres"
 glossary/default_case_sensitive=true
 audio/type_sound_bus="SFX"
 
-[display]
-
-window/size/mode=3
-
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
