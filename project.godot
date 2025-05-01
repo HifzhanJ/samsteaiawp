@@ -24,10 +24,15 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"Cashier": "res://assets/characters/Cashier.dch",
 "aika_vanya": "res://assets/characters/aika_vanya.dch",
+"andri": "res://assets/characters/andri.dch",
+"ibuaika": "res://assets/characters/ibuaika.dch",
 "mc": "res://assets/characters/mc.dch",
-"reportertv": "res://assets/characters/reportertv.dch",
-"unit_test_character": "res://Tests/Resources/unit_test_character.dch"
+"status_window": "res://assets/characters/status_window.dch",
+"unit_test_character": "res://Tests/Resources/unit_test_character.dch",
+"warga1": "res://assets/characters/warga1.dch",
+"warga2": "res://assets/characters/warga2.dch"
 }
 directories/dtl_directory={
 "chapter1": "res://assets/timelines/chapter1.dtl",
@@ -35,7 +40,7 @@ directories/dtl_directory={
 "prolog": "res://assets/timelines/prolog.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"
-text/letter_speed=0.05
+text/letter_speed=0.04
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1
 text/advance_delay=0.1
@@ -60,9 +65,27 @@ audio/channel_defaults={
 "loop": false,
 "volume": 0.0
 },
-"music": {
-"audio_bus": "Music",
+"Music": {
+"audio_bus": "",
+"fade_length": 0.2,
+"loop": true,
+"volume": 0.0
+},
+"Sfx_fade": {
+"audio_bus": "",
+"fade_length": 2.0,
+"loop": false,
+"volume": 0.0
+},
+"comet_explosive_sfx": {
+"audio_bus": "",
 "fade_length": 0.0,
+"loop": false,
+"volume": 0.0
+},
+"music_fade": {
+"audio_bus": "",
+"fade_length": 1.0,
 "loop": true,
 "volume": 0.0
 },
@@ -74,10 +97,10 @@ audio/channel_defaults={
 }
 }
 variables={
-"namauser": "Rey Baskara"
+"namauser": "Rio Bagaskara"
 }
-layout/style_list=["res://assets/styles/dialogic_styles/visualnovel.tres"]
-layout/default_style="res://assets/styles/visualnovel.tres"
+layout/style_list=[]
+layout/default_style="Default"
 glossary/default_case_sensitive=true
 audio/type_sound_bus="SFX"
 

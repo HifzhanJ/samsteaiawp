@@ -10,20 +10,20 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "normal",
+&"default_portrait": "Normal",
 &"description": "",
-&"display_name": "Reporter TV",
+&"display_name": "Cashier",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"normal": {
+"Normal": {
 "export_overrides": {
-"image": "\"res://assets/char_img/reportertv.png\""
+"image": "\"res://assets/char_img/Cashier.png\""
 },
-"mirror": false,
-"offset": Vector2(0, -150),
-"scale": 0.5,
+"mirror": true,
+"offset": Vector2(0, -90),
+"scale": 0.55,
 "scene": ""
 }
 },

@@ -10,22 +10,12 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "normal",
+&"default_portrait": "",
 &"description": "",
-&"display_name": "Reporter TV",
+&"display_name": "Status Window",
 &"mirror": false,
-&"nicknames": [""],
+&"nicknames": ["Status Window"],
 &"offset": Vector2(0, 0),
-&"portraits": {
-"normal": {
-"export_overrides": {
-"image": "\"res://assets/char_img/reportertv.png\""
-},
-"mirror": false,
-"offset": Vector2(0, -150),
-"scale": 0.5,
-"scene": ""
-}
-},
+&"portraits": {},
 &"scale": 1.0
 }
