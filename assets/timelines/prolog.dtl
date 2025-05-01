@@ -1,5 +1,6 @@
+jump prolog/[Scene: Rumah Sakit - Kamar Rawat]
 [text_input text="Tolong masukkan nama anda:" var="namauser"]
-[wait time="2.0"]
+[wait time="1.0"]
 label [Scene: Luar angkasa - Meteor Tabrakan]
 [background arg="res://assets/backgrounds/How to see a double meteor shower on Tuesday night with a chance of fireballs.jpeg" fade="1.0" transition="Simple Fade"]
 [wait time="3.1"]
@@ -7,49 +8,112 @@ Di tengah kehampaan luar angkasa, dua benda langit bertabrakan.
 Batu meteor dan batu misterius menghantam satu sama lain, menghasilkan ledakan energi yang luar biasa.
 label [Scene: Kota - Malam Hari - Minimarket]
 [background arg="res://assets/backgrounds/☆.jpeg" fade="1.0"]
+audio music_fade "res://assets/sound/windy_night.mp3"
 [wait time="2.0"]
 Suatu malam yang tenang, angin berhembus lembut menyusuri jalanan kota kecil.
 {namauser} seorang remaja biasa, tengah berbelanja kebutuhan makan malamnya.
+audio music -
 [background arg="res://assets/backgrounds/永辉.jpeg" fade="1.0"]
+audio music_fade "res://assets/sound/supermarket_ambience.mp3"
 [wait time="2.0"]
+{namauser} berdiri di dalam minimarket, membawa keranjang berisi snack, mie instan, dan telur.
 join mc center
 mc: Hmm... kayaknya udah cukup buat makan malam.
-[{namauser} berdiri di antrean kasir. Di sudut ruangan, televisi menyala menampilkan berita.]
-join mc right
-join reportertv leftmost
-reportertv: Krisis pencemaran air semakin parah. Banyak sumber air utama kini terkontaminasi oleh limbah dan bakteri.
+leave mc [animation="Slide To Right" length="1.0"]
+{namauser} berdiri di antrean kasir. Di sudut ruangan, televisi menyala menampilkan berita.
+join reportertv center
+reportertv: Halo selamat malam pemirsa... kembali lagi bersama saya Rita, pembawa berita malam hari ini
+reportertv: Berita pertama dimulai dari kota Cihideung
+reportertv: Diduga 51 Siswa SMA 1 Cihideung keracunan usai santap Cemilan bergizi gratis, 6 masih dirawat
 reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa
+reportertv: Selanjutnya, Krisis pencemaran air semakin parah. Banyak sumber air utama kini terkontaminasi oleh limbah dan bakteri.
+reportertv: Kementrian Lingkungan Hidup dan kehutanan sudah menghimbau masyarakat untuk selalu menjaga lingkungan dan tidak membuang sampah sembarangan
 reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa
 reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa
 leave reportertv
-mc: Hah... berita beginian lagi. Nggak ada yang baru. [{namauser} monolog dengan perasaan acuh ]
-leave mc
-[MC membayar dan keluar dari minimarket]
+join mc center [animation="Fade In"]
+ {namauser} berbicara sendiri dengan perasaan acuh 
+mc: Hah... berita beginian lagi. Nggak ada yang baru.
+update mc right [move_time="1.0"]
+join Cashier left
+Cashier: totalnya jadi Rp.20.000 yaa
+mc: Pembayarannya lewat KiRIS ya kak
+Cashier: Okee sebentar yaa
+leave mc [animation="Slide To Right" length="1.5"]
+leave Cashier [animation="Fade Out" length="1.0"]
+audio Sfx_fade "res://assets/sound/515882__filmscore__truck-stop-interior-door-chime.mp3"
+{namauser} membayar dan keluar dari minimarket
+[wait time="1.5"]
+audio music_fade -
 label [Scene: Jalanan Malam - Langit Berbintang]
 [background arg="res://assets/backgrounds/☆.jpeg" fade="0.5"]
+audio Sfx_fade "res://assets/sound/windy_night.mp3"
 {namauser} berjalan sambil memakan snack, menikmati ketenangan malam. Ia menatap langit malam yang cerah.
-join mc right
+join mc center
 mc: Bintang malam ini keren juga...
-({namauser}  melempar bungkus snack ke selokan sembarangan)
-Ah, bodo amat
-({namauser} melihat bintang jatuh. Semakin lama semakin besar...)
-Eh...? Tunggu, itu... kok makin gede?!
-(Flash putih terang menyelimuti layar. Transisi ke hitam)
+{namauser} melempar bungkus snack ke selokan sembarangan
+- Peduli amat, bukan urusanku.
+- Eh... tadi buangnya sembarangan ya?
+Ah, bodo amat lah
+{namauser} melihat bintang jatuh...
+Namun...
+pecahan bintang tersebut semakin lama semakin mendekat dengan cepat...
+update mc center [animation="Shake X"]
+mc: Eh...? tunggu
+update mc center [animation="Shake Y" z_index="0" move_ease="in" move_trans="linear"]
+mc:  itu...
+audio Sfx_fade -
+update mc center [animation="Shake Y" z_index="0" move_ease="in" move_trans="linear"]
+mc: kok makin gede?!
+leave mc [animation="Instant Out" length="0.7"]
+audio "res://assets/sound/comet_explosive.mp3"
+[background arg="res://assets/backgrounds/pitch_black.png" fade="0.5"]
+[wait time="19.0"]
+Pecahan bintang tersebut langsung jatuh menghantam {namauser}
+[wait time="1.0"]
+mc: .....
+[wait time="1.0"]
+[wait_input]
 label [Scene: Rumah Sakit - Kamar Rawat]
-(Keesokan harinya. MC membuka mata, terbaring di ranjang rumah sakit)
-Ugh... Di mana ini...?
-(Suster masuk ke dalam ruangan)
-Syukurlah, kamu sudah sadar! Kamu ditemukan tak sadarkan diri semalam di pinggir jalan. Bajumu agak terbakar, tapi anehnya tubuhmu nggak terluka sama sekali
-Aku... ngelihat meteor... lalu... gelap.
-(Suster tersenyum dan meletakkan segelas air di meja. Lalu keluar ruangan)
-({namauser} mengambil gelas air. Tiba-tiba layar status transparan muncul di atasnya)
+[background arg="res://assets/backgrounds/pitch_white.png" fade="0.5"]
+[wait time="2.0"]
+Keesokan harinya...
+{namauser} membuka mata, terbaring di ranjang rumah sakit
+[background arg="res://assets/backgrounds/patient_room.jpg" fade="0.5"]
+mc: [speed=3]Ugh...
+mc: [speed=3]Di mana ini...?
+Suster masuk ke dalam ruangan
+join doctor center
+\doctor: Syukurlah, kamu sudah sadar! Kamu ditemukan tak sadarkan diri semalam di pinggir jalan
+\doctor:  Bajumu agak terbakar, tapi anehnya tubuhmu nggak terluka sama sekali
+update doctor right [move_time="0.5"]
+join mc left [mirrored="true"]
+mc: [speed=3] Aku... 
+mc: [speed=3] ngelihat meteor...
+mc: [speed=3] lalu...
+mc: [speed=3] gelap.
+leave mc [animation="Fade Out"]
+leave doctor [animation="Fade Out"]
+Suster tersenyum dan meletakkan segelas air di meja. Lalu keluar ruangan
+[wait time="1.0"]
+{namauser} mengambil gelas air...
+Tiba-tiba layar status transparan muncul di atasnya
 label [STATUS WINDOW]
-Hah?! Apaan ini?!
-Apa-apaan ini... kayak... game? Tapi nyata?!
-({namauser} menekan tombol PURIFY. Tampilan layar berubah, muncul bakteri-bakteri animasi)
+join mc center
+mc: Hah?! Apaan ini?!
+update mc center [animation="Shake X"]
+Apa-apaan ini...
+mc:  kayak...
+mc: game? Tapi nyata?!
+leave mc [animation="Fade Out"]
+{namauser} menekan tombol PURIFY
+Tampilan layar berubah, muncul bakteri-bakteri yang terlihat menyeramkan
 label [Minigames dimulai]
-bisa disentuh...
-(MC menyentuh bakteri → mati satu per satu. Setelah selesai, status berubah\: "AIR TELAH DIMURNIKAN)
-Gila... Apa yang sebenarnya terjadi sama aku...?
+join mc center
+mc: bisa disentuh...
+{namauser} menyentuh bakteri → mati satu per satu. Setelah selesai, status berubah\: "AIR TELAH DIMURNIKAN
+update mc center [animation="Shake X"]
+mc: Gila... Apa yang sebenarnya terjadi sama aku...?
 ({namauser} menatap gelas, lalu meminumnya perlahan)
 ({namauser} menyadari kekuatan barunya dan masih tidak percaya dengan apa yang dialaminya)
+[end_timeline]

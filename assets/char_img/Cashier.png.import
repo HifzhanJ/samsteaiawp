@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cges70kgockhk"
-path="res://.godot/imported/AWS' new text-to-speech engine sounds like a newscaster _ TechCrunch.jpeg-a8fb8f1a9bb352318c3ac7c2893d55f9.ctex"
+uid="uid://cfekpb5avyg75"
+path="res://.godot/imported/Cashier.png-0d512522995989d61f8a8ed01f9fefda.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/char_img/AWS' new text-to-speech engine sounds like a newscaster _ TechCrunch.jpeg"
-dest_files=["res://.godot/imported/AWS' new text-to-speech engine sounds like a newscaster _ TechCrunch.jpeg-a8fb8f1a9bb352318c3ac7c2893d55f9.ctex"]
+source_file="res://assets/char_img/Cashier.png"
+dest_files=["res://.godot/imported/Cashier.png-0d512522995989d61f8a8ed01f9fefda.ctex"]
 
 [params]
 
