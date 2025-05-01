@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://ciqt5b2loudis"]
+
+[ext_resource type="FontFile" uid="uid://cocjm6mgh03yn" path="res://assets/fonts/ZF2334 After a Rain.otf" id="1_tlabq"]
+
+[resource]
+Label/font_sizes/font_size = 50
+Label/fonts/font = ExtResource("1_tlabq")

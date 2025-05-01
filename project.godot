@@ -11,7 +11,10 @@ config_version=5
 [application]
 
 config/name="SAMSTEAIAWP"
+run/main_scene="uid://l6in4iirmdde"
 config/features=PackedStringArray("4.4", "Forward Plus")
+boot_splash/show_image=false
+boot_splash/use_filter=false
 config/icon="res://icon.svg"
 
 [autoload]
@@ -59,33 +62,39 @@ save/encryption_on_exports_only=true
 text/autopauses={}
 audio/channel_defaults={
 "": {
-"audio_bus": "",
+"audio_bus": "SFX",
 "fade_length": 0.0,
 "loop": false,
 "volume": 0.0
 },
 "Music": {
-"audio_bus": "",
+"audio_bus": "Music",
 "fade_length": 0.2,
 "loop": true,
 "volume": 0.0
 },
 "Sfx_fade": {
-"audio_bus": "",
+"audio_bus": "SFX",
 "fade_length": 2.0,
 "loop": false,
 "volume": 0.0
 },
 "comet_explosive_sfx": {
-"audio_bus": "",
+"audio_bus": "SFX",
 "fade_length": 0.0,
 "loop": false,
 "volume": 0.0
 },
 "music_fade": {
-"audio_bus": "",
+"audio_bus": "Music",
 "fade_length": 1.0,
 "loop": true,
+"volume": 0.0
+},
+"new_channel_name": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": false,
 "volume": 0.0
 }
 }
@@ -95,6 +104,7 @@ variables={
 layout/style_list=[]
 layout/default_style="Default"
 glossary/default_case_sensitive=true
+audio/type_sound_bus="SFX"
 
 [editor_plugins]
 

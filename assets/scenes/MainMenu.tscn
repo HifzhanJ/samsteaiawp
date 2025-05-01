@@ -1,0 +1,138 @@
+[gd_scene load_steps=8 format=3 uid="uid://dxwuk1uhtpt2v"]
+
+[ext_resource type="Script" uid="uid://b7f55aqdtsnig" path="res://assets/scripts/MainMenu.gd" id="1_1l0v7"]
+[ext_resource type="PackedScene" uid="uid://coqkfvrkmk7wm" path="res://assets/scenes/AudioManager.tscn" id="2_c1eu8"]
+[ext_resource type="AudioStream" uid="uid://du0loxxikrq3x" path="res://assets/sounds/music/opening.mp3" id="3_nory3"]
+[ext_resource type="FontFile" uid="uid://dpyoxp0s1gi7x" path="res://assets/fonts/Gravity-Regular.otf" id="4_7metd"]
+[ext_resource type="PackedScene" uid="uid://b0l3eblj4pj2o" path="res://assets/scenes/Setting.tscn" id="5_1l0v7"]
+[ext_resource type="Theme" uid="uid://orokrhj1u63" path="res://assets/themes/button_themes/mainmenu.tres" id="5_an4tj"]
+[ext_resource type="PackedScene" uid="uid://c0vosddejbfhe" path="res://assets/scenes/LoadPanel.tscn" id="7_kj6rs"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1l0v7")
+
+[node name="AudioManager" parent="." instance=ExtResource("2_c1eu8")]
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_nory3")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Judul" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_7metd")
+theme_override_font_sizes/font_size = 40
+text = "Suddenly A Meteor
+Struck The Earth
+And
+I Became A
+Water Purifier"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="Middle" type="Control" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+
+[node name="HBoxContainer" type="VBoxContainer" parent="MarginContainer/Middle"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -138.0
+offset_top = -78.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Lanjut" type="Button" parent="MarginContainer/Middle/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_an4tj")
+text = "Lanjut"
+
+[node name="Mulai" type="Button" parent="MarginContainer/Middle/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_an4tj")
+text = "Mulai Permainan"
+
+[node name="Muat" type="Button" parent="MarginContainer/Middle/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_an4tj")
+text = "Muat Permainan"
+
+[node name="Pengaturan" type="Button" parent="MarginContainer/Middle/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_an4tj")
+text = "Pengaturan"
+
+[node name="Keluar" type="Button" parent="MarginContainer/Middle/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_an4tj")
+text = "Keluar"
+
+[node name="Setting" parent="." instance=ExtResource("5_1l0v7")]
+visible = false
+layout_mode = 1
+
+[node name="LoadPanel" parent="." instance=ExtResource("7_kj6rs")]
+visible = false
+layout_mode = 1
+
+[connection signal="mouse_entered" from="MarginContainer/Middle/HBoxContainer/Lanjut" to="." method="_on_lanjut_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/Middle/HBoxContainer/Lanjut" to="." method="_on_lanjut_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/Middle/HBoxContainer/Mulai" to="." method="_on_mulai_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/Middle/HBoxContainer/Mulai" to="." method="_on_mulai_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/Middle/HBoxContainer/Muat" to="." method="_on_muat_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/Middle/HBoxContainer/Muat" to="." method="_on_muat_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/Middle/HBoxContainer/Pengaturan" to="." method="_on_pengaturan_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/Middle/HBoxContainer/Pengaturan" to="." method="_on_pengaturan_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/Middle/HBoxContainer/Keluar" to="." method="_on_keluar_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/Middle/HBoxContainer/Keluar" to="." method="_on_keluar_pressed"]

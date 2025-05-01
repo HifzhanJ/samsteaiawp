@@ -1,0 +1,73 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0vosddejbfhe"]
+
+[ext_resource type="Script" uid="uid://dyl3nyaisgvha" path="res://assets/scripts/LoadPanel.gd" id="1_yg5k6"]
+[ext_resource type="PackedScene" uid="uid://84x4pkpfjk3s" path="res://assets/scenes/LoadSlot.tscn" id="2_bifnp"]
+[ext_resource type="FontFile" uid="uid://cocjm6mgh03yn" path="res://assets/fonts/ZF2334 After a Rain.otf" id="2_w8xuo"]
+
+[node name="LoadPanel" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yg5k6")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_w8xuo")
+theme_override_font_sizes/font_size = 50
+text = "Load Slot"
+
+[node name="HBoxContainer" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_constants/h_separation = 100
+theme_override_constants/v_separation = 100
+columns = 3
+
+[node name="SaveSlot1" parent="MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("2_bifnp")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SaveSlot2" parent="MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("2_bifnp")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SaveSlot3" parent="MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("2_bifnp")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SaveSlot4" parent="MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("2_bifnp")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SaveSlot5" parent="MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("2_bifnp")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SaveSlot6" parent="MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("2_bifnp")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BackButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Back"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]

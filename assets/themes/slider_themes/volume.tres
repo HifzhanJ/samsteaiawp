@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://ci3mmdk7ig6um"]
+
+[ext_resource type="StyleBox" uid="uid://b88lkcwq11org" path="res://assets/themes/slider_themes/stylebox.tres" id="1_2xj4n"]
+
+[resource]
+HSlider/styles/grabber_area = ExtResource("1_2xj4n")
+HSlider/styles/grabber_area_highlight = ExtResource("1_2xj4n")
