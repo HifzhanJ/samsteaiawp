@@ -2,9 +2,11 @@
 label [Scene: Kelas Baru - Pagi Hari]
 Tahun ajaran baru dimulai. Suasana kelas penuh dengan wajah-wajah baru dan bisik-bisik penuh rasa ingin tahu.
 Guru berdiri di depan, tersenyum.
+join guru center
 guru: Baik, sebelum kita mulai pelajaran, mari kita berkenalan satu per satu.
+join mc leftmost
 mc: (Berdiri dari kursinya.)
-guru: Nama saya [Nama MC]. Senang bertemu dengan kalian semua. Mohon bimbingannya.
+mc: Nama saya {namauser}. Senang bertemu dengan kalian semua. Mohon bimbingannya.
 Siswa-siswa lain mengangguk ramah. MC duduk kembali.
 mc: Merasa biasa saja... sampai giliran orang di sebelahnya.
 Seorang gadis berparah cantik berdiri. Semua mata di kelas tertuju padanya.
