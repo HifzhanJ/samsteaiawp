@@ -7,7 +7,7 @@
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
-"style": "visualnovel",
+"style": "",
 "suffix": ""
 },
 &"default_portrait": "Normal",
@@ -24,7 +24,7 @@
 "mirror": true,
 "offset": Vector2(0, -90),
 "scale": 0.55,
-"scene": ""
+"scene": "res://addons/dialogic/Modules/Character/default_portrait.tscn"
 }
 },
 &"scale": 1.0
