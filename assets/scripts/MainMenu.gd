@@ -1,5 +1,8 @@
 extends Control
 
+func _ready() -> void:
+	$Anim.play("Fade_In")
+
 func _on_lanjut_pressed() -> void:
 	$AudioManager.playbuttonclick()
 

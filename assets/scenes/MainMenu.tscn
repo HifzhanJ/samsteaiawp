@@ -1,12 +1,49 @@
-[gd_scene load_steps=8 format=3 uid="uid://dxwuk1uhtpt2v"]
+[gd_scene load_steps=12 format=3 uid="uid://dxwuk1uhtpt2v"]
 
 [ext_resource type="Script" uid="uid://b7f55aqdtsnig" path="res://assets/scripts/MainMenu.gd" id="1_1l0v7"]
 [ext_resource type="PackedScene" uid="uid://coqkfvrkmk7wm" path="res://assets/scenes/AudioManager.tscn" id="2_c1eu8"]
 [ext_resource type="AudioStream" uid="uid://du0loxxikrq3x" path="res://assets/sounds/music/opening.mp3" id="3_nory3"]
-[ext_resource type="FontFile" uid="uid://dpyoxp0s1gi7x" path="res://assets/fonts/Gravity-Regular.otf" id="4_7metd"]
+[ext_resource type="Texture2D" uid="uid://cn6ctrw14y23n" path="res://assets/backgrounds/mainmenu.png" id="4_an4tj"]
 [ext_resource type="PackedScene" uid="uid://b0l3eblj4pj2o" path="res://assets/scenes/Setting.tscn" id="5_1l0v7"]
+[ext_resource type="FontFile" uid="uid://cocjm6mgh03yn" path="res://assets/fonts/ZF2334 After a Rain.otf" id="5_7metd"]
 [ext_resource type="Theme" uid="uid://orokrhj1u63" path="res://assets/themes/button_themes/mainmenu.tres" id="5_an4tj"]
 [ext_resource type="PackedScene" uid="uid://c0vosddejbfhe" path="res://assets/scenes/LoadPanel.tscn" id="7_kj6rs"]
+
+[sub_resource type="Animation" id="Animation_7metd"]
+resource_name = "Fade_In"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Judul:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_an4tj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Judul:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ka3ux"]
+_data = {
+&"Fade_In": SubResource("Animation_7metd"),
+&"RESET": SubResource("Animation_an4tj")
+}
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -41,27 +78,29 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("4_an4tj")
 
 [node name="Judul" type="Label" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
+offset_left = -187.0
+offset_top = -178.5
+offset_right = 187.0
+offset_bottom = 178.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("4_7metd")
+theme_override_fonts/font = ExtResource("5_7metd")
 theme_override_font_sizes/font_size = 40
-text = "Suddenly A Meteor
-Struck The Earth
-And
-I Became A
-Water Purifier"
+text = "SUDDENLY A METOR
+STRUCK THE EARTH
+AND
+I BECAME A
+WATER PURIFER"
 horizontal_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
@@ -101,12 +140,12 @@ text = "Lanjut"
 [node name="Mulai" type="Button" parent="MarginContainer/Middle/HBoxContainer"]
 layout_mode = 2
 theme = ExtResource("5_an4tj")
-text = "Mulai Permainan"
+text = " Mulai Permainan "
 
 [node name="Muat" type="Button" parent="MarginContainer/Middle/HBoxContainer"]
 layout_mode = 2
 theme = ExtResource("5_an4tj")
-text = "Muat Permainan"
+text = " Muat Permainan "
 
 [node name="Pengaturan" type="Button" parent="MarginContainer/Middle/HBoxContainer"]
 layout_mode = 2
@@ -125,6 +164,11 @@ layout_mode = 1
 [node name="LoadPanel" parent="." instance=ExtResource("7_kj6rs")]
 visible = false
 layout_mode = 1
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_ka3ux")
+}
 
 [connection signal="mouse_entered" from="MarginContainer/Middle/HBoxContainer/Lanjut" to="." method="_on_lanjut_mouse_entered"]
 [connection signal="pressed" from="MarginContainer/Middle/HBoxContainer/Lanjut" to="." method="_on_lanjut_pressed"]

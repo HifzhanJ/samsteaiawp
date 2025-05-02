@@ -28,7 +28,7 @@
 },
 "sedih": {
 "export_overrides": {
-"image": "\"res://assets/char_img/download (4).jpeg\""
+"image": "\"res://assets/char_img/tungtungsahur.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

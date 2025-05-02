@@ -4,4 +4,5 @@
 
 [resource]
 Button/colors/font_hover_color = Color(0, 0.894118, 0.807843, 1)
+Button/font_sizes/font_size = 30
 Button/fonts/font = ExtResource("1_5jkyv")
