@@ -112,6 +112,7 @@ layout/style_list=["res://assets/styles/dialogic_styles/visualnovel.tres", "res:
 layout/default_style="res://assets/styles/visualnovel.tres"
 glossary/default_case_sensitive=true
 audio/type_sound_bus="SFX"
+history/simple_history_enabled=false
 
 [display]
 

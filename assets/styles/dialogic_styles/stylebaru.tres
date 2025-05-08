@@ -22,7 +22,10 @@ overrides = {}
 
 [sub_resource type="Resource" id="Resource_k1w4o"]
 script = ExtResource("1_7mkp7")
-overrides = {}
+overrides = {
+"disabled": "true",
+"text_alignment": "2"
+}
 
 [sub_resource type="Resource" id="Resource_sipf3"]
 script = ExtResource("1_7mkp7")
