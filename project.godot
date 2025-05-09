@@ -39,7 +39,7 @@ directories/dch_directory={
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch",
 "warga1": "res://assets/characters/warga1.dch",
 "warga2": "res://assets/characters/warga2.dch",
-"wargasampah": "res://assets/characters/wargasampah.dch"
+"warga_sampah": "res://assets/characters/warga_sampah.dch"
 }
 directories/dtl_directory={
 "chapter1": "res://assets/timelines/chapter1.dtl",
@@ -106,7 +106,7 @@ audio/channel_defaults={
 }
 }
 variables={
-"namauser": "Rio Bagaskara"
+"namauser": "Rey"
 }
 layout/style_list=["res://assets/styles/dialogic_styles/visualnovel.tres", "res://assets/styles/dialogic_styles/stylebaru.tres"]
 layout/default_style="res://assets/styles/visualnovel.tres"

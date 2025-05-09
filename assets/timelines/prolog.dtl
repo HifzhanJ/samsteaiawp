@@ -11,7 +11,7 @@ label [Scene: Kota - Malam Hari - Minimarket]
 audio music_fade "res://assets/sound/windy_night.mp3"
 [wait time="2.0"]
 Suatu malam yang tenang, angin berhembus lembut menyusuri jalanan kota kecil.
-{namauser} seorang remaja biasa, tengah berbelanja kebutuhan makan malamnya.
+Rey Baskara seorang remaja biasa, tengah berbelanja kebutuhan makan malamnya.
 [background arg="res://assets/backgrounds/永辉.jpeg" fade="1.0"]
 audio music_fade "res://assets/sound/supermarket_ambience.mp3"
 [wait time="2.0"]
@@ -115,4 +115,4 @@ update mc center [animation="Shake X"]
 mc: Gila... Apa yang sebenarnya terjadi sama aku...?
 {namauser} menatap gelas, lalu meminumnya perlahan
 {namauser} menyadari kekuatan barunya dan masih tidak percaya dengan apa yang dialaminya
-[end_timeline]
+jump chapter1/

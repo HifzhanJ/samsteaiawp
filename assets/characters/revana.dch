@@ -7,15 +7,25 @@
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
-"style": "visualnovel",
+"style": "",
 "suffix": ""
 },
-&"default_portrait": "",
+&"default_portrait": "Normal",
 &"description": "",
-&"display_name": "Revana Putri",
+&"display_name": "Revana",
 &"mirror": false,
-&"nicknames": ["Revana"],
+&"nicknames": [""],
 &"offset": Vector2(0, 0),
-&"portraits": {},
+&"portraits": {
+"Normal": {
+"export_overrides": {
+"image": "\"res://assets/char_img/revana_template.png\""
+},
+"mirror": false,
+"offset": Vector2(50, 350),
+"scale": 1,
+"scene": ""
+}
+},
 &"scale": 1.0
 }

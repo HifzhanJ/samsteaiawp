@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://l6in4iirmdde"]
 
-[ext_resource type="Script" uid="uid://bh4jo6l0hs20e" path="res://assets/scripts/SplashScreen.gd" id="1_aahgc"]
+[ext_resource type="Script" path="res://assets/scripts/SplashScreen.gd" id="1_aahgc"]
 [ext_resource type="FontFile" uid="uid://cocjm6mgh03yn" path="res://assets/fonts/ZF2334 After a Rain.otf" id="1_tp7hk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aahgc"]
