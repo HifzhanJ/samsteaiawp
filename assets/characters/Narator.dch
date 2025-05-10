@@ -10,22 +10,12 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "biji",
+&"default_portrait": "",
 &"description": "",
 &"display_name": "Narator",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
-&"portraits": {
-"biji": {
-"export_overrides": {
-"image": ""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-}
-},
+&"portraits": {},
 &"scale": 1.0
 }
