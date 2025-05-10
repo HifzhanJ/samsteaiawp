@@ -109,8 +109,8 @@ audio/channel_defaults={
 variables={
 "namauser": "Rey"
 }
-layout/style_list=["res://assets/styles/dialogic_styles/stylevisualnovel.tres", "res://assets/styles/dialogic_styles/stylespeakertext.tres"]
-layout/default_style="res://assets/styles/dialogic_styles/stylevisualnovel.tres"
+layout/style_list=[]
+layout/default_style="res://custom_style1.tres"
 glossary/default_case_sensitive=true
 audio/type_sound_bus="SFX"
 history/simple_history_enabled=false
