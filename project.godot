@@ -110,10 +110,14 @@ variables={
 "namauser": "Rey"
 }
 layout/style_list=[]
-layout/default_style="res://custom_style1.tres"
+layout/default_style="res://newstyle1.tres"
 glossary/default_case_sensitive=true
 audio/type_sound_bus="SFX"
 history/simple_history_enabled=false
+
+[display]
+
+window/size/mode=3
 
 [editor_plugins]
 
