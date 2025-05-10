@@ -26,6 +26,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 directories/dch_directory={
 "Cashier": "res://assets/characters/Cashier.dch",
 "Manajer": "res://assets/characters/Manajer.dch",
+"Narator": "res://assets/characters/Narator.dch",
 "aika_vanya": "res://assets/characters/aika_vanya.dch",
 "andri": "res://assets/characters/andri.dch",
 "doctor": "res://assets/characters/doctor.dch",
@@ -108,15 +109,11 @@ audio/channel_defaults={
 variables={
 "namauser": "Rey"
 }
-layout/style_list=["res://assets/styles/dialogic_styles/visualnovel.tres", "res://assets/styles/dialogic_styles/stylebaru.tres"]
-layout/default_style="res://assets/styles/visualnovel.tres"
+layout/style_list=["res://assets/styles/dialogic_styles/stylevisualnovel.tres", "res://assets/styles/dialogic_styles/stylespeakertext.tres"]
+layout/default_style="res://assets/styles/dialogic_styles/stylevisualnovel.tres"
 glossary/default_case_sensitive=true
 audio/type_sound_bus="SFX"
 history/simple_history_enabled=false
-
-[display]
-
-window/size/mode=3
 
 [editor_plugins]
 
