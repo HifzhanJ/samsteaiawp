@@ -5,6 +5,7 @@ label [Scene: Luar angkasa - Meteor Tabrakan]
 [background arg="res://assets/backgrounds/How to see a double meteor shower on Tuesday night with a chance of fireballs.jpeg" fade="1.0" transition="Simple Fade"]
 [wait time="3.1"]
 Narator: Di tengah kehampaan luar angkasa, dua benda langit bertabrakan.
+Narator: waduh waduh
 Narator: Batu meteor dan batu misterius menghantam satu sama lain, menghasilkan ledakan energi yang luar biasa.
 label [Scene: Kota - Malam Hari - Minimarket]
 [background arg="res://assets/backgrounds/☆.jpeg" fade="1.0"]
