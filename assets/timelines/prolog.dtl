@@ -1,27 +1,27 @@
-jump [Scene: Kota - Malam Hari - Minimarket]
+jump [Minigames selesai]
 [text_input text="Tolong masukkan nama anda:" var="namauser"]
 [wait time="1.0"]
 label [Scene: Luar angkasa - Meteor Tabrakan]
 [background arg="res://assets/backgrounds/How to see a double meteor shower on Tuesday night with a chance of fireballs.jpeg" fade="1.0" transition="Simple Fade"]
-[wait time="3.1"]
+[wait time="3.0"]
 Narator: Di tengah kehampaan luar angkasa, dua benda langit bertabrakan.
-Narator: waduh waduh
 Narator: Batu meteor dan batu misterius menghantam satu sama lain, menghasilkan ledakan energi yang luar biasa.
 label [Scene: Kota - Malam Hari - Minimarket]
 [background arg="res://assets/backgrounds/☆.jpeg" fade="1.0"]
-audio music_fade "res://assets/sound/windy_night.mp3"
+[music path="res://assets/sound/windy__night.mp3" fade="1.0" volume="0.0"]
 [wait time="2.0"]
 Narator: Suatu malam yang tenang, angin berhembus lembut menyusuri jalanan kota kecil.
 Narator: Rey Baskara seorang remaja biasa, tengah berbelanja kebutuhan makan malamnya.
 [background arg="res://assets/backgrounds/永辉.jpeg" fade="1.0"]
-audio music_fade "res://assets/sound/supermarket_ambience.mp3"
+[music path="res://assets/sound/supermarket_ambience.mp3" fade="1.0" volume="-1.0"]
 [wait time="2.0"]
 Narator: {namauser} berdiri di dalam minimarket, membawa keranjang berisi snack, mie instan, dan telur.
 join mc center
 mc: Hmm... kayaknya udah cukup buat makan malam.
-leave mc [animation="Slide To Right" length="1.0"]
+[wait time="1.0"]
+leave mc [animation="Slide Out Left" length="5.0"]
 Narator: {namauser} berdiri di antrean kasir. Di sudut ruangan, televisi menyala menampilkan berita.
-join reportertv center
+join reportertv left
 reportertv: Halo selamat malam pemirsa... kembali lagi bersama saya Rita, pembawa berita malam hari ini
 reportertv: Berita pertama dimulai dari kota Cihideung
 reportertv: Diduga 51 Siswa SMA 1 Cihideung keracunan usai santap Cemilan bergizi gratis, 6 masih dirawat
@@ -31,47 +31,59 @@ reportertv: Kementrian Lingkungan Hidup dan kehutanan sudah menghimbau masyaraka
 reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa
 reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa
 leave reportertv
-join mc center [animation="Fade In"]
-Narator: {namauser} berbicara sendiri dengan perasaan acuh
+join mc center [animation="Fade In Up"]
+[wait time="1.5"]
 mc: Hah... berita beginian lagi. Nggak ada yang baru.
+Narator: {namauser} berbicara sendiri dengan perasaan acuh
 update mc right [move_time="1.0"]
 join Cashier left
 Cashier: totalnya jadi Rp.20.000 yaa
 mc: Pembayarannya lewat KiRIS ya kak
 Cashier: Okee sebentar yaa
-leave mc [animation="Slide To Right" length="1.5"]
+leave mc [animation="Slide Out Left" length="8.0"]
 leave Cashier [animation="Fade Out" length="1.0"]
-audio Sfx_fade "res://assets/sound/515882__filmscore__truck-stop-interior-door-chime.mp3"
+[music path="res://assets/sound/515882__filmscore__truck-stop-interior-door-chime.mp3" channel="1" fade="2.0" volume="0.0" loop="false"]
 Narator: {namauser} membayar dan keluar dari minimarket
 [wait time="1.5"]
-audio Sfx_fade -
 label [Scene: Jalanan Malam - Langit Berbintang]
 [background arg="res://assets/backgrounds/☆.jpeg" fade="0.5"]
-audio music_fade "res://assets/sound/windy_night.mp3"
-Narator: {namauser} berjalan sambil memakan snack, menikmati ketenangan malam. Ia menatap langit malam yang cerah.
+[music path="res://assets/sound/windy__night.mp3" fade="1.0" volume="0.0"]
+Narator: {namauser} berjalan sambil memakan snack, menikmati ketenangan malam.
+Narator: Ia menatap langit malam yang cerah, penuh dengan bintang-bintang
+Narator: Namun ketenangan itu tidak berlangsung dengan lama...
 join mc center
+[wait time="1.0"]
 mc: Bintang malam ini keren juga...
+mc: Biasanya langit malam tertutup awan, jadi jarang sekali melihat momen seperti ini.
 Narator: {namauser} melempar bungkus snack ke selokan sembarangan
+[wait time="1.0"]
 - Peduli amat, bukan urusanku.
 - Eh... tadi buangnya sembarangan ya?
 mc: Ah, bodo amat lah
-Narator: {namauser} melihat bintang jatuh...
+[wait time="1.0"]
+Narator: {namauser} melihat sebuah bintang jatuh di langit malam yang cerah
+Narator: bintang jatuh yang memancarkan sinar warna merah ke jingga-an mengekor panjang ke belakang
+[wait time="1.0"]
+mc: hmm?
+mc: Sebuah komet? eh atau mungkin ini disebut meteor?
+mc: wow... gua baru pertama kali lihat itu secara langsung
+mc: (Rey bergumam)
+[wait time="1.0"]
 Narator: Namun...
 Narator: pecahan bintang tersebut semakin lama semakin mendekat dengan cepat...
 update mc center [animation="Shake X"]
 mc: Eh...? tunggu
 update mc center [animation="Shake Y" z_index="0" move_ease="in" move_trans="linear"]
 mc: itu
-audio music_fade -
 update mc center [animation="Shake Y" z_index="0" move_ease="in" move_trans="linear"]
 mc: kok makin gede?!
-leave mc [animation="Instant Out" length="0.7"]
-audio "res://assets/sound/comet_explosive.mp3"
+leave mc [animation="Instant Out" length="2.0"]
+[music path="res://assets/sound/comet_explosive.mp3" channel="2" fade="1.0" volume="0.0" loop="false"]
 [background arg="res://assets/backgrounds/pitch_black.png" fade="0.5"]
 [wait time="19.0"]
 Narator: Pecahan bintang tersebut langsung jatuh menghantam {namauser}
 [wait time="1.0"]
-mc: .....
+.....
 [wait time="1.0"]
 [wait_input]
 label [Scene: Rumah Sakit - Kamar Rawat]
@@ -82,40 +94,63 @@ Narator: {namauser} membuka mata, terbaring di ranjang rumah sakit
 [background arg="res://assets/backgrounds/patient_room.jpg" fade="0.5"]
 mc: [speed=3]Ugh...
 mc: [speed=3]Di mana ini...?
+[wait time="1.0"]
 Narator: Suster masuk ke dalam ruangan
 join doctor center
+[wait time="1.0"]
 \doctor: Syukurlah, kamu sudah sadar! Kamu ditemukan tak sadarkan diri semalam di pinggir jalan
 \doctor: Bajumu agak terbakar, tapi anehnya tubuhmu nggak terluka sama sekali
-update doctor right [move_time="0.5"]
+update doctor right [move_time="1.0"]
 join mc left [mirrored="true"]
 mc: [speed=3] Aku...
-mc: [speed=3] ngelihat meteor...
-mc: [speed=3] lalu...
-mc: [speed=3] gelap.
-leave mc [animation="Fade Out"]
-leave doctor [animation="Fade Out"]
+mc: [speed=2] ngelihat meteor...
+mc: [speed=2] lalu...
+mc: [speed=1] semuanya menjadi hitam.
+leave mc [animation="Fade Out" length="1.0"]
+leave doctor [animation="Fade Out" length="1.0"]
 Narator: Suster tersenyum dan meletakkan segelas air di meja. Lalu keluar ruangan
 [wait time="1.0"]
 Narator: {namauser} mengambil gelas air...
-Narator: Tiba-tiba layar status transparan muncul di atasnya
+Narator: Tiba-tiba layar jendela status transparan muncul di atasnya
 label [STATUS WINDOW]
-join mc center
+# Status window menunjukkan "The Water has been Contaminated"
+join mc center [animation="Fade In Up"]
 mc: Hah?! Apaan ini?!
 update mc center [animation="Shake X"]
-Apa-apaan ini...
-mc: kayak...
-mc: game? Tapi nyata?!
-leave mc [animation="Fade Out"]
-{namauser} menekan tombol PURIFY
-Tampilan layar berubah, muncul bakteri-bakteri yang terlihat menyeramkan
-label [Minigames dimulai]
-[background fade="1.0"]
-join mc center
-mc: bisa disentuh...
-{namauser} menyentuh bakteri → mati satu per satu. Setelah selesai, status berubah\: "AIR TELAH DIMURNIKAN
-update mc center [animation="Shake X"]
+mc: Apa-apaan ini...
+mc: Seperti...
+mc: suatu cerita komik yang pernah gua baca? tapi ini nyata?!
+leave mc [animation="Fade Out" length="1.0"]
+[wait time="1.0"]
+- Purify
+	Narator: {namauser} menekan tombol PURIFY
+	[wait time="2.0"]
+	label [Minigames dimulai]
+	# Pemain masuk ke minigames untuk membasmi semua bakteri
+	# menyentuh bakteri → mati satu per satu. Setelah selesai, status berubah: "The Water has been Purified"
+	[background fade="1.0"]
+	mc: Apa ini?!
+	mc: Bakteri?...virus?!!
+	[wait time="2.0"]
+	# Setelah bakteri pertama terbunuh, muncul dialog lanjutan
+	mc: bakterinya mati setelah aku sentuh?
+label [Minigames selesai]
 [background arg="res://assets/backgrounds/patient_room.jpg" fade="1.0"]
-mc: Gila... Apa yang sebenarnya terjadi sama aku...?
-{namauser} menatap gelas, lalu meminumnya perlahan
-{namauser} menyadari kekuatan barunya dan masih tidak percaya dengan apa yang dialaminya
-jump chapter1/
+[wait time="2.0"]
+join mc center [animation="Shake X"]
+mc: Gila... Apa yang sebenarnya terjadi sama gua...?
+mc: Air yang di gelas ini tadinya beracun?!
+mc: tapi sekarang udah bersih?...emang beneran?!
+mc: (berbicara sendiri)
+leave mc [animation="Fade Out" length="1.0"]
+[wait time="1.0"]
+Narator: {namauser} menatap gelas, lalu meminumnya perlahan
+[wait time="1.5"]
+Narator: {namauser} menggelengkan kepala karena kebingungan dengan apa yang ia rasakan
+[wait time="1.0"]
+mc: Aghh... anjirlah...
+[wait time="1.5"]
+Narator: {namauser} menyadari kekuatan barunya dan masih tidak percaya dengan apa yang dialaminya
+[background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
+[wait time="2.0"]
+[end_timeline]
