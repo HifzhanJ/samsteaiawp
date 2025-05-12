@@ -116,6 +116,10 @@ audio/type_sound_bus="SFX"
 history/simple_history_enabled=false
 audio/max_channels=8.0
 
+[display]
+
+window/size/mode=3
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
