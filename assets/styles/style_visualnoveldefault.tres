@@ -39,7 +39,8 @@ overrides = {
 "name_label_custom_font_size": "36.0",
 "name_label_use_global_font_size": "false",
 "text_size": "30.0",
-"text_use_global_size": "false"
+"text_use_global_size": "false",
+"typing_sounds_volume": "5.0"
 }
 
 [sub_resource type="Resource" id="Resource_6qb58"]
@@ -82,4 +83,4 @@ layer_info = {
 }
 base_overrides = {}
 layers = Array[ExtResource("1_8135w")]([])
-metadata/_latest_layer = "15"
+metadata/_latest_layer = "13"

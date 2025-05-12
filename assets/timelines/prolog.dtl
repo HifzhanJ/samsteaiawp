@@ -1,15 +1,25 @@
-jump [Minigames selesai]
 [text_input text="Tolong masukkan nama anda:" var="namauser"]
 [wait time="1.0"]
 label [Scene: Luar angkasa - Meteor Tabrakan]
 [background arg="res://assets/backgrounds/How to see a double meteor shower on Tuesday night with a chance of fireballs.jpeg" fade="1.0" transition="Simple Fade"]
+[music path="res://assets/sounds/music/Prologue Theme.wav" fade="1.5" volume="0.0"]
 [wait time="3.0"]
-Narator: Di tengah kehampaan luar angkasa, dua benda langit bertabrakan.
-Narator: Batu meteor dan batu misterius menghantam satu sama lain, menghasilkan ledakan energi yang luar biasa.
+Narator: [speed=1.3]Di ujung galaksi yang sunyi, jauh dari jangkauan manusia...
+Narator: [speed=1.3]Dua benda langit melayang perlahan, satu tampak seperti batu meteor biasa, yang lain... mengeluarkan cahaya biru misterius.
+Narator: [speed=1.3]Tidak ada suara. Tidak ada arah. Hanya kehampaan dan waktu yang mengalir lambat.
+Narator: [speed=1.3]Hingga pada suatu saat...
+Narator: [speed=1.3]Tabrakan tak terelakkan terjadi. Dua kekuatan yang bertolak belakang saling menghantam, menghasilkan ledakan cahaya yang menembus ruang dan waktu.
+Narator: [speed=1.3]Dari ledakan itu, pecahan batu misterius terpental… dan mulai jatuh... menuju planet biru kecil bernama Bumi.
+Narator: [speed=1.3]Pecahan itu bukan hanya membawa zat asing. Ia membawa perubahan.
+Narator: [speed=1.3]Evolusi.
+Narator: [speed=1.3]Ketidakseimbangan.
+[wait time="2.0"]
+Narator: [speed=1.3]Sebuah awal dari cerita yang tak disadari siapa pun...
+Narator: [speed=1.3]Termasuk seorang remaja biasa, yang tak tahu bahwa hidupnya akan berubah selamanya.
 label [Scene: Kota - Malam Hari - Minimarket]
 [background arg="res://assets/backgrounds/☆.jpeg" fade="1.0"]
-[music path="res://assets/sound/windy__night.mp3" fade="1.0" volume="0.0"]
-[wait time="2.0"]
+[music path="res://assets/sound/windy__night.mp3" fade="1.5" volume="0.0"]
+[wait time="3.0"]
 Narator: Suatu malam yang tenang, angin berhembus lembut menyusuri jalanan kota kecil.
 Narator: Rey Baskara seorang remaja biasa, tengah berbelanja kebutuhan makan malamnya.
 [background arg="res://assets/backgrounds/永辉.jpeg" fade="1.0"]
@@ -21,7 +31,8 @@ mc: Hmm... kayaknya udah cukup buat makan malam.
 [wait time="1.0"]
 leave mc [animation="Slide Out Left" length="5.0"]
 Narator: {namauser} berdiri di antrean kasir. Di sudut ruangan, televisi menyala menampilkan berita.
-join reportertv left
+join reportertv left [animation="Fade In"]
+[wait time="1.0" hide_text="false"]
 reportertv: Halo selamat malam pemirsa... kembali lagi bersama saya Rita, pembawa berita malam hari ini
 reportertv: Berita pertama dimulai dari kota Cihideung
 reportertv: Diduga 51 Siswa SMA 1 Cihideung keracunan usai santap Cemilan bergizi gratis, 6 masih dirawat
@@ -35,7 +46,7 @@ join mc center [animation="Fade In Up"]
 [wait time="1.5"]
 mc: Hah... berita beginian lagi. Nggak ada yang baru.
 Narator: {namauser} berbicara sendiri dengan perasaan acuh
-update mc right [move_time="1.0"]
+update mc right [move_time="1.0" move_ease="in"]
 join Cashier left
 Cashier: totalnya jadi Rp.20.000 yaa
 mc: Pembayarannya lewat KiRIS ya kak
@@ -43,11 +54,13 @@ Cashier: Okee sebentar yaa
 leave mc [animation="Slide Out Left" length="8.0"]
 leave Cashier [animation="Fade Out" length="1.0"]
 [music path="res://assets/sound/515882__filmscore__truck-stop-interior-door-chime.mp3" channel="1" fade="2.0" volume="0.0" loop="false"]
+[music channel="1" fade="0.7" volume="0.0"]
 Narator: {namauser} membayar dan keluar dari minimarket
 [wait time="1.5"]
 label [Scene: Jalanan Malam - Langit Berbintang]
 [background arg="res://assets/backgrounds/☆.jpeg" fade="0.5"]
 [music path="res://assets/sound/windy__night.mp3" fade="1.0" volume="0.0"]
+[wait time="2.0"]
 Narator: {namauser} berjalan sambil memakan snack, menikmati ketenangan malam.
 Narator: Ia menatap langit malam yang cerah, penuh dengan bintang-bintang
 Narator: Namun ketenangan itu tidak berlangsung dengan lama...
@@ -57,8 +70,9 @@ mc: Bintang malam ini keren juga...
 mc: Biasanya langit malam tertutup awan, jadi jarang sekali melihat momen seperti ini.
 Narator: {namauser} melempar bungkus snack ke selokan sembarangan
 [wait time="1.0"]
-- Peduli amat, bukan urusanku.
+- Peduli amat, bukan urusan gua.
 - Eh... tadi buangnya sembarangan ya?
+mc: Kok feeling gua jadi ga enak yaa...
 mc: Ah, bodo amat lah
 [wait time="1.0"]
 Narator: {namauser} melihat sebuah bintang jatuh di langit malam yang cerah
@@ -70,6 +84,7 @@ mc: wow... gua baru pertama kali lihat itu secara langsung
 mc: (Rey bergumam)
 [wait time="1.0"]
 Narator: Namun...
+[music path="res://assets/sound/619037__mrrap4food__heart-beat.mp3" fade="1.5" volume="0.0"]
 Narator: pecahan bintang tersebut semakin lama semakin mendekat dengan cepat...
 update mc center [animation="Shake X"]
 mc: Eh...? tunggu
@@ -78,23 +93,26 @@ mc: itu
 update mc center [animation="Shake Y" z_index="0" move_ease="in" move_trans="linear"]
 mc: kok makin gede?!
 leave mc [animation="Instant Out" length="2.0"]
-[music path="res://assets/sound/comet_explosive.mp3" channel="2" fade="1.0" volume="0.0" loop="false"]
+[music path="res://assets/sound/comet_explosive.mp3" fade="1.0" volume="0.0" loop="false"]
 [background arg="res://assets/backgrounds/pitch_black.png" fade="0.5"]
 [wait time="19.0"]
 Narator: Pecahan bintang tersebut langsung jatuh menghantam {namauser}
 [wait time="1.0"]
 .....
-[wait time="1.0"]
-[wait_input]
+[wait time="8.0"]
 label [Scene: Rumah Sakit - Kamar Rawat]
+[music path="res://assets/sound/daydream.mp3" fade="1.0" volume="0.0"]
 [background arg="res://assets/backgrounds/pitch_white.png" fade="0.5"]
 [wait time="2.0"]
 Narator: Keesokan harinya...
 Narator: {namauser} membuka mata, terbaring di ranjang rumah sakit
-[background arg="res://assets/backgrounds/patient_room.jpg" fade="0.5"]
+[background arg="res://assets/backgrounds/patient_room.jpg" fade="1.0" transition="Simple Fade"]
+[music path="res://assets/sound/room-71897.mp3" channel="1" fade="1.0" volume="0.0"]
+[wait time="2.0"]
 mc: [speed=3]Ugh...
 mc: [speed=3]Di mana ini...?
-[wait time="1.0"]
+[sound path="res://assets/sound/walkingandopendoor.wav" volume="0.0"]
+[wait time="16.0"]
 Narator: Suster masuk ke dalam ruangan
 join doctor center
 [wait time="1.0"]
@@ -109,20 +127,26 @@ mc: [speed=1] semuanya menjadi hitam.
 leave mc [animation="Fade Out" length="1.0"]
 leave doctor [animation="Fade Out" length="1.0"]
 Narator: Suster tersenyum dan meletakkan segelas air di meja. Lalu keluar ruangan
-[wait time="1.0"]
+[sound path="res://assets/sound/main-door-opening-closing-38280.mp3" volume="0.0"]
+[wait time="6.0"]
 Narator: {namauser} mengambil gelas air...
 Narator: Tiba-tiba layar jendela status transparan muncul di atasnya
 label [STATUS WINDOW]
 # Status window menunjukkan "The Water has been Contaminated"
-join mc center [animation="Fade In Up"]
+join mc center [animation="Fade In Up" length="0.8" wait="true"]
 mc: Hah?! Apaan ini?!
 update mc center [animation="Shake X"]
 mc: Apa-apaan ini...
 mc: Seperti...
-mc: suatu cerita komik yang pernah gua baca? tapi ini nyata?!
+mc: Suatu cerita komik yang pernah gua baca? tapi ini nyata?!
+[wait time="1.0"]
+mc: Layar melayang nya?!...bisa disentuh...
+mc: dan buat apa tombol ini?!
 leave mc [animation="Fade Out" length="1.0"]
 [wait time="1.0"]
-- Purify
+[style name="purify_button"]
+- ╚════▣◎PURIFY◎▣════╗
+	[style]
 	Narator: {namauser} menekan tombol PURIFY
 	[wait time="2.0"]
 	label [Minigames dimulai]
@@ -145,12 +169,15 @@ mc: (berbicara sendiri)
 leave mc [animation="Fade Out" length="1.0"]
 [wait time="1.0"]
 Narator: {namauser} menatap gelas, lalu meminumnya perlahan
-[wait time="1.5"]
+[sound path="res://assets/sound/drink-swallow-272665.wav" volume="0.0"]
+[wait time="2.5"]
 Narator: {namauser} menggelengkan kepala karena kebingungan dengan apa yang ia rasakan
 [wait time="1.0"]
 mc: Aghh... anjirlah...
 [wait time="1.5"]
 Narator: {namauser} menyadari kekuatan barunya dan masih tidak percaya dengan apa yang dialaminya
+[music fade="1.0" volume="0.0"]
+[music channel="1" fade="1.0" volume="0.0"]
 [background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
 [wait time="2.0"]
 [end_timeline]
