@@ -109,7 +109,7 @@ audio/channel_defaults={
 variables={
 "namauser": "Rey"
 }
-layout/style_list=["res://assets/styles/style_speakertext.tres", "res://assets/styles/style_visualnoveldefault.tres", "res://assets/styles/style_vnNarator.tres", "res://assets/styles/purify_button.tres"]
+layout/style_list=["res://assets/styles/style_visualnoveldefault.tres", "res://assets/styles/purify_button.tres", "res://assets/styles/style_speakertext.tres", "res://assets/styles/style_vnNarator.tres"]
 layout/default_style="res://assets/styles/style_visualnoveldefault.tres"
 glossary/default_case_sensitive=true
 audio/type_sound_bus="SFX"
@@ -118,6 +118,8 @@ audio/max_channels=8.0
 
 [display]
 
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/size/mode=3
 
 [editor_plugins]
