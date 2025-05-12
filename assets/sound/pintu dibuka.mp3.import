@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cn5duj4dyn0cc"
+path="res://.godot/imported/pintu dibuka.mp3-7bfa4cff1b4bea27924e164184d31cbd.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/pintu dibuka.mp3"
+dest_files=["res://.godot/imported/pintu dibuka.mp3-7bfa4cff1b4bea27924e164184d31cbd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

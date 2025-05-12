@@ -10,12 +10,22 @@
 "style": "visualnovel",
 "suffix": ""
 },
-&"default_portrait": "",
+&"default_portrait": "normal",
 &"description": "",
 &"display_name": "Warga",
 &"mirror": false,
 &"nicknames": ["Warga"],
 &"offset": Vector2(0, 0),
-&"portraits": {},
+&"portraits": {
+"normal": {
+"export_overrides": {
+"image": "\"res://assets/char_img/tungtungsahur.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+}
+},
 &"scale": 1.0
 }

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cbhtbpodlytgq"
+path="res://.godot/imported/alarm sekolah.mp3-6b7ce3564b45121d7cbb852ed2603a2b.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/alarm sekolah.mp3"
+dest_files=["res://.godot/imported/alarm sekolah.mp3-6b7ce3564b45121d7cbb852ed2603a2b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

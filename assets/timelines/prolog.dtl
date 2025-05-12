@@ -11,7 +11,7 @@ label [Scene: Luar angkasa - Meteor Tabrakan]
 [speed=1.3]Hingga pada suatu saat...
 [speed=1.3]Tabrakan tak terelakkan terjadi, dua kekuatan yang bertolak belakang saling menghantam, menghasilkan ledakan cahaya yang menembus ruang dan waktu.
 [speed=1.3]Dari ledakan itu, pecahan batu misterius terpental… dan mulai jatuh... menuju planet biru kecil bernama Bumi.
-[speed=1.3]Pecahan itu bukan hanya membawa zat asing., ia membawa perubahan.
+[speed=1.3]Pecahan itu bukan hanya membawa zat asing, ia membawa perubahan.
 [speed=1.3]Evolusi.
 [speed=1.3]Ketidakseimbangan.
 [wait time="2.0"]
@@ -34,10 +34,10 @@ leave mc [animation="Slide Out Left" length="5.0"]
 {namauser} berdiri di antrean kasir. Di sudut ruangan, televisi menyala menampilkan berita.
 join reportertv left [animation="Fade In"]
 [wait time="1.0" hide_text="false"]
-reportertv: Halo selamat malam pemirsa... kembali lagi bersama saya Rita, pembawa berita malam hari ini
-reportertv: Berita pertama dimulai dari kota Cihideung
-reportertv: Diduga 51 Siswa SMA 1 Cihideung keracunan usai santap Cemilan bergizi gratis, 6 masih dirawat
-reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa
+reportertv: Halo selamat malam pemirsa... kembali lagi bersama saya Rita, pembawa berita malam hari ini.
+reportertv: Berita pertama dimulai dari kota Cihideung.
+reportertv: Diduga 51 Siswa SMA 1 Cihideung keracunan usai santap Cemilan bergizi gratis, 6 masih dirawat.
+reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa.
 reportertv: Selanjutnya, Krisis pencemaran air semakin parah. Banyak sumber air utama kini terkontaminasi oleh limbah dan bakteri.
 reportertv: Kementrian Lingkungan Hidup dan kehutanan sudah menghimbau masyarakat untuk selalu menjaga lingkungan dan tidak membuang sampah sembarangan
 reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa
@@ -46,17 +46,17 @@ leave reportertv [animation="Fade Out" length="1.0" wait="true"]
 join mc center [animation="Fade In Up"]
 [wait time="1.5"]
 mc: Hah... berita beginian lagi. Nggak ada yang baru.
-{namauser} berbicara sendiri dengan perasaan acuh
+{namauser} berbicara sendiri dengan perasaan acuh.
 update mc right [move_time="1.0"]
 join Cashier left
 [wait time="1.0"]
-Cashier: Totalnya jadi Rp.20.000 yaa
-Cashier: Pembayarannya lewat KiRIS ya kak
-mc: Okee sebentar yaa
+Cashier: Totalnya jadi Rp.20.000 ya.
+Cashier: Pembayarannya lewat KiRIS ya kak.
+mc: Okee sebentar ya.
 leave mc [animation="Slide Out Left" length="8.0"]
 leave Cashier [animation="Fade Out" length="1.0"]
 [music path="res://assets/sound/515882__filmscore__truck-stop-interior-door-chime.mp3" channel="1" fade="2.0" volume="0.0" loop="false"]
-{namauser} membayar dan keluar dari minimarket
+{namauser} membayar dan keluar dari minimarket.
 [music channel="1" fade="0.7" volume="0.0"]
 [wait time="1.5"]
 label [Scene: Jalanan Malam - Langit Berbintang]
@@ -64,41 +64,41 @@ label [Scene: Jalanan Malam - Langit Berbintang]
 [music path="res://assets/sound/windy__night.mp3" fade="1.0" volume="0.0"]
 [wait time="2.0"]
 {namauser} berjalan sambil memakan snack, menikmati ketenangan malam.
-Ia menatap langit malam yang cerah, penuh dengan bintang-bintang
+Ia menatap langit malam yang cerah, penuh dengan bintang-bintang.
 Namun ketenangan itu tidak berlangsung dengan lama...
 join mc center
 [wait time="1.0"]
 mc: Bintang malam ini keren juga...
 mc: Biasanya langit malam tertutup awan, jadi jarang sekali melihat momen seperti ini.
-{namauser} melempar bungkus snack ke selokan sembarangan
+{namauser} melempar bungkus snack ke selokan sembarangan.
 [wait time="1.0"]
 - Peduli amat, bukan urusan gua.
 - Eh... tadi buangnya sembarangan ya?
 mc: Kok feeling gua jadi ga enak yaa...
-mc: Ah, bodo amat lah
+mc: Ah, bodo amat lah.
 [wait time="1.0"]
-{namauser} melihat sebuah bintang jatuh di langit malam yang cerah
-Bintang jatuh yang memancarkan sinar warna merah ke jingga-an mengekor panjang ke belakang
+{namauser} melihat sebuah bintang jatuh di langit malam yang cerah.
+Bintang jatuh yang memancarkan sinar warna merah ke jingga-an mengekor panjang ke belakang.
 [wait time="1.0"]
 mc: Hmm?
-mc: Sebuah komet? eh atau mungkin ini disebut meteor?
-mc: Wow... gua baru pertama kali lihat itu secara langsung
-mc: (bergumam)
+mc: Sebuah komet? eh atau mungkin ini disebut meteor?.
+mc: Wow... gua baru pertama kali lihat itu secara langsung.
+mc: (bergumam.)
 [wait time="1.0"]
 Namun...
 [music path="res://assets/sound/619037__mrrap4food__heart-beat.mp3" fade="1.5" volume="0.0"]
 Pecahan bintang tersebut semakin lama semakin mendekat dengan cepat...
 update mc center [animation="Shake X"]
-mc: Eh...? tunggu
+mc: Eh...? tunggu...
 update mc center [animation="Shake Y" z_index="0" move_ease="in" move_trans="linear"]
-mc: Itu
+mc: Itu...
 update mc center [animation="Shake Y" z_index="0" move_ease="in" move_trans="linear"]
 mc: Kok makin gede?!
 leave mc [animation="Instant Out" length="2.0"]
 [music path="res://assets/sound/comet_explosive.mp3" fade="1.0" volume="0.0" loop="false"]
 [background arg="res://assets/backgrounds/pitch_black.png" fade="0.5"]
 [wait time="19.0"]
-Pecahan bintang tersebut langsung jatuh menghantam {namauser}
+Pecahan bintang tersebut langsung jatuh menghantam {namauser}.
 [wait time="1.0"]
 .....
 [wait time="8.0"]
@@ -140,10 +140,10 @@ mc: Hah?! Apaan ini?!
 update mc center [animation="Shake X"]
 mc: Apa-apaan ini...
 mc: Seperti...
-mc: Suatu cerita komik yang pernah gua baca? tapi ini nyata?!.
+mc: Suatu cerita komik yang pernah gua baca? tapi ini nyata?!
 [wait time="1.0"]
 mc: Layar melayang nya?!...bisa disentuh...
-mc: Dan buat apa tombol ini?!.
+mc: Dan buat apa tombol ini?!
 leave mc [animation="Fade Out" length="1.0"]
 [wait time="1.0"]
 [style name="purify_button"]
@@ -156,8 +156,8 @@ leave mc [animation="Fade Out" length="1.0"]
 	# menyentuh bakteri → mati satu per satu. Setelah selesai, status berubah: "The Water has been Purified"
 	[background fade="1.0"]
 	mc: Apa ini?!
-	mc: Ughhh....bentuknya aneh sekali
-	mc: Bakteri?...virus?!!
+	mc: Ughhh....bentuknya aneh sekali.
+	mc: Bakteri?...virus?!
 	[wait time="2.0"]
 	# Setelah bakteri pertama terbunuh, muncul dialog lanjutan
 	mc: Bakterinya mati setelah aku sentuh?
@@ -166,8 +166,8 @@ label [Minigames selesai]
 [wait time="2.0"]
 join mc center [animation="Shake X"]
 mc: Gila... Apa yang sebenarnya terjadi sama gua...?
-mc: Air yang di gelas ini tadinya beracun?!.
-mc: tapi sekarang udah bersih?...emang beneran?!.
+mc: Air yang di gelas ini tadinya beracun?!
+mc: tapi sekarang udah bersih?...emang beneran?!
 mc: (berbicara sendiri.)
 leave mc [animation="Fade Out" length="1.0"]
 [wait time="1.0"]

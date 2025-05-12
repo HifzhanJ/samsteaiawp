@@ -1,78 +1,164 @@
-[background arg="res://assets/backgrounds/Screenshot (4).png" fade="0.0"]
+jump mata air desa
+label pagi hari
+[background arg="res://assets/backgrounds/pitch_white.png" fade="1.0"]
+[wait time="2.0"]
+[music path="res://assets/sounds/music/chill night.mp3" fade="-2.0" volume="0.0"]
+[background arg="res://assets/backgrounds/Screenshot (4).png" fade="0.5" transition="Simple Fade"]
+[wait time="2.0"]
 Cahaya matahari menyelinap lewat jendela, membangunkan MC dari tidurnya.
-join mc leftmost
+join mc center
 mc: Ugh... kenapa rasanya aneh? Tapi... badan malah berasa lebih enteng.
-mc: (Bangun, duduk di tepi ranjang, mengingat kejadian semalam.)
+mc: (Mengingat kejadian kemarin.)
 mc: Meteor... cahaya itu... rumah sakit... dan... layar aneh itu...
-(Menggelengkan kepala, berusaha menghapus rasa bingung.)
+mc: (Menggelengkan kepala.)
 mc: Udahlah... mungkin cuma mimpi aneh.
-mc: (Bersiap-siap untuk sekolah.)
+(Bersiap-siap untuk sekolah.)
+leave mc
 [background fade="0.0"]
+[wait time="2.0"]
+label dijalan
+[music path="res://assets/sounds/music/cozy night.mp3" channel="1" fade="0.5" volume="-10.0"]
+[music path="res://assets/sound/612942__leo_da_slowly_movin__walking-outside-8.mp3" channel="2" fade="0.0" volume="6.0"]
+[music path="res://assets/sound/273913__beskhu__car-coming-2.mp3" channel="3" fade="0.0" volume="-5.0"]
 Dalam perjalanan ke sekolah, {namauser} mulai memperhatikan sesuatu yang ganjil.
-(Beberapa orang di jalan terlihat pucat, batuk, bahkan ada yang terduduk lemas.)
+[music path="res://assets/sound/763968__shangusburger__crwdmisc_coughs-chatter-and-laughs_shanevincent_gsc24_bin-ambeovr.mp3" fade="0.0" volume="2.0"]
+Beberapa orang di jalan terlihat pucat, batuk, bahkan ada yang terduduk lemas.
 [background fade="0.0"]
-[background fade="0.0"]
+join mc center
 mc: Hmm? Kenapa banyak orang keliatan sakit, ya?
 mc: (Berjalan cepat, sedikit khawatir.)
+leave mc
+[music fade="1.0" volume="0.0"]
+[music channel="1" fade="1.0" volume="0.0"]
+[music channel="2" fade="1.0" volume="0.0"]
+[music channel="3" fade="1.0" volume="0.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="1.0"]
+[music path="res://assets/sounds/music/chill night.mp3" fade="-1.0" volume="-10.0"]
 [background fade="0.0"]
-Di sekolah, suasana terasa berbeda. {namauser} mencari sosok yang biasa menyapanya setiap pagi.\
-mc\: Mana dia? Biasanya juga udah teriak-teriak dari tadi...
-audio -
-(Bel masuk.)
+label dikelas
+join mc center
+mc: Di sekolah, suasana terasa berbeda. {namauser} mencari sosok yang biasa menyapanya setiap pagi.
+mc: Mana dia? Biasanya juga udah teriak-teriak dari tadi...
+[music path="res://assets/sound/217486__sbyandiji__short-alarm-bell-in-school-hall-some-clock-ticks-etc.mp3" channel="1" fade="0.0" volume="0.0"]
+leave mc
+Bel tanda masuk kelas berbunyi.
+[music channel="1" fade="0.0" volume="0.0"]
+[wait time="2.0"]
 [background fade="0.0"]
-(Setelah pelajaran pertama selesai.)
+[music path="res://assets/sound/274213__bexhillcollege__college-hallway-ambience.mp3" channel="2" fade="0.0" volume="0.0"]
+Waktu berlalu, tak terasa perlajaran pertama selesai.
+join mc left
 mc: Eh, lo liat Aika?
+join andri left
 andri: Oh, dia sakit katanya. Dari semalem udah nggak enak badan.
 andri: Tapi keliatan nya parah banget kata ibunya.
+update mc center [move_time="1.0" move_ease="in"]
+leave andri [animation="Fade Out"]
 mc: Hmm...
 mc: (Menggenggam erat tasnya.)
 mc: Gue harus cek ke rumahnya.
+leave mc
+label rumah aika
+[background arg="res://assets/backgrounds/pitch_white.png" fade="1.0"]
+[music path="res://assets/sounds/music/cozy night.mp3" fade="0.0" volume="0.0"]
+[wait time="2.0"]
 [background fade="0.0"]
+join mc center
+[music path="res://assets/sound/571671__nachtmahrtv__knock-on-door-2.mp3" channel="1" fade="0.0" volume="0.0"]
 mc: (Mengetuk pintu.)
-ibuaika: Oh, kamu... Makasih udah mau datang. Dia lagi istirahat di kamar.
+[music channel="1" fade="0.0" volume="0.0"]
+update mc left [move_time="1.0"]
+join ibuaika right
+ibuaika: Oh, kamu... Makasih udah mau datang.
+ibuaika: Aika lagi istirahat di kamar.
 mc: Saya boleh lihat?
-ibuaika: Hati-hati ya. Dia masih lemas banget.
+ibuaika: Masuk aja. Dia masih lemas banget.
+mc: Permisi.
+leave ibuaika
+leave mc
 [background fade="0.0"]
-mc: (Masuk ke kamar Aika. Aika terbaring lemas, wajahnya pucat, berkeringat.)
+[music path="res://assets/sound/571671__nachtmahrtv__knock-on-door-2.mp3" channel="1" fade="0.0" volume="0.0"]
+mc: (Mengetuk pintu kamar Aika.)
+[music channel="1" fade="0.0" volume="0.0"]
+join mc center
 mc: Aika...
-aika_vanya: (Batuk)
+update mc left [move_time="1.0"]
+[sound path="res://assets/sound/398749__anthousai__door-open-creak-outside-to-inside.mp3" volume="0.0"]
+join aika_vanya right
+aika_vanya: (Batuk.)
 aika_vanya: Eh {namauser}… ada apa?
 mc: Ku dengar kamu sakit, jadi aku datang berkunjung.
+mc: (Melihat gelas air diatas meja.)
 aika_vanya: Cuma sakit biasa kok, nanti juga sembuh.
-(Melihat gelas air diatas meja.)
+leave mc
+leave aika_vanya
 [clear time="1.0"]
 [background fade="0.0"]
-mc: Lagi... status window itu...
+join mc center
+update mc left [move_time="1.0"]
 mc: (Menatap teman masa kecilnya yang lemah, lalu menatap gelas air.)
 mc: Kalau ini beneran bisa... gue harus coba.
-- PURIFY!
+leave mc
+[style name="purify_button"]
+- ╚════▣◎PURIFY◎▣════╗
+mc: Lagi... status window itu...
+[style]
 Dalam hitungan detik, air dalam gelas itu tampak lebih jernih.
-mc: (Mengambil gelas tersebut, ragu-ragu.)
+(Mengambil gelas tersebut, ragu-ragu.)
+join aika_vanya (normal) center
 aika_vanya: (Bingung)
 aika_vanya: Apa yang baru saja kamu lakukan?
+update aika_vanya right [move_time="1.0"]
+join mc left
 mc: (Memberikan gelas air minum.)
 mc: Minum dikit, ya.
-aika_vanya: (Minum air yang diberikan {namauser})
+aika_vanya: (Minum air yang diberikan {namauser}.)
 Waktu seolah berjalan lambat... hingga perlahan, warna di wajah Aika mulai kembali, napasnya membaik.
 aika_vanya: Aku... tidak sakit lagi?
 mc: Ini... berhasil?!
-mc: (Memandang tangannya, lalu gelas itu.)
+mc: (Memandang Aika, lalu gelas itu.)
 mc: Kalau air di rumahnya kotor... berarti seluruh desa...
 mc: Ada hal yang harus ku lakukan, nanti akan ku jelaskan!
+leave aika_vanya
 mc: (Bergegas menuju mata air desa)
+leave mc
+[music fade="0.0" volume="0.0"]
+label mata air desa
+[background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
+[music path="res://assets/sounds/music/chill night.mp3" fade="0.0" volume="0.0"]
+[wait time="2.0"]
 [background fade="0.0"]
+join mc center
 mc: (Sampai di mata air desa.)
-[background fade="0.0"]
 mc: Gila... kayak racun...
-- PURIFY
-mc: Gila... ini lebih susah!
-mc: Akhirnya!
+leave mc
+[style name="purify_button"]
+- ╚════▣◎PURIFY◎▣════╗
+[style]
+join mc center
+Akhirnya!
 status_window: Mata Air Telah Dipurifikasi.
 Cahaya hijau menyelimuti mata air, perlahan membersihkan warna hitam dan membuatnya jernih kembali.
 mc: Satu masalah selesai... Tapi ini... baru awalnya.
+leave mc
+[music fade="0.0" volume="0.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
+[music path="res://assets/sounds/music/cozy night.mp3" fade="0.0" volume="0.0"]
+[wait time="2.0"]
 [background fade="0.0"]
 Keesokan paginya, suasana desa berubah. Warga yang sebelumnya sakit mulai sembuh.
+join warga1 center
 warga1: Aneh ya, airnya tiba-tiba jernih lagi!
+update warga1 right
+join warga2 rightmost
 warga2: Kayaknya mujizat deh, hahaha!
+join mc left
 mc: (Lewat, hanya tersenyum kecil.)
 mc: Mereka nggak perlu tahu... Tapi gue harus siap. Ini baru permulaan.
+leave mc
+leave warga1
+leave warga2
+[music fade="2.0" volume="0.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
+[wait time="2.0"]
+[end_timeline]

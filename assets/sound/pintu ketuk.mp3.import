@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dlfs0g184dtj3"
+path="res://.godot/imported/pintu ketuk.mp3-61cfc60a13706f2ebbaf400d5d90f180.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/pintu ketuk.mp3"
+dest_files=["res://.godot/imported/pintu ketuk.mp3-61cfc60a13706f2ebbaf400d5d90f180.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
