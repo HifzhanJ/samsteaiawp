@@ -1,7 +1,0 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://d4cpkwegmw2k2"]
-
-[ext_resource type="FontFile" uid="uid://dpyoxp0s1gi7x" path="res://assets/fonts/Gravity-Regular.otf" id="1_ffkk6"]
-
-[resource]
-TabBar/font_sizes/font_size = 30
-TabBar/fonts/font = ExtResource("1_ffkk6")
