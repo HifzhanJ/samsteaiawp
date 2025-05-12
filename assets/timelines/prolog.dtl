@@ -168,7 +168,7 @@ join mc center [animation="Shake X"]
 mc: Gila... Apa yang sebenarnya terjadi sama gua...?
 mc: Air yang di gelas ini tadinya beracun?!
 mc: tapi sekarang udah bersih?...emang beneran?!
-mc: (berbicara sendiri)
+mc: (berbicara sendiri.)
 leave mc [animation="Fade Out" length="1.0"]
 [wait time="1.0"]
 Narator: {namauser} menatap gelas, lalu meminumnya perlahan
