@@ -68,7 +68,7 @@ Narator: Ia menatap langit malam yang cerah, penuh dengan bintang-bintang
 Narator: Namun ketenangan itu tidak berlangsung dengan lama...
 join mc center
 [wait time="1.0"]
-mc: Bintang malam ini keren juga...
+mc: Bintang malam ini keren juga....
 mc: Biasanya langit malam tertutup awan, jadi jarang sekali melihat momen seperti ini.
 Narator: {namauser} melempar bungkus snack ke selokan sembarangan
 [wait time="1.0"]
@@ -176,7 +176,7 @@ Narator: {namauser} menatap gelas, lalu meminumnya perlahan
 [wait time="2.5"]
 Narator: {namauser} menggelengkan kepala karena kebingungan dengan apa yang ia rasakan
 [wait time="1.0"]
-mc: Aghh... anjirlah...
+mc: Aghh....anjirlah...
 [wait time="1.5"]
 Narator: {namauser} menyadari kekuatan barunya dan masih tidak percaya dengan apa yang dialaminya
 [music fade="1.0" volume="0.0"]
