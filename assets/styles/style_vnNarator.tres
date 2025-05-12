@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=13 format=3 uid="uid://baj00hpmg73bd"]
+
+[ext_resource type="Script" uid="uid://fq7varrh7sd2" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_of2c1"]
+[ext_resource type="Resource" uid="uid://bgf1p4f7bbpjx" path="res://assets/styles/style_visualnoveldefault.tres" id="1_sqs0f"]
+[ext_resource type="Script" uid="uid://cortl34bphe2d" path="res://addons/dialogic/Resources/dialogic_style.gd" id="2_sqs0f"]
+
+[sub_resource type="Resource" id="Resource_chhv2"]
+script = ExtResource("1_of2c1")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_m3v0h"]
+script = ExtResource("1_of2c1")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_v2ek4"]
+script = ExtResource("1_of2c1")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_a8tx6"]
+script = ExtResource("1_of2c1")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_wb2ux"]
+script = ExtResource("1_of2c1")
+overrides = {
+"name_label_custom_color": "Color(0.976563, 0.892639, 0, 1)",
+"name_label_use_character_color": "false",
+"name_label_use_global_color": "false"
+}
+
+[sub_resource type="Resource" id="Resource_u724x"]
+script = ExtResource("1_of2c1")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_5afqv"]
+script = ExtResource("1_of2c1")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_4gg3p"]
+script = ExtResource("1_of2c1")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_1psb8"]
+script = ExtResource("1_of2c1")
+overrides = {}
+
+[resource]
+script = ExtResource("2_sqs0f")
+name = "style_vnNarator"
+inherits = ExtResource("1_sqs0f")
+layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16", "17"])
+layer_info = {
+"": SubResource("Resource_chhv2"),
+"10": SubResource("Resource_m3v0h"),
+"11": SubResource("Resource_v2ek4"),
+"12": SubResource("Resource_a8tx6"),
+"13": SubResource("Resource_wb2ux"),
+"14": SubResource("Resource_u724x"),
+"15": SubResource("Resource_5afqv"),
+"16": SubResource("Resource_4gg3p"),
+"17": SubResource("Resource_1psb8")
+}
+base_overrides = {}
+layers = Array[ExtResource("1_of2c1")]([])
+metadata/_latest_layer = "13"
