@@ -149,7 +149,7 @@ leave mc [animation="Fade Out" length="1.0"]
 [style name="purify_button"]
 - ╚════▣◎PURIFY◎▣════╗
 	[style]
-	mc: (menekan tombol PURIFY.)
+	mc: (Menekan tombol PURIFY.)
 	[wait time="2.0"]
 	label [Minigames dimulai]
 	# Pemain masuk ke minigames untuk membasmi semua bakteri
