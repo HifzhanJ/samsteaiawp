@@ -1,4 +1,3 @@
-jump prolog/[Scene: Kota - Malam Hari - Minimarket]
 [text_input text="Tolong masukkan nama anda:" var="namauser"]
 [wait time="1.0"]
 label [Scene: Luar angkasa - Meteor Tabrakan]

@@ -96,7 +96,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("5_7metd")
 theme_override_font_sizes/font_size = 40
-text = "SUDDENLY A METOR
+text = "SUDDENLY A METEOR
 STRUCK THE EARTH
 AND
 I BECAME A
