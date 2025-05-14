@@ -1,4 +1,4 @@
-jump chapter2/[Scene: Kelas Baru - Pagi Hari]
+jump chapter2/[Scene: Jalanan Kota - Sore Hari]
 label [Scene: Highschool - Pagi Hari]
 [background arg="res://assets/backgrounds/highschool_outside.jpg" fade="1.0"]
 [music path="res://assets/sounds/music/chill night.mp3" fade="2.0" volume="0.0"]
@@ -33,7 +33,7 @@ guru: Untuk jumlah siswa di kelas ini ada 30 yaa..
 guru: Baik, kita mulai dari absen pertama dulu... [pause=1]silakan dimulai
 leave guru [animation="Fade Out"]
 [wait time="2.0"]
-Perkenalan pun dimulai oleh seluruh siswa, [pause=2]hingga pada bagian akhir tiba giliran {namauser} memperkenalkan dirinya. 
+Perkenalan pun dimulai oleh seluruh siswa, [pause=2]hingga pada bagian akhir tiba giliran {namauser} memperkenalkan dirinya.
 [wait time="1.0"]
 {namauser} Berdiri dari kursinya.
 join mc center [animation="Fade In Up"]
@@ -82,13 +82,16 @@ update revana [animation="Shake X"]
 Pria itu mengangkat tangan, siap menampar revana
 [wait time="1.0"]
 {namauser} berlari dengan cepat mendekati mereka berdua
-label Minigame tap tap (rescue revana)
-[background fade="0.5"]
-[wait time="5.0"]
-label Minigame keluar (rescue revana)
-[background arg="res://assets/backgrounds/tepi_sungai.png" fade="0.5"]
+leave --All-- [animation="Fade Out"]
+[background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
+[wait time="3.0"]
 {namauser} akhirnya berhasil memegang tangan pria itu, dan menghentikan nya.
-join mc center [animation="Slide From Right"]
+[wait time="1.0"]
+[background arg="res://assets/backgrounds/tepi_sungai.png" fade="1.0"]
+join revana right [animation="Fade In"]
+join warga_sampah center [animation="Fade In"]
+[wait time="1.0"]
+join mc center [animation="Slide In Right"]
 update warga_sampah left [animation="Shake X" move_time="0.2" move_ease="in" move_trans="linear"]
 [wait time="1.5"]
 mc: Lu pikir bisa seenaknya mukul orang?!
