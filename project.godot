@@ -26,7 +26,6 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 directories/dch_directory={
 "Cashier": "res://assets/characters/Cashier.dch",
 "Manajer": "res://assets/characters/Manajer.dch",
-"Narator": "res://assets/characters/Narator.dch",
 "aika_vanya": "res://assets/characters/aika_vanya.dch",
 "andri": "res://assets/characters/andri.dch",
 "doctor": "res://assets/characters/doctor.dch",
