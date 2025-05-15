@@ -1,4 +1,4 @@
-jump Minigame keluar
+jump pagi
 label pagi
 [background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
 [music path="res://assets/sounds/music/chill night.mp3" fade="0.0" volume="0.0"]
@@ -148,7 +148,7 @@ STATUS WINDOW muncul kembali.
 	mc: [speed=1.3](Menggaruk kepalanya, sedikit malu.)
 	update revana right
 	join mc left
-	mc: [speed=1.3]Aku cuma ngelakuin apa yang bisa kulakuin.
+	mc: [speed=1.3]Gue cuma ngelakuin apa yang bisa kulakuin.
 	mc: [speed=1.3]Dah sore nih, karena masalah sudah diatasi.
 	mc: [speed=1.3]Yuk pulang, gue yakin nanti masalah penyakit ini bisa reda kayak Aika kasus dulu.
 	revana: [speed=1.3](Menganguk.)
