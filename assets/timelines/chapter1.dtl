@@ -1,164 +1,273 @@
-jump mata air desa
+jump besoknya
 label pagi hari
 [background arg="res://assets/backgrounds/pitch_white.png" fade="1.0"]
 [wait time="2.0"]
 [music path="res://assets/sounds/music/chill night.mp3" fade="-2.0" volume="0.0"]
 [background arg="res://assets/backgrounds/Screenshot (4).png" fade="0.5" transition="Simple Fade"]
-[wait time="2.0"]
+[wait time="3.0"]
 Cahaya matahari menyelinap lewat jendela, membangunkan MC dari tidurnya.
 join mc center
-mc: Ugh... kenapa rasanya aneh? Tapi... badan malah berasa lebih enteng.
-mc: (Mengingat kejadian kemarin.)
-mc: Meteor... cahaya itu... rumah sakit... dan... layar aneh itu...
-mc: (Menggelengkan kepala.)
-mc: Udahlah... mungkin cuma mimpi aneh.
-(Bersiap-siap untuk sekolah.)
+mc: [speed=1.3]Ugh-
+mc: [speed=1.3]Kenapa rasanya aneh?
+mc: [speed=1.3]Tapi-
+mc: [speed=1.3]Badan malah berasa lebih enteng.
+mc: [speed=1.3](Mengingat kejadian kemarin.)
+mc: [speed=1.3]Meteor sama layar aneh kemaren!
+mc: [speed=1.3]Ugh...
+mc: [speed=1.3](Menggelengkan kepala.)
+mc: [speed=1.3]Udahlah- mungkin cuma mimpi aneh.
+mc: [speed=1.3]Mending gue siap-siap ke sekolah.
+[wait time="3.0"]
 leave mc
-[background fade="0.0"]
+[music fade="0.0" volume="0.0"]
+label dijalan
+[background arg="res://assets/backgrounds/pitch_white.png" fade="1.0"]
+[music path="res://assets/sounds/music/cozy night.mp3" fade="-0.5" volume="-10.0"]
 [wait time="2.0"]
 label dijalan
-[music path="res://assets/sounds/music/cozy night.mp3" channel="1" fade="0.5" volume="-10.0"]
+[background arg="res://assets/backgrounds/jalananpagi.jpg" fade="1.0"]
+[wait time="3.0"]
 [music path="res://assets/sound/612942__leo_da_slowly_movin__walking-outside-8.mp3" channel="2" fade="0.0" volume="6.0"]
 [music path="res://assets/sound/273913__beskhu__car-coming-2.mp3" channel="3" fade="0.0" volume="-5.0"]
 Dalam perjalanan ke sekolah, {namauser} mulai memperhatikan sesuatu yang ganjil.
-[music path="res://assets/sound/763968__shangusburger__crwdmisc_coughs-chatter-and-laughs_shanevincent_gsc24_bin-ambeovr.mp3" fade="0.0" volume="2.0"]
+[music path="res://assets/sound/763968__shangusburger__crwdmisc_coughs-chatter-and-laughs_shanevincent_gsc24_bin-ambeovr.mp3" channel="1" fade="0.0" volume="2.0"]
 Beberapa orang di jalan terlihat pucat, batuk, bahkan ada yang terduduk lemas.
-[background fade="0.0"]
 join mc center
-mc: Hmm? Kenapa banyak orang keliatan sakit, ya?
+mc: Hmm?
+mc: Orang-orang kenapa dah?
+mc: Kudu cepet nih, lama-lama gue ikut sakit juga ntar.
 mc: (Berjalan cepat, sedikit khawatir.)
 leave mc
 [music fade="1.0" volume="0.0"]
 [music channel="1" fade="1.0" volume="0.0"]
 [music channel="2" fade="1.0" volume="0.0"]
 [music channel="3" fade="1.0" volume="0.0"]
+label disekolah
 [background arg="res://assets/backgrounds/pitch_white.png" fade="1.0"]
 [music path="res://assets/sounds/music/chill night.mp3" fade="-1.0" volume="-10.0"]
-[background fade="0.0"]
-label dikelas
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/sekolahhall.jpg" fade="1.0"]
+[wait time="3.0"]
+Sampai di sekolah, {namauser} menyadari suasana terasa berbeda.
+{namauser} mencari sosok yang biasa menyapanya setiap pagi.
+[wait time="1.0"]
 join mc center
-mc: Di sekolah, suasana terasa berbeda. {namauser} mencari sosok yang biasa menyapanya setiap pagi.
-mc: Mana dia? Biasanya juga udah teriak-teriak dari tadi...
+mc: Mana dia? Biasanya juga udah teriak-teriak dari tadi-
+mc: Apa jangan-jangan dia telat ya?
 [music path="res://assets/sound/217486__sbyandiji__short-alarm-bell-in-school-hall-some-clock-ticks-etc.mp3" channel="1" fade="0.0" volume="0.0"]
-leave mc
+[wait time="3.0"]
 Bel tanda masuk kelas berbunyi.
 [music channel="1" fade="0.0" volume="0.0"]
+mc: Duh udah masuk, buru-buru ke kelas dah gue.
+mc: Ntar abis gue kalo keduluan guru yang masuk.
+leave mc
+[background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
 [wait time="2.0"]
-[background fade="0.0"]
-[music path="res://assets/sound/274213__bexhillcollege__college-hallway-ambience.mp3" channel="2" fade="0.0" volume="0.0"]
+[background arg="res://assets/backgrounds/ruangkelas.jpg" fade="0.0"]
+join mc center
+{namauser} melihat meja Aika, teman masa kecilnya yang tampak kosong.
+mc: Hmm, tumben dia ga masuk.
+[wait time="2.0"]
+mc: Gue coba tanya andri deh.
+{namauser} mencoba bertanya kepada Andri, teman yang duduk di bangku sebelahnya.
+mc: Andr-
+Belum sempat bicara tiba-tiba seorang guru masuk ke ruang kelas tanda pelajaran dimulai.
+mc: Yaudah deh ntar aja.
+mc: (Gelisah.)
+leave mc
+[music fade="0.0" volume="0.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
+[music path="res://assets/sounds/music/cozy night.mp3" fade="-0.5" volume="0.0"]
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/ruangkelas.jpg" fade="2.0"]
+[music path="res://assets/sound/274213__bexhillcollege__college-hallway-ambience.mp3" channel="1" fade="0.0" volume="0.0"]
+[wait time="3.0"]
 Waktu berlalu, tak terasa perlajaran pertama selesai.
-join mc left
-mc: Eh, lo liat Aika?
-join andri left
-andri: Oh, dia sakit katanya. Dari semalem udah nggak enak badan.
-andri: Tapi keliatan nya parah banget kata ibunya.
+join mc center
+Tidak membuang kesempatan, {namauser} bertanya ke Andri mengenai keadaan Aika.
+mc: Andri, lo tau kenapa Aika ga masuk?
+update mc left [move_time="1.0"]
+join andri right
+andri: Oh, dia sakit katanya.
+andri: Tadi ibunya dateng ke sekolah.
+andri: Gue ga sengaja denger pas beliau ngobrol sama guru.
+andri: Tapi keliatan nya parah banget sih kata ibunya.
+mc: Hmm...
+mc: Gitu yah, oke deh thanks infonya.
 update mc center [move_time="1.0" move_ease="in"]
 leave andri [animation="Fade Out"]
-mc: Hmm...
 mc: (Menggenggam erat tasnya.)
 mc: Gue harus cek ke rumahnya.
 leave mc
+[music channel="1" fade="0.0" volume="0.0"]
+[music fade="0.0" volume="0.0"]
 label rumah aika
-[background arg="res://assets/backgrounds/pitch_white.png" fade="1.0"]
-[music path="res://assets/sounds/music/cozy night.mp3" fade="0.0" volume="0.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
+[music path="res://assets/sounds/music/chill night.mp3" fade="0.0" volume="0.0"]
 [wait time="2.0"]
-[background fade="0.0"]
-join mc center
+[background arg="res://assets/backgrounds/rumahaika.jpg" fade="2.0"]
+[wait time="3.0"]
+Rumah Aika cukup dekat dari rumahnya, sehingga {namauser} memutuskan untuk melihat kondisi Aika dahalu sebelum pulang kerumah.
+Hal ini dilakukannya juga untuk mengatasi rasa gelisah dan penasaran yang ia rasakan sedari pagi.
+[wait time="2.0"]
 [music path="res://assets/sound/571671__nachtmahrtv__knock-on-door-2.mp3" channel="1" fade="0.0" volume="0.0"]
 mc: (Mengetuk pintu.)
+[wait time="1.5"]
+join mc center
+mc: Permisi.
 [music channel="1" fade="0.0" volume="0.0"]
 update mc left [move_time="1.0"]
+[sound path="res://assets/sound/398749__anthousai__door-open-creak-outside-to-inside.mp3" volume="0.0"]
 join ibuaika right
-ibuaika: Oh, kamu... Makasih udah mau datang.
+ibuaika: Oh {namauser}.
+mc: Selamat siang tante, Aika nya ada?
+ibuaika: Makasih udah mau datang.
+ibuaika: (Batuk.)
 ibuaika: Aika lagi istirahat di kamar.
+Rasa gelisahnya semakin memuncak melihat Ibu Aika yang tampak sakit juga.
 mc: Saya boleh lihat?
-ibuaika: Masuk aja. Dia masih lemas banget.
+ibuaika: Masuk aja, dia masih lemas banget.
 mc: Permisi.
 leave ibuaika
 leave mc
-[background fade="0.0"]
+[music fade="0.0" volume="0.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="1.0"]
+[music path="res://assets/sounds/music/cozy night.mp3" fade="0.0" volume="0.0"]
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/rumahaika-tengah.jpg" fade="1.0"]
+[wait time="3.0"]
+join ibuaika center
+ibuaika: Aika nya di kamar, langsung aja kesana nanti ibu siapkan minum ya.
+ibuaika: (Batuk.)
+update ibuaika right [move_time="1.0"]
+join mc left
+[wait time="1.5"]
+mc: Iya tante.
+leave ibuaika
+leave mc
+{namauser} melihat-lihat isi rumah Aika sembari menuju ke kamar Aika.
 [music path="res://assets/sound/571671__nachtmahrtv__knock-on-door-2.mp3" channel="1" fade="0.0" volume="0.0"]
+[wait time="2.0"]
 mc: (Mengetuk pintu kamar Aika.)
-[music channel="1" fade="0.0" volume="0.0"]
 join mc center
-mc: Aika...
+mc: Aika-
+[music channel="1" fade="0.0" volume="0.0"]
 update mc left [move_time="1.0"]
 [sound path="res://assets/sound/398749__anthousai__door-open-creak-outside-to-inside.mp3" volume="0.0"]
 join aika_vanya right
 aika_vanya: (Batuk.)
-aika_vanya: Eh {namauser}… ada apa?
-mc: Ku dengar kamu sakit, jadi aku datang berkunjung.
-mc: (Melihat gelas air diatas meja.)
-aika_vanya: Cuma sakit biasa kok, nanti juga sembuh.
+aika_vanya: Eh {namauser} ada apa?
+aika_vanya: Masuk dulu.
+leave aika_vanya
+leave mc
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/kamaraika.jpg" fade="2.0"]
+[wait time="3.0"]
+mc: (Masuk dan duduk di lantai.)
+join mc center
+mc: Gue dengar lo sakit, jadi gue datang berkunjung.
+update mc left [move_time="1.0"]
+join aika_vanya right
+aika_vanya: Cuma sakit biasa kok, ntar juga sembuh.
+update aika_vanya rightmost [move_time="1.0"]
+join ibuaika right
+ibuaika: {namauser}, Aika ibu masuk ya.
+ibuaika: Ini ibu bawakan minum.
+ibuaika: Ibu tinggal dulu ya, kalian lanjut aja ngobrol lagi.
+mc: Iya makasih, tante.
+leave ibuaika
 leave mc
 leave aika_vanya
-[clear time="1.0"]
-[background fade="0.0"]
+{namauser} terkejut melihat tiba-tiba layar aneh yang dia lihat kemarin muncul lagi diatas air yang baru dibawakan oleh Ibu Aika.
 join mc center
 update mc left [move_time="1.0"]
-mc: (Menatap teman masa kecilnya yang lemah, lalu menatap gelas air.)
-mc: Kalau ini beneran bisa... gue harus coba.
+mc: Lagi, layar aneh itu lagi.
+mc: (Tiba-tiba teringat kejadian dirumah sakit.)
+Gue harus coba.
 leave mc
 [style name="purify_button"]
 - ╚════▣◎PURIFY◎▣════╗
-mc: Lagi... status window itu...
 [style]
 Dalam hitungan detik, air dalam gelas itu tampak lebih jernih.
-(Mengambil gelas tersebut, ragu-ragu.)
+mc: (Mengambil gelas tersebut, ragu-ragu.)
 join aika_vanya (normal) center
-aika_vanya: (Bingung)
-aika_vanya: Apa yang baru saja kamu lakukan?
+aika_vanya: (Bingung.)
+aika_vanya: Lo barusan ngapain?
 update aika_vanya right [move_time="1.0"]
 join mc left
 mc: (Memberikan gelas air minum.)
-mc: Minum dikit, ya.
+mc: Coba lu minum.
+aika_vanya: Eh apaan sih?
+mc: Udah minum aja kalo mau sembuh.
 aika_vanya: (Minum air yang diberikan {namauser}.)
-Waktu seolah berjalan lambat... hingga perlahan, warna di wajah Aika mulai kembali, napasnya membaik.
-aika_vanya: Aku... tidak sakit lagi?
-mc: Ini... berhasil?!
+Waktu seolah berjalan lambat, hingga perlahan warna di wajah Aika mulai kembali, napasnya membaik.
+aika_vanya: Gue... ga sakit lagi?
+mc: Ini- berhasil?!
 mc: (Memandang Aika, lalu gelas itu.)
-mc: Kalau air di rumahnya kotor... berarti seluruh desa...
+mc: Kalau air di rumahnya kotor, berarti seluruh desa-
 mc: Ada hal yang harus ku lakukan, nanti akan ku jelaskan!
+mc: Jangan lupa kasih airnya ke tante!
 leave aika_vanya
-mc: (Bergegas menuju mata air desa)
+{namauser} bergegas menuju sumber mata air desa, sumber mata air yang mengalir ke rumah-rumah warga.
 leave mc
 [music fade="0.0" volume="0.0"]
 label mata air desa
-[background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
-[music path="res://assets/sounds/music/chill night.mp3" fade="0.0" volume="0.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
+[music path="res://assets/sounds/music/Prologue Theme.wav" fade="0.0" volume="0.0"]
 [wait time="2.0"]
-[background fade="0.0"]
-join mc center
+[background arg="res://assets/backgrounds/mata air before.jpg" fade="2.0"]
+[wait time="5.0"]
 mc: (Sampai di mata air desa.)
-mc: Gila... kayak racun...
+join mc center
+mc: Sudah gue duga dari sini penyebabnya.
+mc: Pantes aja warga pada banyak yang sakit.
+mc: Keluarga Aika juga.
+Yang kek gini ga bisa di biarin, gue harus beresin pake layar aneh itu.
 leave mc
 [style name="purify_button"]
 - ╚════▣◎PURIFY◎▣════╗
+mc: (Menekan tombol PURIFY.)
 [style]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="1.0"]
+[music path="res://assets/sounds/music/chill night.mp3" fade="0.0" volume="0.0"]
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/mata air after.jpg" fade="1.0"]
+[wait time="5.0"]
 join mc center
-Akhirnya!
+mc: Akhirnya!
 status_window: Mata Air Telah Dipurifikasi.
-Cahaya hijau menyelimuti mata air, perlahan membersihkan warna hitam dan membuatnya jernih kembali.
-mc: Satu masalah selesai... Tapi ini... baru awalnya.
+mc: Hehe.
+mc: Satu masalah selesai.
+mc: Dengan begini harusnya Aika dan para warga bisa sembuh.
+mc: Oh iya dah mulai sore, gue kudu balik ntar malah dicariin.
 leave mc
+{namauser} pulang kerumah dengan perasaan lega dihatinya.
 [music fade="0.0" volume="0.0"]
-[background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
+label besoknya
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
 [music path="res://assets/sounds/music/cozy night.mp3" fade="0.0" volume="0.0"]
 [wait time="2.0"]
-[background fade="0.0"]
+[background arg="res://assets/backgrounds/jalananpagi.jpg" fade="2.0"]
+[wait time="4.0"]
 Keesokan paginya, suasana desa berubah. Warga yang sebelumnya sakit mulai sembuh.
+[wait time="3.0"]
 join warga1 center
-warga1: Aneh ya, airnya tiba-tiba jernih lagi!
-update warga1 right
-join warga2 rightmost
-warga2: Kayaknya mujizat deh, hahaha!
+warga1: [speed=1.3]Aneh ya, airnya tiba-tiba jernih lagi!
+update warga1 right [move_time="1.0"]
+join warga2 left
+warga2: [speed=1.3]Kayaknya mujizat deh, hahaha!
+mc: [speed=1.3](Lewat, hanya tersenyum kecil.)
+update warga2 rightmost [move_time="1.0"]
 join mc left
-mc: (Lewat, hanya tersenyum kecil.)
-mc: Mereka nggak perlu tahu... Tapi gue harus siap. Ini baru permulaan.
+mc: [speed=1.3]Mereka nggak perlu tahu- Tapi gue harus siap.
+[speed=1.3]Ini baru permulaan.
 leave mc
 leave warga1
 leave warga2
+[wait time="5.0"]
 [music fade="2.0" volume="0.0"]
 [background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
 [wait time="2.0"]
+[wait_input]
 [end_timeline]
