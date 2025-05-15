@@ -33,6 +33,7 @@ directories/dch_directory={
 "guru": "res://assets/characters/guru.dch",
 "ibuaika": "res://assets/characters/ibuaika.dch",
 "mc": "res://assets/characters/mc.dch",
+"mc-smp": "res://assets/characters/mc-smp.dch",
 "petugas": "res://assets/characters/petugas.dch",
 "reportertv": "res://assets/characters/reportertv.dch",
 "revana": "res://assets/characters/revana.dch",

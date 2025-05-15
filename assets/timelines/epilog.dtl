@@ -31,8 +31,8 @@ reportertv: Kasus penyakit misterius yang sempat menyebar di kota 𝑥𝑥𝑥�
 leave reportertv [animation="Fade Out" wait="true"]
 [music fade="0.0" volume="0.0"]
 [wait time="1.5"]
-mc: (Tersenyum.)
-mc: Syukurlah... [pause=0.5]setidaknya kota ini aman untuk sekarang.
+mc (senyum): (Tersenyum.)
+mc (senyum): Syukurlah... [pause=0.5]setidaknya kota ini aman untuk sekarang.
 [wait time="1.0"]
 {namauser} mengambil tasnya, siap untuk berangkat ke sekolah.
 leave mc [animation="Slide Out Left" length="1.0"]
@@ -42,17 +42,17 @@ join reportertv left [animation="Fade In"]
 reportertv: Namun, di wilayah lain, [pause=0.5]muncul laporan baru mengenai air yang kembali berubah warna dan gejala-gejala aneh di kalangan penduduk. Penyelidikan masih berlangsung.
 leave reportertv [animation="Fade Out" wait="true"]
 [wait time="1.0"]
-join mc center [animation="Instant In" wait="true"]
+join mc (normal) center [animation="Instant In" wait="true"]
 update mc [animation="Shake X" wait="true"]
-mc: (seketika terhenti langkahnya.)
+mc: (Seketika terhenti langkahnya.)
 mc: Pandangannya kosong, [pause=0.5]namun [pause=0.5]sorot matanya mulai berubah.
 [wait time="1.5"]
-mc: Jadi... [pause=0.5]ini belum berakhir.
+mc: Jadi- [pause=0.5]ini belum berakhir.
 [wait time="1.5"]
-{namauser} menyadari sesuatu.[pause=0.5] Kemampuannya bukan sekadar kebetulan.[pause=0.5] Mungkin... [pause=0.5]ini adalah takdir yang harus ia jalani.
+{namauser} menyadari sesuatu.[pause=0.5] Kemampuannya bukan sekadar kebetulan.[pause=0.5] Mungkin- [pause=0.5]ini adalah takdir yang harus ia jalani.
 [wait time="1.0"]
 mc: (Menggenggam erat tali ranselnya.)
-Kalau gua bisa membantu... [pause=0.5]gua nggak boleh tinggal diam.
+Kalau gue bisa membantu- [pause=0.5]gue nggak boleh tinggal diam.
 [music channel="1" fade="0.0" volume="0.0"]
 leave mc [animation="Fade Out" wait="true"]
 [wait time="1.0"]

@@ -1,193 +1,213 @@
-jump prolog/[Scene: Kota - Malam Hari - Minimarket]
-[text_input text="Tolong masukkan nama anda:" var="namauser"]
-[wait time="1.0"]
+jump [Scene: Jalanan Malam - Langit Berbintang]
 label [Scene: Luar angkasa - Meteor Tabrakan]
-[background arg="res://assets/backgrounds/How to see a double meteor shower on Tuesday night with a chance of fireballs.jpeg" fade="1.0" transition="Simple Fade"]
-[music path="Prologue Theme.wav" fade="1.5" volume="0.0"]
-[wait time="3.0"]
-[speed=1.3]Di ujung galaksi yang sunyi, jauh dari jangkauan manusia-
-[speed=1.3]Dua benda langit melayang perlahan, satu tampak seperti batu meteor biasa, yang lain... mengeluarkan cahaya biru misterius.
-[speed=1.3]Tidak ada suara, tidak ada arah, hanya kehampaan dan waktu yang mengalir lambat.
-[speed=1.3]Hingga pada suatu saat-
-[speed=1.3]Tabrakan tak terelakkan terjadi, dua kekuatan yang bertolak belakang saling menghantam, menghasilkan ledakan cahaya yang menembus ruang dan waktu.
-[speed=1.3]Dari ledakan itu, pecahan batu misterius terpental… dan mulai jatuh... menuju planet biru kecil bernama Bumi.
-[speed=1.3]Pecahan itu bukan hanya membawa zat asing, ia membawa perubahan.
-[speed=1.3]Evolusi.
-[speed=1.3]Ketidakseimbangan.
+[background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
+[wait time="2.0"]
+[text_input text="Please enter your name:" var="namauser"]
+[wait time="1.0"]
+[background arg="res://assets/backgrounds/pitch_black.png" fade="2.0"]
+[wait time="5.0"]
+[background arg="res://assets/backgrounds/prolog_title.png" fade="1.0"]
+[wait time="5.0"]
+[background arg="res://assets/backgrounds/outer_space.png" fade="1.0" transition="Simple Fade"]
+[wait time="1.5"]
+[music path="res://assets/sounds/music/Prologue Theme.mp3" fade="1.5" volume="0.0"]
+[speed=1.3]Di ujung galaksi yang sunyi, jauh dari jangkauan manusia...
+[speed=1.3]Dua benda langit melayang perlahan, satu tampak seperti batu meteor biasa, yang lain... mengeluarkan cahaya kuning misterius.
+[speed=1.3]Tidak ada suara.[pause=0.5] Tidak ada arah.[pause=0.5] Hanya kehampaan dan waktu yang mengalir lambat.
+[speed=1.3]Hingga pada suatu saat...
+[speed=1.3]Tabrakan tak terelakkan terjadi.[pause=0.5] Dua kekuatan yang bertolak belakang saling menghantam, menghasilkan ledakan cahaya yang menembus ruang dan waktu.
+[speed=1.3]Dari ledakan itu, pecahan batu misterius terpental… [pause=0.5]dan mulai jatuh... [pause=0.5]menuju planet biru kecil bernama Bumi.
+[wait time="1.0"]
+[background arg="res://assets/backgrounds/meteor_bg.png" fade="1.0"]
+[speed=1.3]Pecahan itu bukan hanya membawa zat asing. [pause=1]Ia membawa perubahan. [pause=0.5]Evolusi.[pause=0.5] Ketidakseimbangan.
 [wait time="2.0"]
 [speed=1.3]Sebuah awal dari cerita yang tak disadari siapa pun...
 [speed=1.3]Termasuk seorang remaja biasa, yang tak tahu bahwa hidupnya akan berubah selamanya.
 label [Scene: Kota - Malam Hari - Minimarket]
-[background arg="res://assets/backgrounds/☆.jpeg" fade="1.0"]
+[background arg="res://assets/backgrounds/night_street.jpg" fade="1.0"]
 [music path="res://assets/sound/windy__night.mp3" fade="1.5" volume="0.0"]
 [wait time="3.0"]
 Suatu malam yang tenang, angin berhembus lembut menyusuri jalanan kota kecil.
 {namauser} seorang remaja biasa, tengah berbelanja kebutuhan makan malamnya.
-[background arg="res://assets/backgrounds/永辉.jpeg" fade="1.0"]
+[background arg="res://assets/backgrounds/morgan-vander-hart-QICueXvfH3U-unsplash.jpg" fade="1.0"]
 [music path="res://assets/sound/supermarket_ambience.mp3" fade="1.0" volume="-1.0"]
 [wait time="2.0"]
 {namauser} berdiri di dalam minimarket, membawa keranjang berisi snack, mie instan, dan telur.
-join mc (smp) center
-mc (smp): Hmm- kayaknya udah cukup buat makan malam.
+join mc-smp center
+mc-smp: Hmm- kayaknya udah cukup buat makan malam.
 [wait time="1.0"]
-leave mc [animation="Slide Out Left" length="5.0"]
+leave mc-smp [animation="Slide Out Left" length="5.0"]
 {namauser} berdiri di antrean kasir. Di sudut ruangan, televisi menyala menampilkan berita.
-join reportertv left [animation="Fade In"]
+join reportertv center [animation="Fade In"]
 [wait time="1.0" hide_text="false"]
-reportertv: Halo selamat malam pemirsa... kembali lagi bersama saya Rita, pembawa berita malam hari ini.
+reportertv: Halo selamat malam pemirsa- kembali lagi bersama saya Rita, pembawa berita malam hari ini.
 reportertv: Berita pertama dimulai dari kota Cihideung.
 reportertv: Diduga 51 Siswa SMA 1 Cihideung keracunan usai santap Cemilan bergizi gratis, 6 masih dirawat.
 reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa.
 reportertv: Selanjutnya, Krisis pencemaran air semakin parah. Banyak sumber air utama kini terkontaminasi oleh limbah dan bakteri.
-reportertv: Kementrian Lingkungan Hidup dan kehutanan sudah menghimbau masyarakat untuk selalu menjaga lingkungan dan tidak membuang sampah sembarangan
-reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa
-reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa
+reportertv: Kementrian Lingkungan Hidup dan Kehutanan sudah menghimbau masyarakat untuk selalu menjaga lingkungan dan tidak membuang sampah sembarangan.
+reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa.
+reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa.
 leave reportertv [animation="Fade Out" length="1.0" wait="true"]
-join mc (smp) center [animation="Fade In Up"]
+join mc-smp center [animation="Fade In Up"]
 [wait time="1.5"]
-mc: Hah- berita beginian lagi. Nggak ada yang baru.
+mc-smp: Hah- berita beginian lagi. Nggak ada yang baru.
 {namauser} berbicara sendiri dengan perasaan acuh.
-update mc right [move_time="1.0"]
+update mc-smp right [move_time="1.0"]
 join Cashier left
 [wait time="1.0"]
-Cashier: Totalnya jadi Rp.20.000 ya.
-Cashier: Pembayarannya lewat KiRIS ya kak.
-mc (smp): Okee sebentar ya.
-leave mc [animation="Slide Out Left" length="8.0"]
+Cashier: Totalnya jadi Rp.20.000 yaa.
+mc-smp: Pembayarannya lewat KiRIS ya kak.
+Cashier: Okee sebentar yaa.
+leave mc-smp [animation="Slide Out Left" length="8.0"]
 leave Cashier [animation="Fade Out" length="1.0"]
 [music path="res://assets/sound/515882__filmscore__truck-stop-interior-door-chime.mp3" channel="1" fade="2.0" volume="0.0" loop="false"]
 {namauser} membayar dan keluar dari minimarket.
 [music channel="1" fade="0.7" volume="0.0"]
 [wait time="1.5"]
 label [Scene: Jalanan Malam - Langit Berbintang]
-[background arg="res://assets/backgrounds/☆.jpeg" fade="0.5"]
+[background arg="res://assets/backgrounds/night_street.jpg" fade="0.5"]
 [music path="res://assets/sound/windy__night.mp3" fade="1.0" volume="0.0"]
 [wait time="2.0"]
 {namauser} berjalan sambil memakan snack, menikmati ketenangan malam.
-Ia menatap langit malam yang cerah, penuh dengan bintang-bintang.
+Ia menatap langit malam yang cerah, penuh dengan bintang-bintang
 Namun ketenangan itu tidak berlangsung dengan lama.
-join mc (smp) center
+join mc-smp center
 [wait time="1.0"]
-mc (smp): Bintang malam ini keren juga.
-mc (smp): Biasanya langit malam tertutup awan, jadi jarang sekali melihat momen seperti ini.
-{namauser} melempar bungkus snack ke selokan sembarangan.
+mc-smp (senyum): Bintang malam ini keren juga.
+mc-smp: Biasanya langit malam tertutup awan, jadi jarang sekali melihat momen seperti ini.
+mc-smp (normal): {namauser} melempar bungkus snack ke selokan sembarangan.
 [wait time="1.0"]
 - Peduli amat, bukan urusan gue.
-- Eh... tadi buangnya sembarangan ya?
-mc (smp): Kok feeling gue jadi ga enak yaa.
-mc (smp): Ah, bodo amat lah.
+- Eh- tadi buangnya sembarangan?
+mc-smp (bingung): Kok feeling gua jadi ga enak yaa.
+mc-smp (normal): Ah, bodo amat lah
 [wait time="1.0"]
 {namauser} melihat sebuah bintang jatuh di langit malam yang cerah.
 Bintang jatuh yang memancarkan sinar warna merah ke jingga-an mengekor panjang ke belakang.
 [wait time="1.0"]
-mc (smp): Hmm?
-mc (smp): Sebuah komet? eh atau mungkin ini disebut meteor?.
-mc: Wow- gue baru pertama kali lihat itu secara langsung.
-mc (smp): (Bergumam.)
+mc-smp (bingung): Hmm?
+mc-smp (bingung): Sebuah komet? [pause=1]eh atau mungkin ini disebut meteor?
+mc-smp (bingung): Wow- [pause=1]gue baru pertama kali lihat itu secara langsung
+mc-smp (normal): (Bergumam)
 [wait time="1.0"]
 Namun-
 [music path="res://assets/sound/619037__mrrap4food__heart-beat.mp3" fade="1.5" volume="0.0"]
 Pecahan bintang tersebut semakin lama semakin mendekat dengan cepat.
 update mc center [animation="Shake X"]
-mc (smp): Eh-? tunggu-
-update mc center [animation="Shake Y" z_index="0" move_ease="in" move_trans="linear"]
-mc: Itu-
-update mc center [animation="Shake Y" z_index="0" move_ease="in" move_trans="linear"]
-mc (smp): Kok makin gede?!
-leave mc [animation="Instant Out" length="2.0"]
+mc-smp (bingung): Eh? [pause=1]tunggu.
+update mc-smp center [animation="Shake Y" z_index="0" move_ease="in" move_trans="linear"]
+mc-smp (normal): Itu-
+update mc-smp center [animation="Shake Y" z_index="0" move_ease="in" move_trans="linear"]
+mc-smp (kaget): Kok makin gede?!
+leave mc-smp [animation="Instant Out" length="2.0"]
 [music path="res://assets/sound/comet_explosive.mp3" fade="1.0" volume="0.0" loop="false"]
 [background arg="res://assets/backgrounds/pitch_black.png" fade="0.5"]
 [wait time="19.0"]
-Pecahan bintang tersebut langsung jatuh menghantam {namauser}.
+Pecahan bintang tersebut langsung jatuh menghantam {namauser}
 [wait time="1.0"]
 .....
-[wait time="8.0"]
+[wait_input]
 label [Scene: Rumah Sakit - Kamar Rawat]
 [music path="res://assets/sound/daydream.mp3" fade="1.0" volume="0.0"]
 [background arg="res://assets/backgrounds/pitch_white.png" fade="0.5"]
 [wait time="2.0"]
-Keesokan harinya...
+Keesokan harinya.
 {namauser} membuka mata, terbaring di ranjang rumah sakit.
 [background arg="res://assets/backgrounds/patient_room_fix.jpg" fade="1.0" transition="Simple Fade"]
 [music path="res://assets/sound/room-71897.mp3" channel="1" fade="1.0" volume="0.0"]
 [wait time="2.0"]
-mc (smp): [speed=3]Ugh-
-mc (smp): [speed=3]Di mana ini?
+mc-smp (normal): [speed=3]Ugh-
+mc-smp (bingung): [speed=3]Di mana ini?
 [sound path="res://assets/sound/walkingandopendoor.wav" volume="0.0"]
+update mc-smp (normal)
 [wait time="16.0"]
 Suster masuk ke dalam ruangan.
 join doctor center
 [wait time="1.0"]
-\doctor: Syukurlah, kamu sudah sadar! Kamu ditemukan tak sadarkan diri semalam di pinggir jalan.
+\doctor: Syukurlah, kamu sudah sadar![pause=0.5] Kamu ditemukan tak sadarkan diri semalam di pinggir jalan.
 \doctor: Bajumu agak terbakar, tapi anehnya tubuhmu nggak terluka sama sekali.
 update doctor right [move_time="1.0"]
-join mc (smp) left [mirrored="true"]
-mc (smp): [speed=3] Aku-
-mc: [speed=2] Melihat meteor-
-mc: [speed=2] Lalu...
-mc: [speed=1] Semuanya menjadi hitam.
-leave mc [animation="Fade Out" length="1.0"]
-Suster tersenyum dan meletakkan segelas air di meja. Lalu keluar ruangan.
+join mc-smp left [mirrored="true"]
+mc-smp: [speed=3] Aku-
+mc-smp: [speed=2] Melihat meteor.
+mc-smp: [speed=2] Lalu-
+mc-smp: [speed=1] Semuanya menjadi hitam.
+leave mc-smp [animation="Fade Out" length="1.0"]
 leave doctor [animation="Fade Out" length="1.0"]
+Suster tersenyum dan meletakkan segelas air di meja. Lalu keluar ruangan.
 [sound path="res://assets/sound/main-door-opening-closing-38280.mp3" volume="0.0"]
 [wait time="6.0"]
-mc: (Mengambil gelas air.)
+{namauser} mengambil gelas air.
 [music fade="0.0" volume="0.0"]
 [music path="res://assets/sounds/music/Prologue Theme.mp3" fade="0.0" volume="0.0"]
-Tiba-tiba layar jendela status transparan muncul di atasnya.
+Tiba-tiba layar jendela status transparan muncul di atasnya
 [wait_input]
 join status_window (popupunlock) center [animation="Zoom Center In"]
-[sound path="res://assets/sound/news-ting-6832.mp3" volume="0.0"]
+[music path="res://assets/sound/news-ting-6832.mp3" channel="1" fade="0.0" volume="0.0"]
 label [STATUS WINDOW]
+[wait time="4.0"]
 # Status window menunjukkan "The Water has been Contaminated"
-join mc (smp) center [animation="Fade In Up" length="0.8" wait="true"]
-[wait time="5.0"]
-leave status_window [animation="Instant Out"]
-mc (smp): Hah?! Apaan ini?!
+leave status_window
+join mc-smp center [animation="Fade In Up" length="0.8" wait="true"]
+mc-smp (bingung): Hah?! [pause=1]Apaan ini?!
 update mc center [animation="Shake X"]
-mc (smp): Apa-apaan ini-
-mc (smp): Seperti-
-mc (smp): Suatu cerita komik yang pernah gue baca? tapi ini nyata?!
+mc-smp (kaget): Apa-apaan ini.
+mc-smp (normal): Seperti-
+mc-smp (bingung): Suatu cerita komik yang pernah gue baca?[pause=0.5] tapi ini nyata?!
 [wait time="1.0"]
-mc (smp): Layar melayang nya?!- bisa disentuh-
-mc (smp): Dan buat apa tombol ini?!
-leave mc [animation="Fade Out" length="1.0"]
+mc-smp: Layar melayang nya?!-[pause=1] bisa disentuh.
+mc-smp: Dan-[pause=0.5] buat apa tombol ini?!
+leave mc-smp [animation="Fade Out" length="1.0"]
 [wait_input]
 join status_window (popupunlock) center [animation="Zoom Center In"]
 [sound path="res://assets/sound/news-ting-6832.mp3" volume="0.0"]
-[wait time="1.0"]
 [style name="purify_button"]
 - ╚════▣◎PURIFY◎▣════╗
 	[style]
-	mc (smp): (Menekan tombol PURIFY.)
+	leave status_window [animation="Zoom Out"]
+	mc-smp: (Menekan tombol PURIFY.)
 	[wait time="2.0"]
 	label [Minigames dimulai]
 	# Pemain masuk ke minigames untuk membasmi semua bakteri
 	# menyentuh bakteri → mati satu per satu. Setelah selesai, status berubah: "The Water has been Purified"
 	[wait time="2.0"]
 	# Setelah bakteri pertama terbunuh, muncul dialog lanjutan
-mc (smp): Apa itu tadi?!
-mc (smp): Ughhh- bentuknya aneh sekali.
-mc (smp): Bakteri? virus?!
 label [Minigames selesai]
+[music fade="0.0" volume="0.0"]
+[music path="res://assets/sound/flashbang.wav" channel="1" fade="8.0" volume="0.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
+[music path="res://assets/sounds/music/chill night.mp3" fade="0.0" volume="0.0"]
 [wait time="2.0"]
-join mc (smp) center [animation="Shake X"]
-mc (smp): Gila- Apa yang sebenarnya terjadi sama gue?
-mc (smp): Air yang di gelas ini tadinya beracun?!
-mc (smp): Tapi sekarang udah bersih?- emang beneran?!
-mc (smp): (berbicara sendiri.)
-leave mc [animation="Fade Out" length="1.0"]
+[background arg="res://assets/backgrounds/patient_room_fix.jpg" fade="2.0"]
+join mc-smp center
+mc-smp (kaget): Apa ini?!
+mc-smp (bingung): Bakteri?- [pause=0.5]virus?!!
+mc-smp (bingung): Ughhh-[pause=0.5] bentuknya aneh sekali.
+[wait time="2.0"]
+mc-smp (bingung): Gila- [pause=0.5]Apa yang sebenarnya terjadi sama gue?
+mc-smp (bingung): Air yang di gelas ini tadinya beracun?!
+mc-smp (bingung): Tapi sekarang udah bersih?[pause=0.5] emang beneran?!
+mc-smp (normal): (Berbicara sendiri.)
 [wait time="1.0"]
-{namauser} menatap gelas, lalu meminumnya perlahan.
+{namauser} menatap gelas, lalu meminumnya perlahan
 [sound path="res://assets/sound/drink-swallow-272665.wav" volume="6.0"]
 [wait time="2.5"]
-{namauser} menggelengkan kepala karena kebingungan dengan apa yang ia rasakan.
+{namauser} Menggelengkan kepala karena kebingungan dengan apa yang ia rasakan.
 [wait time="1.0"]
-mc: Aghh- anjirlah
+mc-smp: Aghh-[pause=0.5] anjirlah.
 [wait time="1.5"]
 {namauser} menyadari kekuatan barunya dan masih tidak percaya dengan apa yang dialaminya.
+label Prolog done - Back to Choose Chapter
 [music fade="1.0" volume="0.0"]
 [music channel="1" fade="1.0" volume="0.0"]
-[background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
+leave mc-smp [animation="Fade Out" length="1.0"]
+[wait_input]
+[music path="res://assets/sound/flashbang.wav" fade="0.0" volume="0.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="1.0"]
 [wait time="2.0"]
-[end_timeline]
+[background arg="res://assets/backgrounds/prolog_completed.png" fade="1.0"]
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/pitch_black.png" fade="2.0"]
+[wait time="2.0"]
+jump chapter1/pagi hari
