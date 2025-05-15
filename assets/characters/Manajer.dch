@@ -17,81 +17,9 @@
 &"nicknames": ["manajer"],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"Cashier": {
-"export_overrides": {
-"image": "\"res://assets/char_img/Cashier.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1.0,
-"scene": ""
-},
-"doctor": {
-"export_overrides": {
-"image": "\"res://assets/char_img/doctor.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
-"guru": {
-"export_overrides": {
-"image": "\"res://assets/char_img/guru.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
-"mc-1": {
-"export_overrides": {
-"image": "\"res://assets/char_img/mc-1.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
 "normal": {
 "export_overrides": {
-"image": ""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
-"reportertv": {
-"export_overrides": {
-"image": "\"res://assets/char_img/reportertv.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
-"revana_template": {
-"export_overrides": {
-"image": "\"res://assets/char_img/revana_template.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
-"tungtungsahur": {
-"export_overrides": {
-"image": "\"res://assets/char_img/tungtungsahur.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
-"warga": {
-"export_overrides": {
-"image": "\"res://assets/char_img/warga.png\""
+"image": "\"res://assets/char_img/manajer-pabrik.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

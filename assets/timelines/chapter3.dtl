@@ -1,9 +1,15 @@
-jump test
+jump pagi
 label pagi
+[background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/ch3.png" fade="2.0"]
+[wait time="3.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
+[wait time="3.0"]
 [background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
 [music path="res://assets/sounds/music/chill night.mp3" fade="0.0" volume="0.0"]
 [wait time="2.0"]
-[background arg="res://assets/backgrounds/living-room-bg-cc0.jpg" fade="2.0"]
+[background arg="res://assets/backgrounds/ruangtamu.jpeg" fade="2.0"]
 [speed=1.3]Pagi itu, cuaca cerah. {namauser} tengah bersiap-siap untuk pergi ke sekolah.
 [speed=1.3]Suara TV terdengar dari ruang tamu.
 join reportertv center
@@ -13,9 +19,9 @@ reportertv: [speed=1.3]Para ahli masih menyelidiki penyebab utamanya.
 leave reportertv
 join mc center
 mc: [speed=1.3]Lagi-lagi berita ini lagi.
-mc: [speed=1.3]Gejalanya mirip banget sama yang dialami Aika dulu.
+mc (bingung): [speed=1.3]Gejalanya mirip banget sama yang dialami Aika dulu.
 [speed=1.3]Pikirannya langsung berputar.
-mc: [speed=1.3]Ini pasti ada hubungannya dengan sumber air.
+mc (normal): [speed=1.3]Ini pasti ada hubungannya dengan sumber air.
 leave mc
 [music fade="0.0" volume="0.0"]
 label kelas
@@ -31,24 +37,24 @@ mc: Revana, boleh nanya sesuatu?
 update mc left [move_time="1.0"]
 revana: (Menutup bukunya dan menoleh.)
 join revana right
-revana: Tentu, ada apa?
+revana (bingung): Tentu, ada apa?
 mc: Tentang berita penyakit yang lagi rame, lo tahu nggak dari mana kota ini dapat sumber air minumnya?
-revana: (Berpikir sejenak.)
-revana: Kalau nggak salah ada sumber air besar di pinggir kota, deket pabrik xx.
-revana: Emangnya ada apa?
-mc: Oh gapapa, gue cuma kepikiran masalah penyakit yang akhir-akhir ini ramai diberitakan.
-mc: Gue kepikiran mungkin disana ada mungkin disana gue bisa menemukan petunjuk
+revana (bingung): (Berpikir sejenak.)
+revana (Normal): Kalau nggak salah ada sumber air besar di pinggir kota, deket pabrik xx.
+revana (bingung): Emangnya ada apa?
+mc (normal): Oh gapapa, gue cuma kepikiran masalah penyakit yang akhir-akhir ini ramai diberitakan.
+mc (normal): Gue kepikiran mungkin disana ada mungkin disana gue bisa menemukan petunjuk
 {namauser} menceritakan kejadian yang menimpa Aika dan kampung halamannya.
-revana: Aku mengerti.
-revana: Kalo gitu aku ikut, kalo ini beneran sumber penyakitnya. Aku ga bisa diam saja.
-mc: Tapi ini mungkin berbahaya, lo yakin?
+revana (Normal): Aku mengerti.
+revana (serius): Kalo gitu aku ikut, kalo ini beneran sumber penyakitnya. Aku ga bisa diam saja.
+mc (normal): Tapi ini mungkin berbahaya, lo yakin?
 revana: (Revana mengangguk.)
 [wait time="2.0"]
 [music path="res://assets/sound/alarm sekolah.mp3" channel="1" fade="0.0" volume="0.0"]
 Bel tanda pelajaran selanjutnya terdengar.
 [music channel="1" fade="0.0" volume="0.0"]
 mc: Kalo gitu kita kesana sepulang sekolah.
-revana: Oke.
+revana (Normal): Oke.
 leave revana
 leave mc
 [music fade="0.0" volume="0.0"]
@@ -80,16 +86,16 @@ join status_window (popuplock) center [animation="Zoom Center In"]
 	status_window: AKSI TIDAK DAPAT DILAKUKAN.
 	[background arg="res://assets/backgrounds/pabrik before.jpg" fade="2.0"]
 join mc center
-mc: Eh?
-mc: Jangan-jangan-
+mc (kaget): Eh?
+mc (bingung): Jangan-jangan-
 update mc left [move_time="1.0"]
 revana: (Berjalan mendekat.)
 join revana right
-revana: Ada apa?
-mc: Ini bukan hanya sampah biasa.
+revana (bingung): Ada apa?
+mc (normal): Ini bukan hanya sampah biasa.
 mc: Ada bau kimia.
 mc: (Melihat ke arah pabrik.)
-mc: Pabrik itu- mereka yang buang limbah ke sini.
+mc (kaget): Pabrik itu- mereka yang buang limbah ke sini.
 Tanpa membuang waktu, {namauser} dan Revana menuju pabrik yang tidak jauh dari sungai.
 leave --All--
 [background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
@@ -100,12 +106,12 @@ join petugas center
 petugas: Ada keperluan apa di sini, anak-anak?
 update petugas right [move_time="1.0"]
 join mc left
-mc: Kami tahu kalian buang limbah ke sungai. Itu sumber air minum warga!
+mc (normal): Kami tahu kalian buang limbah ke sungai. Itu sumber air minum warga!
 petugas: Kami punya izin! Dan cuma buang air limbah yang aman!
 join revana leftmost
-revana: Kalau aman, kenapa banyak warga sakit? Airnya kotor dan beracun!
+revana (marah): Kalau aman, kenapa banyak warga sakit? Airnya kotor dan beracun!
 mc: (Maju satu langkah, tatapannya tajam.)
-mc: Kalian pikir kami bodoh? Orang bodoh mana yang mengizinkan membuang limbah ke sungai?!
+mc (marah): Kalian pikir kami bodoh? Orang bodoh mana yang mengizinkan membuang limbah ke sungai?!
 mc: Kalau kalian nggak mau masalah ini masuk berita, lebih baik kalian hentikan sekarang.
 Petugas itu terlihat gugup. Seorang manajer pabrik datang menghampiri.
 join Manajer rightmost
@@ -127,14 +133,14 @@ join status_window (popupunlock) center [animation="Zoom Center In"]
 - ╚════▣◎PURIFY◎▣════╗
 	[style]
 	leave status_window [animation="Zoom Center Out"]
-	mc: (Menekan tombol PURIFY.)
+	mc (normal): (Menekan tombol PURIFY.)
 	[wait_input]
-	label Minigame mulai
+	label Minigame boss bakteri mulai
 	label Minigame keluar
 	[background arg="res://assets/backgrounds/pabrik before.jpg" fade="2.0"]
 	revana: (Memperhatikan {namauser} yang lagi "bermain udara" dengan ekspresi bingung tapi juga kagum.)
 	join revana center
-	revana: Apa sebenarnya yang dia lihat?
+	revana (bingung): Apa sebenarnya yang dia lihat?
 	leave mc
 	leave revana
 	Setelah pertarungan sengit, akhirnya bakteri boss hancur dalam ledakan cahaya.
@@ -153,18 +159,22 @@ join status_window (popupunlock) center [animation="Zoom Center In"]
 	mc: [speed=1.3](Menggaruk kepalanya, sedikit malu.)
 	update revana right
 	join mc left
-	mc: [speed=1.3]Gue cuma ngelakuin apa yang bisa kulakuin.
+	mc (senyum): [speed=1.3]Gue cuma ngelakuin apa yang bisa kulakuin.
 	mc: [speed=1.3]Dah sore nih, karena masalah sudah diatasi.
 	mc: [speed=1.3]Yuk pulang, gue yakin nanti masalah penyakit ini bisa reda kayak kasus Aika dulu.
-	revana: [speed=1.3](Menganguk.)
+	revana (senyum): [speed=1.3](Menganguk.)
 	revana: [speed=1.3]Hm, yuk!
 	leave --All--
 	[speed=1.3]Namun, di balik keberhasilan ini, {namauser} tahu ini baru permulaan. Ada sesuatu yang jauh lebih besar menunggu di balik semua ini.
 	[speed=1.3]Ada sesuatu yang jauh lebih besar menunggu di balik semua ini.
 	[clear time="1.0"]
 	[music fade="0.0" volume="0.0"]
-	[sound path="res://assets/sound/744157__simonus18__sci-fi-synth-sfx-alien-artifact-emitting-shiny-sound-[AudioTrimmer.com].wav" volume="0.0"]
-	[background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
-	[wait time="2.0"]
 	[wait_input]
-	[end_timeline]
+	[music path="res://assets/sound/flashbang.wav" fade="0.0" volume="0.0"]
+	[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
+	[wait time="2.0"]
+	[background arg="res://assets/backgrounds/ch2_done.png" fade="0.0"]
+	[wait time="2.0"]
+	[background arg="res://assets/backgrounds/pitch_black.png" fade="2.0"]
+	[wait time="2.0"]
+	jump epilog/[Scene: After Story - White Blank]
