@@ -10,12 +10,49 @@
 "style": "visualnovel",
 "suffix": ""
 },
-&"default_portrait": "",
+&"default_portrait": "normal",
 &"description": "",
 &"display_name": "Status Window",
 &"mirror": false,
 &"nicknames": ["Status Window"],
 &"offset": Vector2(0, 0),
-&"portraits": {},
+&"portraits": {
+"normal": {
+"export_overrides": {
+"image": ""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"popupboss": {
+"export_overrides": {
+"image": "\"res://assets/char_img/statuswindowboss.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"popuplock": {
+"export_overrides": {
+"image": "\"res://assets/char_img/statuswindowlock.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"popupunlock": {
+"export_overrides": {
+"image": "\"res://assets/char_img/statuswindow.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 &"scale": 1.0
 }

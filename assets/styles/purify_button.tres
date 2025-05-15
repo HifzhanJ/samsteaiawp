@@ -37,9 +37,11 @@ overrides = {
 "font_custom": "\"res://assets/fonts/Dune_Rise.otf\"",
 "font_size_custom": "48.0",
 "font_use_global": "false",
+"sounds_hover": "\"res://assets/sound/ui-button-click-8-341030.mp3\"",
+"sounds_volume": "20.0",
 "text_color_focused": "Color(0.458824, 0.792157, 1, 1)",
 "text_color_hovered": "Color(0, 0.615942, 1, 1)",
-"text_color_pressed": "Color(0.458824, 0.792157, 1, 1)",
+"text_color_pressed": "Color(1, 0.458824, 0.458824, 1)",
 "text_color_use_global": "false"
 }
 

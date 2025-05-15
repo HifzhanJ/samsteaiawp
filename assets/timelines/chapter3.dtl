@@ -1,4 +1,4 @@
-jump pagi
+jump test
 label pagi
 [background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
 [music path="res://assets/sounds/music/chill night.mp3" fade="0.0" volume="0.0"]
@@ -8,7 +8,7 @@ label pagi
 [speed=1.3]Suara TV terdengar dari ruang tamu.
 join reportertv center
 reportertv: [speed=1.3]Kembali kami laporkan, dalam beberapa hari terakhir, banyak warga kota mengalami gejala aneh.
-reportertv: [speed=1.3]Demam tinggi, muntah, dan pusing. 
+reportertv: [speed=1.3]Demam tinggi, muntah, dan pusing.
 reportertv: [speed=1.3]Para ahli masih menyelidiki penyebab utamanya.
 leave reportertv
 join mc center
@@ -65,17 +65,19 @@ mc: Sama kayak waktu itu- tapi ini lebih parah.
 Tiba-tiba-
 [music fade="0.0" volume="0.0"]
 [music path="res://assets/sounds/music/Prologue Theme.mp3" fade="0.0" volume="0.0"]
-STATUS WINDOW muncul.
 leave mc
-[background arg="res://assets/backgrounds/pabrik window.png" fade="2.0" transition="Simple Fade"]
+STATUS WINDOW muncul.
 [wait time="3.0"]
+join status_window (popuplock) center [animation="Zoom Center In"]
+[sound path="res://assets/sound/news-ting-6832.mp3" volume="0.0"]
 [wait_input]
+[wait time="3.0"]
 [style name="purify_button"]
 - ╚════▣◎PURIFY◎▣════╗ | [=""]
+	leave status_window [animation="Instant Out"]
 	[style]
 	mc: (Menekan tombol PURIFY.)
-	status_window: AKSI TIDAK DAPAT DILAKUKAN
-	[wait_input]
+	status_window: AKSI TIDAK DAPAT DILAKUKAN.
 	[background arg="res://assets/backgrounds/pabrik before.jpg" fade="2.0"]
 join mc center
 mc: Eh?
@@ -84,7 +86,7 @@ update mc left [move_time="1.0"]
 revana: (Berjalan mendekat.)
 join revana right
 revana: Ada apa?
-mc: Ini bukan hanya sampah biasa. 
+mc: Ini bukan hanya sampah biasa.
 mc: Ada bau kimia.
 mc: (Melihat ke arah pabrik.)
 mc: Pabrik itu- mereka yang buang limbah ke sini.
@@ -107,21 +109,24 @@ mc: Kalian pikir kami bodoh? Orang bodoh mana yang mengizinkan membuang limbah k
 mc: Kalau kalian nggak mau masalah ini masuk berita, lebih baik kalian hentikan sekarang.
 Petugas itu terlihat gugup. Seorang manajer pabrik datang menghampiri.
 join Manajer rightmost
-Manajer: Baiklah, kami akan mengalihkan jalur pembuangan ke pengolahan limbah internal. 
+Manajer: Baiklah, kami akan mengalihkan jalur pembuangan ke pengolahan limbah internal.
 Manajer: Tapi jangan bikin masalah lebih besar, ya.
 mc: Cepat laksanakan!
 leave --All--
+label test
 [background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
 [wait time="2.0"]
 [background arg="res://assets/backgrounds/pabrik before.jpg" fade="0.0"]
 Setelah jalur pembuangan dialihkan, {namauser} kembali ke sungai bersama Revana.
 STATUS WINDOW muncul kembali.
-[background arg="res://assets/backgrounds/pabrik window done.png" fade="0.0"]
-[wait time="3.0"]
 [wait_input]
+join status_window (popupunlock) center [animation="Zoom Center In"]
+[sound path="res://assets/sound/news-ting-6832.mp3" volume="0.0"]
+[wait time="3.0"]
 [style name="purify_button"]
 - ╚════▣◎PURIFY◎▣════╗
 	[style]
+	leave status_window [animation="Zoom Center Out"]
 	mc: (Menekan tombol PURIFY.)
 	[wait_input]
 	label Minigame mulai
@@ -150,12 +155,13 @@ STATUS WINDOW muncul kembali.
 	join mc left
 	mc: [speed=1.3]Gue cuma ngelakuin apa yang bisa kulakuin.
 	mc: [speed=1.3]Dah sore nih, karena masalah sudah diatasi.
-	mc: [speed=1.3]Yuk pulang, gue yakin nanti masalah penyakit ini bisa reda kayak Aika kasus dulu.
+	mc: [speed=1.3]Yuk pulang, gue yakin nanti masalah penyakit ini bisa reda kayak kasus Aika dulu.
 	revana: [speed=1.3](Menganguk.)
 	revana: [speed=1.3]Hm, yuk!
+	leave --All--
 	[speed=1.3]Namun, di balik keberhasilan ini, {namauser} tahu ini baru permulaan. Ada sesuatu yang jauh lebih besar menunggu di balik semua ini.
 	[speed=1.3]Ada sesuatu yang jauh lebih besar menunggu di balik semua ini.
-	leave --All--
+	[clear time="1.0"]
 	[music fade="0.0" volume="0.0"]
 	[sound path="res://assets/sound/744157__simonus18__sci-fi-synth-sfx-alien-artifact-emitting-shiny-sound-[AudioTrimmer.com].wav" volume="0.0"]
 	[background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://or8aetp3lpy7"
-path="res://.godot/imported/mata air before.jpg-9bdeaec73a642eb2e6138c8227499010.ctex"
+uid="uid://bfpgsjahddx82"
+path="res://.godot/imported/airracun window.png-c3ca4c5653334c10f9c70230f6f8fec3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/mata air before.jpg"
-dest_files=["res://.godot/imported/mata air before.jpg-9bdeaec73a642eb2e6138c8227499010.ctex"]
+source_file="res://assets/backgrounds/airracun window.png"
+dest_files=["res://.godot/imported/airracun window.png-c3ca4c5653334c10f9c70230f6f8fec3.ctex"]
 
 [params]
 
