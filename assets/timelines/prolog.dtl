@@ -1,3 +1,4 @@
+jump [Scene: Kota - Malam Hari - Minimarket]
 label [Scene: Luar angkasa - Meteor Tabrakan]
 [background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
 [wait time="2.0"]
@@ -71,7 +72,7 @@ label [Scene: Jalanan Malam - Langit Berbintang]
 {namauser} berjalan sambil memakan snack, menikmati ketenangan malam.
 Ia menatap langit malam yang cerah, penuh dengan bintang-bintang
 Namun ketenangan itu tidak berlangsung dengan lama...
-join mc center
+join mc (smp) center
 [wait time="1.0"]
 mc (smp): Bintang malam ini keren juga....
 mc (smp): Biasanya langit malam tertutup awan, jadi jarang sekali melihat momen seperti ini.
