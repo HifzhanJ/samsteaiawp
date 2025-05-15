@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://qusocnugrbyl"]
+
+[ext_resource type="Script" uid="uid://dufd0uwr1oaud" path="res://assets/scripts/tongsampah.gd" id="1_06ofu"]
+[ext_resource type="Texture2D" uid="uid://cgbch4p6ig65q" path="res://assets/images/minigames/kumpulsampah/Tongsampahorganik.png" id="2_06ofu"]
+
+[node name="tongsampahorganik" type="Area2D"]
+scale = Vector2(0.6, 0.6)
+script = ExtResource("1_06ofu")
+jenis = "organik"
+
+[node name="tongsampah" type="Sprite2D" parent="."]
+texture = ExtResource("2_06ofu")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(0, 3.33333)
+polygon = PackedVector2Array(195, -240, 128.333, -385, -138.333, -380, -191.667, -246.667)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

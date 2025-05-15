@@ -5,11 +5,11 @@ func _ready() -> void:
 
 func _on_lanjut_pressed() -> void:
 	$AudioManager.playbuttonclick()
+	Dialogic.History.save_visited_history()
 
 func _on_mulai_pressed() -> void:
 	$AudioManager.playbuttonclick()
-	get_tree().change_scene_to_file("res://assets/scenes/VisualNovel.tscn")
-	Dialogic.start("prolog")
+	get_tree().change_scene_to_file("res://assets/scenes/map.tscn")
 
 func _on_muat_pressed() -> void:
 	$AudioManager.playbuttonclick()

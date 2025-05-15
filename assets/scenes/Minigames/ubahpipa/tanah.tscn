@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://beig34vm8krwx"]
+
+[ext_resource type="Texture2D" uid="uid://dm48dp2jey14m" path="res://assets/images/minigames/ubahpipa/tanah.png" id="1_j0sb4"]
+
+[node name="tanah" type="Sprite2D"]
+texture = ExtResource("1_j0sb4")
+
+[node name="text" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "asdasdasd"

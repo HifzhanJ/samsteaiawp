@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://7x3pleudahlh"]
+
+[ext_resource type="Texture2D" uid="uid://bt6us8w0baa3k" path="res://assets/images/minigames/ubahpipa/batu.png" id="1_ebjlp"]
+
+[node name="batu" type="Sprite2D"]
+texture = ExtResource("1_ebjlp")

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://1c1uty10yk7e"]
+
+[ext_resource type="Script" uid="uid://bqpt7vwf1o8bs" path="res://assets/scripts/sampah.gd" id="1_m2cnk"]
+[ext_resource type="Texture2D" uid="uid://n3sp1ssjbhp8" path="res://assets/images/minigames/kumpulsampah/battery.png" id="2_m2cnk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t8bkg"]
+size = Vector2(119, 250)
+
+[node name="sampahbaterai" type="Area2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_m2cnk")
+jenis = "b3"
+
+[node name="sampah" type="Sprite2D" parent="."]
+texture = ExtResource("2_m2cnk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -2)
+shape = SubResource("RectangleShape2D_t8bkg")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdds22womfdjk"]
+
+[ext_resource type="Script" uid="uid://dufd0uwr1oaud" path="res://assets/scripts/tongsampah.gd" id="1_v4nsl"]
+[ext_resource type="Texture2D" uid="uid://diajynwnuoeor" path="res://assets/images/minigames/kumpulsampah/Tongsampahb3.png" id="2_v4nsl"]
+
+[node name="tongsampahb3" type="Area2D"]
+scale = Vector2(0.6, 0.6)
+script = ExtResource("1_v4nsl")
+jenis = "b3"
+
+[node name="tongsampah" type="Sprite2D" parent="."]
+texture = ExtResource("2_v4nsl")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(0, 3.33333)
+polygon = PackedVector2Array(188.333, -240, 125, -385, -133.333, -386.667, -195, -236.667)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

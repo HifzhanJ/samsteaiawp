@@ -1,0 +1,126 @@
+[gd_scene load_steps=21 format=3 uid="uid://dn72oxfhqtom6"]
+
+[ext_resource type="Script" uid="uid://d1s6hhby2tkjq" path="res://map.gd" id="1_bnucp"]
+[ext_resource type="Texture2D" uid="uid://cn6ctrw14y23n" path="res://assets/backgrounds/mainmenu.png" id="3_07t7k"]
+[ext_resource type="Texture2D" uid="uid://mc5mk3116bhp" path="res://assets/backgrounds/Screenshot (4).png" id="4_07t7k"]
+[ext_resource type="Texture2D" uid="uid://cyb71g1bay6nl" path="res://assets/backgrounds/highschool_outside.jpg" id="5_jroha"]
+[ext_resource type="Texture2D" uid="uid://ofwryp8dh7qt" path="res://assets/backgrounds/sungai.png" id="6_lphgc"]
+[ext_resource type="Texture2D" uid="uid://bycw7gy81m1xc" path="res://assets/backgrounds/tepi_sungai.png" id="7_lphgc"]
+[ext_resource type="PackedScene" uid="uid://b4aic1euap87a" path="res://assets/scenes/chapterbuttons.tscn" id="8_g2dpn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_45j4w"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fyu4c"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_07t7k"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g2dpn"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jry1f"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="Theme" id="Theme_lphgc"]
+HScrollBar/styles/grabber = SubResource("StyleBoxFlat_45j4w")
+HScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_fyu4c")
+HScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_07t7k")
+HScrollBar/styles/scroll = SubResource("StyleBoxFlat_g2dpn")
+HScrollBar/styles/scroll_focus = SubResource("StyleBoxFlat_jry1f")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m5sv8"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1vs06"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1vs06"]
+texture = ExtResource("3_07t7k")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ofj3e"]
+texture = ExtResource("4_07t7k")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4rs11"]
+texture = ExtResource("5_jroha")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hbrwi"]
+texture = ExtResource("7_lphgc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_468dr"]
+texture = ExtResource("6_lphgc")
+
+[node name="Map" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bnucp")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.118581, 0.118581, 0.118581, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="HBoxContainer" type="ScrollContainer" parent="MarginContainer"]
+layout_mode = 2
+theme = SubResource("Theme_lphgc")
+theme_override_styles/panel = SubResource("StyleBoxFlat_m5sv8")
+theme_override_styles/focus = SubResource("StyleBoxFlat_1vs06")
+draw_focus_border = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_constants/separation = 50
+
+[node name="prolog" parent="MarginContainer/HBoxContainer/HBoxContainer" instance=ExtResource("8_g2dpn")]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_1vs06")
+text = "Prolog"
+timeline = "prolog"
+
+[node name="chapter1" parent="MarginContainer/HBoxContainer/HBoxContainer" instance=ExtResource("8_g2dpn")]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_ofj3e")
+timeline = "chapter1"
+
+[node name="chapter2" parent="MarginContainer/HBoxContainer/HBoxContainer" instance=ExtResource("8_g2dpn")]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_4rs11")
+text = "Chapter 2"
+timeline = "chapter2"
+
+[node name="chapter3" parent="MarginContainer/HBoxContainer/HBoxContainer" instance=ExtResource("8_g2dpn")]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_hbrwi")
+text = "Chapter 3"
+timeline = "chapter3"
+
+[node name="epilog" parent="MarginContainer/HBoxContainer/HBoxContainer" instance=ExtResource("8_g2dpn")]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_468dr")
+text = "Epilog"
+timeline = "epilog"
