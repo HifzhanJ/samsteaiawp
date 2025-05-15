@@ -1,3 +1,4 @@
+jump Minigames Mulai [Tap - tap warga]
 [background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
 [wait time="2.0"]
 [background arg="res://assets/backgrounds/ch2.png" fade="2.0"]
@@ -41,7 +42,7 @@ leave guru [animation="Fade Out"]
 Perkenalan pun dimulai oleh seluruh siswa, [pause=2]hingga pada bagian akhir tiba giliran {namauser} memperkenalkan dirinya.
 [wait time="1.0"]
 {namauser} Berdiri dari kursinya.
-join mc center [animation="Fade In Up"]
+join mc (sma) center [animation="Fade In Up"]
 [wait time="1.5"]
 mc: Nama saya {namauser}. [pause=0.5]Senang bertemu dengan kalian semua. [pause=1]Mohon bimbingannya.
 [wait time="1.0"]
@@ -91,15 +92,19 @@ Pria itu mengangkat tangan, siap menampar revana
 {namauser} berlari dengan cepat mendekati mereka berdua
 leave --All-- [animation="Fade Out"]
 [background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
-[wait time="3.0"]
-{namauser} akhirnya berhasil memegang tangan pria itu, dan menghentikan nya.
 [wait time="1.0"]
+label Minigames Mulai [Tap - tap warga]
+do Minigamehandler.playtaptapwarga()
+label Minigames Selesai [Tap - tap warga]
+[wait time="2.0"]
 [background arg="res://assets/backgrounds/tepi_sungai.jpg" fade="1.0"]
-[wait time="1.0"]
+[wait time="2.0"]
+{namauser} akhirnya berhasil memegang tangan pria itu, dan menghentikan nya.
+[wait time="2.0"]
 join revana right [animation="Fade In"]
 join warga_sampah center [animation="Fade In"]
 [wait time="1.0"]
-join mc center [animation="Slide In Right"]
+join mc (sma) center [animation="Slide In Right"]
 update warga_sampah left [animation="Shake X" move_time="0.2" move_ease="in" move_trans="linear"]
 [wait time="1.5"]
 mc: Lu pikir bisa seenaknya mukul orang?!
@@ -145,11 +150,11 @@ label [CHOICE]
 	revana: H-Hey! Kamu ngapain?!
 	[wait time="1.0"]
 	label [Scene: Sungai - Air Keruh]
-	[background fade="0.5"]
-	label Minigame kumpul sampah
+	label Minigame Mulai [kumpul sampah]
+	do Minigamehandler.playkumpulsampah()
+	label Minigame Keluar [Kumpul Sampah]
 	mc: (Berusaha mengumpulkan sampah-sampah plastik yang mengapung.)
 	mc: (Lumpur menodai pakaiannya, namun ia tetap bergerak.)
-	label Minigame keluar
 	revana: (Menatap {namauser} dari atas jembatan, matanya membesar penuh rasa kagum.)
 	revana: Jujur aja yaa, aku udah jarang banget melihat cowo seperti dia yang peduli ama lingkungan (bergumam).
 	revana: Orang ini... aneh. Tapi... hatinya tulus (bergumam).
@@ -180,18 +185,18 @@ label [CHOICE]
 	revana: H-Hey!!! Kamu ngapain?! (kaget)
 	[wait time="1.0"]
 	label [Scene: Sungai - Air Keruh]
-	label Minigame kumpul sampah
-	[background fade="0.5"]
+	label Minigame Mulai [kumpul sampah]
+	do Minigamehandler.playkumpulsampah()
+	label Minigame keluar  [Kumpul Sampah]
 	mc: (Berusaha mengumpulkan sampah-sampah plastik yang mengapung.)
 	(Tanpa pikir panjang... Revana ikut lompat turun dari atas jembatan, membantu mc semampunya.)
 	Lumpur menodai pakaian mereka, namun mereka berdua tetap bergerak.
-	label Minigame keluar
 	[wait time="1.0"]
 	Mereka berdua pun kembali ke atas tepi jalan jembatan dengan pakaian setengah basah dan kotor
 	[music fade="0.0" volume="0.0"]
 [wait time="1.0"]
 [background arg="res://assets/backgrounds/sungai.jpg" fade="0.5"]
-join mc center [animation="Fade In Up" mirrored="true"]
+join mc (sma) center [animation="Fade In Up" mirrored="true"]
 [wait time="1.0"]
 mc: makasih ya udah mau membantu gua membersihkan sampah nya
 mc: baju lu jadi kotor lumpur gitu, aman kah?
@@ -216,8 +221,9 @@ label [STATUS WINDOW]
 [wait time="2.0"]
 mc: Sekarang... waktunya.
 - ╚════▣◎PURIFY◎▣════╗
-	label Minigame dimulai
-	[background fade="0.5"]
+	label Minigame dimulai [Slash Bakteri]
+	do Minigamehandler.playslashbakteri()
+	label Minigame Selesai [Slash Bakteri]
 [wait time="1.0"]
 [background arg="res://assets/backgrounds/sungai.png" fade="2.0"]
 [wait time="2.0"]
@@ -236,15 +242,15 @@ Setelah semua bakteri musnah, sungai berubah perlahan. [pause=0.5]Airnya menjadi
 [music path="res://assets/sounds/music/chill night.mp3" fade="1.0" volume="0.0"]
 [wait time="2.0"]
 [music path="res://assets/sound/car_passing_by.mp3" channel="1" fade="1.0" volume="0.0"]
-join mc left [animation="Fade In Up" mirrored="true"]
-mc: (Menghela napas lega.)
+join mc (sma) left [animation="Fade In Up" mirrored="true"]
+mc (sma): (Menghela napas lega.)
 join revana right [animation="Fade In Up"]
 revana: K-Kamu... barusan... apa yang kamu lakukan?
-mc: U-uh, ini... gimana jelasinnya ya...
-mc: (Berusaha menjelaskan tentang status window, bakteri, dan kemampuannya memurnikan air.)
+mc (sma): U-uh, ini... gimana jelasinnya ya...
+mc (sma): (Berusaha menjelaskan tentang status window, bakteri, dan kemampuannya memurnikan air.)
 revana: Kamu... serius?
-mc: (Menunjuk ke sungai yang kini jernih.)
-mc: Kalau nggak percaya... liat sendiri, kan?
+mc (sma): (Menunjuk ke sungai yang kini jernih.)
+mc (sma): Kalau nggak percaya... liat sendiri, kan?
 revana: (Terdiam, menatap air sungai yang sekarang jauh lebih bersih dan mengalir jernih.)
 revana: Kamu aneh.
 revana: (Menatap {namauser}, dengan senyum heran sambil tertawa kecil dan ada rasa kagum di matanya.)

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://05tjin71ohsr"]
+[gd_scene load_steps=5 format=3 uid="uid://05tjin71ohsr"]
 
 [ext_resource type="PackedScene" uid="uid://bfh66mabsxpsd" path="res://assets/scenes/Minigames/taptapwarga/spawner.tscn" id="1_at10x"]
 [ext_resource type="Script" uid="uid://dygx074hg8di0" path="res://assets/scripts/minigames/taptapwarga/taptapwarga.gd" id="1_eamnl"]
+[ext_resource type="Texture2D" uid="uid://bkwflovotfq74" path="res://assets/backgrounds/sungai.jpg" id="3_exj84"]
 [ext_resource type="FontFile" uid="uid://cocjm6mgh03yn" path="res://assets/fonts/ZF2334 After a Rain.otf" id="3_mq7b0"]
 
 [node name="taptapwarga" type="Node2D"]
@@ -85,3 +86,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 100
 text = "Kalah"
+
+[node name="Sungai" type="Sprite2D" parent="."]
+position = Vector2(966, 552)
+texture = ExtResource("3_exj84")
