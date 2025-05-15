@@ -19,7 +19,7 @@
 &"portraits": {
 "normal": {
 "export_overrides": {
-"image": "\"res://assets/char_img/reportertv.png\""
+"image": "\"res://assets/char_img/reporter.png\""
 },
 "mirror": false,
 "offset": Vector2(115, -310),

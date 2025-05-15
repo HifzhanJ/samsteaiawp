@@ -23,17 +23,17 @@ func playpipa():
 func slashbakterimenang():
 	get_node("slashbakteri").queue_free()
 	visualnovel()
-	Dialogic.start("chapter2","Minigame slash bakteri keluar")
+	Dialogic.start("chapter2","Minigame Selesai [Slash Bakteri]")
 
 func kumpulsampahmenang():
 	get_node("kumpulsampah").queue_free()
 	visualnovel()
-	Dialogic.start("chapter2","Minigame kumpul sampah keluar")
+	Dialogic.start("chapter2","Minigame Keluar [Kumpul Sampah]")
 
 func taptapwargamenang():
 	get_node("taptapwarga").queue_free()
 	visualnovel()
-	Dialogic.start("chapter2","Minigame tap tap warga keluar")
+	Dialogic.start("chapter2","Minigames Selesai [Tap - tap warga]")
 
 func pipamenang():
 	pass
