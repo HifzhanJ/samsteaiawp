@@ -1,40 +1,49 @@
-jump pagi
+jump Minigame keluar
 label pagi
-[background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
 [music path="res://assets/sounds/music/chill night.mp3" fade="0.0" volume="0.0"]
 [wait time="2.0"]
-[background fade="0.0"]
+[background arg="res://assets/backgrounds/living-room-bg-cc0.jpg" fade="2.0"]
 [speed=1.3]Pagi itu, cuaca cerah. {namauser} tengah bersiap-siap untuk pergi ke sekolah.
 [speed=1.3]Suara TV terdengar dari ruang tamu.
 join reportertv center
 reportertv: [speed=1.3]Kembali kami laporkan, dalam beberapa hari terakhir, banyak warga kota mengalami gejala aneh.
-reportertv: [speed=1.3]Demam tinggi, muntah, dan pusing. Para ahli masih menyelidiki penyebab utamanya.
+reportertv: [speed=1.3]Demam tinggi, muntah, dan pusing. 
+reportertv: [speed=1.3]Para ahli masih menyelidiki penyebab utamanya.
 leave reportertv
 join mc center
-mc: [speed=1.3]Gejalanya- mirip banget sama yang dialami Aika dulu.
+mc: [speed=1.3]Lagi-lagi berita ini lagi.
+mc: [speed=1.3]Gejalanya mirip banget sama yang dialami Aika dulu.
 [speed=1.3]Pikirannya langsung berputar.
 mc: [speed=1.3]Ini pasti ada hubungannya dengan sumber air.
+leave mc
 [music fade="0.0" volume="0.0"]
 label kelas
-[background arg="pitch_white.png" fade="2.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
 [music path="res://assets/sounds/music/cozy night.mp3" fade="0.0" volume="0.0"]
 [wait time="2.0"]
-[background fade="2.0"]
+[background arg="res://assets/backgrounds/ruangkelas.jpg" fade="2.0"]
 [music path="res://assets/sound/suara kelas.mp3" channel="1" fade="0.0" volume="0.0"]
+[wait time="3.0"]
 Di sela waktu istirahat, {namauser} duduk di samping Revana yang tengah membaca buku.
 join mc center
-mc: Revana... boleh nanya sesuatu?
+mc: Revana, boleh nanya sesuatu?
 update mc left [move_time="1.0"]
-join revana right
 revana: (Menutup bukunya dan menoleh.)
+join revana right
 revana: Tentu, ada apa?
-mc: Tentang berita penyakit yang lagi rame... Kamu tahu nggak, dari mana kota ini dapat sumber air minumnya?
+mc: Tentang berita penyakit yang lagi rame, lo tahu nggak dari mana kota ini dapat sumber air minumnya?
 revana: (Berpikir sejenak.)
-revana: Kalau nggak salah... ada sumber air besar di pinggir kota, deket pabrik lama.
-mc: Kalau gitu... gue mau periksa tempat itu.
-revana: Aku ikut. Kalau ini tentang air... aku nggak bisa diam aja.
-mc: Tapi ini mungkin berbahaya, kamu yakin?
+revana: Kalau nggak salah ada sumber air besar di pinggir kota, deket pabrik xx.
+revana: Emangnya ada apa?
+mc: Oh gapapa, gue cuma kepikiran masalah penyakit yang akhir-akhir ini ramai diberitakan.
+mc: Gue kepikiran mungkin disana ada mungkin disana gue bisa menemukan petunjuk
+{namauser} menceritakan kejadian yang menimpa Aika dan kampung halamannya.
+revana: Aku mengerti.
+revana: Kalo gitu aku ikut, kalo ini beneran sumber penyakitnya. Aku ga bisa diam saja.
+mc: Tapi ini mungkin berbahaya, lo yakin?
 revana: (Revana mengangguk.)
+[wait time="2.0"]
 [music path="res://assets/sound/alarm sekolah.mp3" channel="1" fade="0.0" volume="0.0"]
 Bel tanda pelajaran selanjutnya terdengar.
 [music channel="1" fade="0.0" volume="0.0"]
@@ -44,35 +53,46 @@ leave revana
 leave mc
 [music fade="0.0" volume="0.0"]
 label pabrik
-[background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
 [music path="res://assets/sounds/music/chill night.mp3" fade="0.0" volume="0.0"]
 [wait time="2.0"]
-[background fade="0.0"]
+[background arg="res://assets/backgrounds/pabrik before.jpg" fade="2.0"]
+[wait time="5.0"]
 Setelah jam sekolah berakhir, {namauser} dan Revana bergegas menuju pinggiran kota.
-Mereka berdiri di tepi sungai besar, airnya terlihat kusam dan berbusa.
-Pemandangan itu membuat {namauser} merasa tidak enak.
+Mereka berdiri di tepi sungai besar, airnya terlihat kusam dan berwarna hijau.
 join mc center
-mc: Sama kayak waktu itu... tapi ini lebih parah.
-Tiba-tiba...
+mc: Sama kayak waktu itu- tapi ini lebih parah.
+Tiba-tiba-
+[music fade="0.0" volume="0.0"]
+[music path="res://assets/sounds/music/Prologue Theme.mp3" fade="0.0" volume="0.0"]
 STATUS WINDOW muncul.
+leave mc
+[background arg="res://assets/backgrounds/pabrik window.png" fade="2.0" transition="Simple Fade"]
+[wait time="3.0"]
+[wait_input]
 [style name="purify_button"]
 - ╚════▣◎PURIFY◎▣════╗ | [=""]
 	[style]
 	mc: (Menekan tombol PURIFY.)
-	status_window: AKSI TIDAK DAPAT DILAKUKAN\
-SUMBER PENCEMARAN TERDETEKSI
+	status_window: AKSI TIDAK DAPAT DILAKUKAN
+	[wait_input]
+	[background arg="res://assets/backgrounds/pabrik before.jpg" fade="2.0"]
+join mc center
 mc: Eh?
-mc: Jangan-jangan...
+mc: Jangan-jangan-
 update mc left [move_time="1.0"]
 revana: (Berjalan mendekat.)
 join revana right
-revana: Ini... bukan hanya sampah biasa. Ada bau kimia.
-mc: (Melihat ke arah pabrik)
-mc: Pabrik itu... Mereka yang buang limbah ke sini.
-Tanpa membuang waktu, {namauser} dan Revana menuju pabrik tua yang tidak jauh dari sungai.
-leave mc
-leave revana
-[background fade="0.0"]
+revana: Ada apa?
+mc: Ini bukan hanya sampah biasa. 
+mc: Ada bau kimia.
+mc: (Melihat ke arah pabrik.)
+mc: Pabrik itu- mereka yang buang limbah ke sini.
+Tanpa membuang waktu, {namauser} dan Revana menuju pabrik yang tidak jauh dari sungai.
+leave --All--
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/pabrikdalam.jpg" fade="2.0"]
 (Seorang petugas keamanan menghampiri mereka.)
 join petugas center
 petugas: Ada keperluan apa di sini, anak-anak?
@@ -85,53 +105,60 @@ revana: Kalau aman, kenapa banyak warga sakit? Airnya kotor dan beracun!
 mc: (Maju satu langkah, tatapannya tajam.)
 mc: Kalian pikir kami bodoh? Orang bodoh mana yang mengizinkan membuang limbah ke sungai?!
 mc: Kalau kalian nggak mau masalah ini masuk berita, lebih baik kalian hentikan sekarang.
-join  center
 Petugas itu terlihat gugup. Seorang manajer pabrik datang menghampiri.
 join Manajer rightmost
-Manajer: Baiklah... Kami akan mengalihkan jalur pembuangan ke pengolahan limbah internal. Tapi jangan bikin masalah lebih besar, ya.
-mc: Cepat laksanakan!.
-leave mc
-leave Manajer
-leave revana
-leave petugas
-label Minigame mulai
-label Minigame selesai
+Manajer: Baiklah, kami akan mengalihkan jalur pembuangan ke pengolahan limbah internal. 
+Manajer: Tapi jangan bikin masalah lebih besar, ya.
+mc: Cepat laksanakan!
+leave --All--
 [background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
 [wait time="2.0"]
-[background fade="0.0"]
+[background arg="res://assets/backgrounds/pabrik before.jpg" fade="0.0"]
 Setelah jalur pembuangan dialihkan, {namauser} kembali ke sungai bersama Revana.
 STATUS WINDOW muncul kembali.
+[background arg="res://assets/backgrounds/pabrik window done.png" fade="0.0"]
+[wait time="3.0"]
+[wait_input]
 [style name="purify_button"]
 - ╚════▣◎PURIFY◎▣════╗
 	[style]
 	mc: (Menekan tombol PURIFY.)
+	[wait_input]
 	label Minigame mulai
-	join mc left
-	mc: Sekarang... saatnya.
-	mc: Ini... level boss!
-	mc: Gila... Bakterinya berubah makin ganas!
+	label Minigame keluar
+	[background arg="res://assets/backgrounds/pabrik before.jpg" fade="2.0"]
 	revana: (Memperhatikan {namauser} yang lagi "bermain udara" dengan ekspresi bingung tapi juga kagum.)
-	join revana right
-	revana: Apa sebenarnya... yang dia lihat?
+	join revana center
+	revana: Apa sebenarnya yang dia lihat?
 	leave mc
 	leave revana
-	label Minigame keluar
 	Setelah pertarungan sengit, akhirnya bakteri boss hancur dalam ledakan cahaya.
+	[music fade="0.0" volume="0.0"]
+	[music path="res://assets/sound/744157__simonus18__sci-fi-synth-sfx-alien-artifact-emitting-shiny-sound-[AudioTrimmer.com].wav" channel="1" fade="8.0" volume="0.0"]
 	[background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
 	[wait time="2.0"]
-	[background fade="0.0"]
-	Air sungai yang tadinya keruh dan berbusa perlahan berubah menjadi jernih, bening seperti kristal.
+	[music channel="1" fade="0.0" volume="0.0"]
+	[background arg="res://assets/backgrounds/pabrik after.jpg" fade="2.0"]
+	[music path="res://assets/sounds/music/cozy night.mp3" fade="4.0" volume="0.0"]
+	[speed=1.3]Air sungai yang tadinya keruh dan berwarna hijau perlahan berubah menjadi jernih.
 	join revana center
-	revana: Indah sekali...
-	revana: (Menatap {namauser}, ada kekaguman tulus di matanya.)
-	revana: Kamu... luar biasa.
-	mc: (Menggaruk kepalanya, sedikit malu.)
+	revana: [speed=1.3]Indah sekali-
+	revana: [speed=1.3](Menatap {namauser}, ada kekaguman tulus di matanya.)
+	revana: [speed=1.3]Kamu luar biasa.
+	mc: [speed=1.3](Menggaruk kepalanya, sedikit malu.)
 	update revana right
 	join mc left
-	mc: Aku cuma... ngelakuin apa yang bisa kulakuin.
-	Namun, di balik keberhasilan ini, {namauser} tahu... ini baru permulaan. Ada sesuatu yang jauh lebih besar menunggu di balik semua ini.
-	leave mc
-	leave revana
+	mc: [speed=1.3]Aku cuma ngelakuin apa yang bisa kulakuin.
+	mc: [speed=1.3]Dah sore nih, karena masalah sudah diatasi.
+	mc: [speed=1.3]Yuk pulang, gue yakin nanti masalah penyakit ini bisa reda kayak Aika kasus dulu.
+	revana: [speed=1.3](Menganguk.)
+	revana: [speed=1.3]Hm, yuk!
+	[speed=1.3]Namun, di balik keberhasilan ini, {namauser} tahu ini baru permulaan. Ada sesuatu yang jauh lebih besar menunggu di balik semua ini.
+	[speed=1.3]Ada sesuatu yang jauh lebih besar menunggu di balik semua ini.
+	leave --All--
+	[music fade="0.0" volume="0.0"]
+	[sound path="res://assets/sound/744157__simonus18__sci-fi-synth-sfx-alien-artifact-emitting-shiny-sound-[AudioTrimmer.com].wav" volume="0.0"]
 	[background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
 	[wait time="2.0"]
-	[music fade="0.0" volume="0.0"]
+	[wait_input]
+	[end_timeline]
