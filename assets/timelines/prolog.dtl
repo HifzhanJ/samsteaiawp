@@ -1,7 +1,7 @@
-jump prolog/[Scene: Kota - Malam Hari - Minimarket]
 [text_input text="Tolong masukkan nama anda:" var="namauser"]
 [wait time="1.0"]
 label [Scene: Luar angkasa - Meteor Tabrakan]
+audio Music "res://assets/sounds/music/crazy night.mp3"
 [background arg="res://assets/backgrounds/How to see a double meteor shower on Tuesday night with a chance of fireballs.jpeg" fade="1.0" transition="Simple Fade"]
 [music path="Prologue Theme.wav" fade="1.5" volume="0.0"]
 [wait time="3.0"]

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cu5ew1b1wp2a8"]
+
+[ext_resource type="Script" uid="uid://c06aesjafh0qm" path="res://assets/scripts/minigames/taptapwarga/warga.gd" id="1_fdo2p"]
+[ext_resource type="Texture2D" uid="uid://7pma2citvnbg" path="res://icon.svg" id="1_hwgva"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fdo2p"]
+size = Vector2(128, 128)
+
+[node name="warga" type="Area2D"]
+script = ExtResource("1_fdo2p")
+
+[node name="warga" type="Sprite2D" parent="."]
+texture = ExtResource("1_hwgva")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fdo2p")
+
+[node name="lari" type="Timer" parent="."]
+autostart = true
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="timeout" from="lari" to="." method="_on_lari_timeout"]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpmpnfbkskmfm"]
+
+[ext_resource type="Script" uid="uid://c4u1ru1eifoad" path="res://assets/scripts/chathistory.gd" id="1_sx1hd"]
+
+[node name="chathistory" type="Node"]
+script = ExtResource("1_sx1hd")

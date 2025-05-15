@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://bk50kxcjh0yln"]
+
+[ext_resource type="Script" uid="uid://3sx4i1vhkn00" path="res://assets/scripts/chathistoryui.gd" id="1_o3yit"]
+[ext_resource type="PackedScene" uid="uid://dpmpnfbkskmfm" path="res://assets/scenes/chathistory.tscn" id="2_ysub8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ysub8"]
+content_margin_left = 50.0
+content_margin_top = 50.0
+content_margin_right = 50.0
+content_margin_bottom = 50.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="chathistoryui" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o3yit")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="TextEdit" type="TextEdit" parent="MarginContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/read_only = SubResource("StyleBoxFlat_ysub8")
+editable = false
+
+[node name="back" type="Button" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 50
+text = "Back"
+
+[node name="chathistory" parent="." instance=ExtResource("2_ysub8")]
+
+[connection signal="pressed" from="MarginContainer/back" to="." method="_on_back_pressed"]

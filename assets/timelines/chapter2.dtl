@@ -1,4 +1,4 @@
-jump chapter2/[CHOICE]
+do Minigamehandler.playkumpulsampah()
 [background arg="res://assets/backgrounds/highschool_outside.jpg" fade="0.5"]
 Tahun ajaran baru dimulai. Langit biru bersih seolah menyambut lembaran baru bagi setiap siswa.
 Di seluruh penjuru sekolah, suara langkah kaki dan tawa mengisi udara pagi.
@@ -59,10 +59,9 @@ update revana [animation="Shake X"]
 Pria itu mengangkat tangan, siap menampar revana
 [wait time="1.0"]
 {namauser} berlari dengan cepat mendekati mereka berdua
-label Minigame tap tap (rescue revana)
-[background fade="0.5"]
-[wait time="5.0"]
-label Minigame keluar (rescue revana)
+label Minigame tap tap warga (rescue revana)
+do Minigamehandler.playtaptapwarga()
+label Minigame tap tap warga keluar (rescue revana)
 [background arg="res://assets/backgrounds/tepi_sungai.png" fade="0.5"]
 {namauser} akhirnya berhasil memegang tangan pria itu, dan menghentikan nya.
 join mc center [animation="Slide From Right"]
@@ -108,7 +107,8 @@ label [CHOICE]
 	label Minigame kumpul sampah
 	mc: (Berusaha mengumpulkan sampah-sampah plastik yang mengapung.)
 	mc: (Lumpur menodai pakaiannya, namun ia tetap bergerak.)
-	label Minigame keluar
+	do Minigamehandler.playkumpulsampah()
+	label Minigame kumpul sampah keluar
 	revana: (Menatap {namauser} dari atas jembatan, matanya membesar penuh rasa kagum.)
 	revana: jujur aja yaa, aku udah jarang banget melihat cowo seperti dia yang peduli ama lingkungan (bergumam).
 	revana: Orang ini... aneh. Tapi... hatinya tulus (bergumam).
@@ -117,56 +117,58 @@ label [CHOICE]
 	label [Scene: Sungai - Bawah Jembatan]
 	[background arg="res://assets/backgrounds/pov_kesungai.png" fade="0.5"]
 	mc: (Menatap ke arah sungai, memperhatikan air sungai yang keruh.)
-	 Tiba-tiba, sebuah status window berwarna merah menyala di hadapannya.
-	label [STATUS WINDOW]
-	mc: Terkunci...?
-	mc: Karena sampah itu?!
-	[wait time="1.0"]
-	revana: (Berdiri di samping {namauser}, mendesah pelan.)
-	revana: Sungai ini...
-	revana: beberapa bagian kota pakai buat sumber air minum.
-	revana: Kalau makin parah... bisa bahaya.
-	mc: (Teringat wajah teman masa kecilnya yang sakit.)
-	mc: Gua nggak bisa diem aja.
-	mc: (Melompat turun ke tepian sungai.)
-	revana: H-Hey!!! Kamu ngapain?! (kaget)
-	label [Scene: Sungai - Air Keruh]
-	label Minigame kumpul sampah
-	[background fade="0.5"]
-	mc: (Berusaha mengumpulkan sampah-sampah plastik yang mengapung.)
-	(Tanpa pikir panjang... Revana ikut lompat turun dari atas jembatan, membantu mc semampunya.)
-	Lumpur menodai pakaian mereka, namun mereka berdua tetap bergerak.
-	label Minigame keluar
-	[wait time="1.0"]
-	mereka berdua pun kembali ke atas tepi jalan jembatan dengan pakaian setengah basah dan kotor
-	[wait time="1.0"]
-	[background arg="res://assets/backgrounds/sungai.png" fade="0.5"]
-	join mc center [animation="Fade In Up" mirrored="true"]
-	[wait time="1.0"]
-	mc: makasih ya udah mau membantu gua membersihkan sampah nya
-	mc: baju lu jadi kotor lumpur gitu, aman kah?
-	update mc left [move_time="0.7" move_ease="in" move_trans="linear"]
-	join revana right [animation="Fade In Up"]
-	[wait time="1.0"]
-	revana: ahh, gapapa kok itss okeyyy
-	revana: lagipula aku kan niatnya demi sungai ini agar lebih bersih dan tidak tercemar lagi
-	mc: hmm, okee
-	leave mc [animation="Slide To Left" length="1.0"]
-	update revana center [move_time="0.5" move_ease="in" move_trans="linear"]
-	[wait time="2.0"]
-	revana: Orang ini... aneh. Tapi... hatinya tulus (bergumam).
-	leave revana [animation="Fade Out"]
+	Tiba-tiba, sebuah status window berwarna merah menyala di hadapannya.
+label [STATUS WINDOW]
+mc: Terkunci...?
+mc: Karena sampah itu?!
+[wait time="1.0"]
+revana: (Berdiri di samping {namauser}, mendesah pelan.)
+revana: Sungai ini...
+revana: beberapa bagian kota pakai buat sumber air minum.
+revana: Kalau makin parah... bisa bahaya.
+mc: (Teringat wajah teman masa kecilnya yang sakit.)
+mc: Gua nggak bisa diem aja.
+mc: (Melompat turun ke tepian sungai.)
+revana: H-Hey!!! Kamu ngapain?! (kaget)
+label [Scene: Sungai - Air Keruh]
+label Minigame kumpul sampah
+[background fade="0.5"]
+mc: (Berusaha mengumpulkan sampah-sampah plastik yang mengapung.)
+(Tanpa pikir panjang... Revana ikut lompat turun dari atas jembatan, membantu mc semampunya.)
+Lumpur menodai pakaian mereka, namun mereka berdua tetap bergerak.
+label Minigame kumpul sampah keluar
+[wait time="1.0"]
+mereka berdua pun kembali ke atas tepi jalan jembatan dengan pakaian setengah basah dan kotor
+[wait time="1.0"]
+[background arg="res://assets/backgrounds/sungai.png" fade="0.5"]
+join mc center [animation="Fade In Up" mirrored="true"]
+[wait time="1.0"]
+mc: makasih ya udah mau membantu gua membersihkan sampah nya
+mc: baju lu jadi kotor lumpur gitu, aman kah?
+update mc left [move_time="0.7" move_ease="in" move_trans="linear"]
+join revana right [animation="Fade In Up"]
+[wait time="1.0"]
+revana: ahh, gapapa kok itss okeyyy
+revana: lagipula aku kan niatnya demi sungai ini agar lebih bersih dan tidak tercemar lagi
+mc: hmm, okee
+leave mc [animation="Slide To Left" length="1.0"]
+update revana center [move_time="0.5" move_ease="in" move_trans="linear"]
+[wait time="2.0"]
+revana: Orang ini... aneh. Tapi... hatinya tulus (bergumam).
+leave revana [animation="Fade Out"]
 [wait time="2.0"]
 [background arg="res://assets/backgrounds/sungai.png" fade="0.5"]
 Setelah semua sampah dikumpulkan dan diangkat, status window berbunyi.
 label [STATUS WINDOW]
 mc: Sekarang... waktunya.
 - PURIFY
-label Minigame dimulai
+label Minigame slash bakteri
+do Minigamehandler.playslashbakteri()
 [background fade="0.5"]
 Bakteri-bakteri berevolusi muncul, lebih besar dan cepat dari sebelumnya.
 mc: Lebih kuat...
 Tapi gue juga udah siap!
+label Minigame slash bakteri keluar
 [wait time="1.0"]
 revana: (Menatap {namauser} dengan ekspresi bingung.)
 revana: Kenapa dia... geser-geser udara...?

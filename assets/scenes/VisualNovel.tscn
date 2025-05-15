@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://1kn13opyeo67"]
+[gd_scene load_steps=7 format=3 uid="uid://1kn13opyeo67"]
 
 [ext_resource type="Script" uid="uid://lhlhvngbyyr2" path="res://assets/scripts/VisualNovel.gd" id="1_3jsea"]
 [ext_resource type="PackedScene" uid="uid://coqkfvrkmk7wm" path="res://assets/scenes/AudioManager.tscn" id="2_7127q"]
 [ext_resource type="PackedScene" uid="uid://b0l3eblj4pj2o" path="res://assets/scenes/Setting.tscn" id="2_br4us"]
 [ext_resource type="PackedScene" uid="uid://b6niiik6tafh8" path="res://assets/scenes/SavePanel.tscn" id="4_vu3i3"]
 [ext_resource type="PackedScene" uid="uid://c0vosddejbfhe" path="res://assets/scenes/LoadPanel.tscn" id="5_u1qf8"]
+[ext_resource type="PackedScene" uid="uid://bk50kxcjh0yln" path="res://assets/scenes/chathistoryui.tscn" id="6_u1qf8"]
 
 [node name="VisualNovel" type="CanvasLayer"]
 script = ExtResource("1_3jsea")
@@ -30,11 +31,15 @@ size_flags_vertical = 0
 
 [node name="Save" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Save"
+text = "Simpan"
 
 [node name="Load" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Load"
+text = "Muat"
+
+[node name="History" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "History"
 
 [node name="Setting" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -42,6 +47,7 @@ text = "Pengaturan"
 
 [node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+text = "Main Menu"
 
 [node name="Setting" parent="." instance=ExtResource("2_br4us")]
 visible = false
@@ -52,7 +58,12 @@ visible = false
 [node name="LoadPanel" parent="." instance=ExtResource("5_u1qf8")]
 visible = false
 
+[node name="chathistoryui" parent="." instance=ExtResource("6_u1qf8")]
+visible = false
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Save" to="." method="_on_save_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/History" to="." method="_on_history_pressed"]
+[connection signal="tree_entered" from="MarginContainer/VBoxContainer/History" to="." method="_on_history_tree_entered"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Setting" to="." method="_on_setting_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
