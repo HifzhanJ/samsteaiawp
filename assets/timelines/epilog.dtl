@@ -20,43 +20,43 @@ label [Scene: Rumah MC - Pagi Hari]
 join mc right [animation="Slide In Right" wait="true"]
 [wait time="1.0"]
 join reportertv left [animation="Fade In"]
-reportertv: Halo, selamat pagi pemirsa... kembali lagi bersama saya Rati, pembawa berita pagi hari ini
+reportertv: Halo, selamat pagi pemirsa...[pause=0.5] kembali lagi bersama saya Rati, pembawa berita pagi hari ini
 reportertv: Berita pertama mengenai prakiraan cuaca untuk hari ini dan dua minggu kedepan.
-reportertv: Berdasarkan analisis klimatologis BKGM, kota 𝑥𝑥𝑥𝑥 masih terpantau di periode peralihan musim...yang memicu potensi hujan tinggi
+reportertv: Berdasarkan analisis klimatologis BKGM, kota 𝑥𝑥𝑥𝑥 masih terpantau di periode peralihan musim...[pause=0.5]yang memicu potensi hujan tinggi
 reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa
 reportertv: Blablabla bla blaa blaa blaa blaa blaaa blaaa
 reportertv: Berita selanjutnya, mengenai kasus penyakit di kota 𝑥𝑥𝑥𝑥
 reportertv: Berdasarkan data analisis Dinas Kesehatan Kota 𝑥𝑥𝑥𝑥.
-reportertv: Kasus penyakit misterius yang sempat menyebar di kota 𝑥𝑥𝑥𝑥 akhirnya mulai menurun drastis. Banyak masyarakat telah kembali beraktivitas seperti biasa.
+reportertv: Kasus penyakit misterius yang sempat menyebar di kota 𝑥𝑥𝑥𝑥 akhirnya mulai menurun drastis. [pause=0.5]Banyak masyarakat telah kembali beraktivitas seperti biasa.
 leave reportertv [animation="Fade Out" wait="true"]
 [music fade="0.0" volume="0.0"]
 [wait time="1.5"]
 mc: (Tersenyum.)
-mc: Syukurlah... setidaknya kota ini aman untuk sekarang.
+mc: Syukurlah... [pause=0.5]setidaknya kota ini aman untuk sekarang.
 [wait time="1.0"]
 {namauser} mengambil tasnya, siap untuk berangkat ke sekolah
 leave mc [animation="Slide Out Left" length="1.0"]
 [wait time="2.0"]
 join reportertv left [animation="Fade In"]
 [music path="res://assets/sound/epilog-bgm-cc0.mp3" fade="0.0" volume="0.0"]
-reportertv: Namun, di wilayah lain, muncul laporan baru mengenai air yang kembali berubah warna dan gejala-gejala aneh di kalangan penduduk. Penyelidikan masih berlangsung.
+reportertv: Namun, di wilayah lain, [pause=0.5]muncul laporan baru mengenai air yang kembali berubah warna dan gejala-gejala aneh di kalangan penduduk. Penyelidikan masih berlangsung.
 leave reportertv [animation="Fade Out" wait="true"]
 [wait time="1.0"]
 join mc center [animation="Instant In" wait="true"]
 update mc [animation="Shake X" wait="true"]
 mc: (seketika terhenti langkahnya.)
-mc: Pandangannya kosong, namun sorot matanya mulai berubah
+mc: Pandangannya kosong, [pause=0.5]namun [pause=0.5]sorot matanya mulai berubah
 [wait time="1.5"]
-mc: Jadi... ini belum berakhir.
+mc: Jadi... [pause=0.5]ini belum berakhir.
 [wait time="1.5"]
-{namauser} menyadari sesuatu. Kemampuannya bukan sekadar kebetulan. Mungkin... ini adalah takdir yang harus ia jalani.
+{namauser} menyadari sesuatu.[pause=0.5] Kemampuannya bukan sekadar kebetulan.[pause=0.5] Mungkin... [pause=0.5]ini adalah takdir yang harus ia jalani.
 [wait time="1.0"]
 mc: (Menggenggam erat tali ranselnya.)
-Kalau gua bisa membantu... gua nggak boleh tinggal diam.
+Kalau gua bisa membantu... [pause=0.5]gua nggak boleh tinggal diam.
 [music channel="1" fade="0.0" volume="0.0"]
 leave mc [animation="Fade Out" wait="true"]
 [wait time="1.0"]
-[background arg="res://assets/backgrounds/epilog_done.png" fade="5.0"]
+[background arg="res://assets/backgrounds/tbc_done.png" fade="5.0"]
 [wait_input]
 [music fade="0.0" volume="0.0"]
 label cekend
