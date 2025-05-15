@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwkh07xpjff6f"
-path="res://.godot/imported/temankelas1.png-8271c6a138a264172a565d2ac7ec1526.ctex"
+uid="uid://c37t1jor85ohm"
+path="res://.godot/imported/mcbingung.png-c8e06edbb841f4e5744e837a5b666b57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/char_img/temankelas1.png"
-dest_files=["res://.godot/imported/temankelas1.png-8271c6a138a264172a565d2ac7ec1526.ctex"]
+source_file="res://assets/char_img/McSMP/mcbingung.png"
+dest_files=["res://.godot/imported/mcbingung.png-c8e06edbb841f4e5744e837a5b666b57.ctex"]
 
 [params]
 

@@ -1,6 +1,14 @@
-label [Scene: Kelas Baru - Pagi Hari]
-jump chapter2/
-[background arg="res://assets/backgrounds/highschool_outside.jpg" fade="0.5"]
+jump 
+[background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/ch2.png" fade="2.0"]
+[wait time="3.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
+[wait time="3.0"]
+label [Scene: Highschool - Pagi Hari]
+[background arg="res://assets/backgrounds/takashi-miyazaki-feFI3Ws__PI-unsplash.jpg" fade="1.0"]
+[music path="res://assets/sounds/music/chill night.mp3" fade="2.0" volume="0.0"]
+[wait time="2.0"]
 Tahun ajaran baru dimulai. Langit biru bersih seolah menyambut lembaran baru bagi setiap siswa.
 Di seluruh penjuru sekolah, suara langkah kaki dan tawa mengisi udara pagi.
 Di sebuah kelas baru, sinar matahari menyelinap masuk lewat jendela, memantul di lantai keramik yang mengkilap.
