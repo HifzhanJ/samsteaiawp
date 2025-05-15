@@ -26,7 +26,6 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 directories/dch_directory={
 "Cashier": "res://assets/characters/Cashier.dch",
 "Manajer": "res://assets/characters/Manajer.dch",
-"Narator": "res://assets/characters/Narator.dch",
 "aika_vanya": "res://assets/characters/aika_vanya.dch",
 "andri": "res://assets/characters/andri.dch",
 "doctor": "res://assets/characters/doctor.dch",
@@ -138,3 +137,7 @@ dialogic_default_action={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+
+[xr]
+
+shaders/autoload_on_startup=false

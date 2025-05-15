@@ -4,6 +4,7 @@ label pagi
 [music path="res://assets/sounds/music/chill night.mp3" fade="0.0" volume="0.0"]
 [wait time="2.0"]
 [background fade="0.0"]
+[wait time="2.0"]
 Pagi itu, cuaca cerah. {namauser} tengah bersiap-siap untuk pergi ke sekolah.
 Suara TV terdengar dari ruang tamu.
 join reportertv center

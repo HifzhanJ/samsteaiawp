@@ -38,10 +38,11 @@ text = "Load"
 
 [node name="Setting" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Pengaturan"
+text = "Settings"
 
 [node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+text = "Exit"
 
 [node name="Setting" parent="." instance=ExtResource("2_br4us")]
 visible = false

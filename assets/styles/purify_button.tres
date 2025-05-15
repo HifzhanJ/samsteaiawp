@@ -35,11 +35,11 @@ overrides = {
 "boxes_stylebox_hovered": "\"res://assets/styles/choice_panel_hover_purify.tres\"",
 "boxes_stylebox_normal": "\"res://assets/styles/choice_panel_normal_purify.tres\"",
 "font_custom": "\"res://assets/fonts/Dune_Rise.otf\"",
-"font_size_custom": "72.0",
+"font_size_custom": "48.0",
 "font_use_global": "false",
-"text_color_focused": "Color(0.0980392, 0.839216, 0.145098, 1)",
-"text_color_hovered": "Color(0.197273, 0.597656, 0.140076, 1)",
-"text_color_pressed": "Color(0.0984192, 0.839844, 0.144758, 1)",
+"text_color_focused": "Color(0.458824, 0.792157, 1, 1)",
+"text_color_hovered": "Color(0, 0.615942, 1, 1)",
+"text_color_pressed": "Color(0.458824, 0.792157, 1, 1)",
 "text_color_use_global": "false"
 }
 
