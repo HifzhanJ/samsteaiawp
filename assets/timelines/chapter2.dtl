@@ -8,8 +8,6 @@ label [Scene: Highschool - Pagi Hari]
 [background arg="res://assets/backgrounds/highschool_outside.jpg" fade="1.0"]
 [music path="res://assets/sounds/music/chill night.mp3" fade="2.0" volume="0.0"]
 [wait time="2.0"]
-do Minigamehandler.playkumpulsampah()
-[background arg="res://assets/backgrounds/highschool_outside.jpg" fade="0.5"]
 Tahun ajaran baru dimulai. Langit biru bersih seolah menyambut lembaran baru bagi setiap siswa.
 Di seluruh penjuru sekolah, suara langkah kaki dan tawa mengisi udara pagi.
 Di sebuah kelas baru, sinar matahari menyelinap masuk lewat jendela, memantul di lantai keramik yang mengkilap.
@@ -93,10 +91,6 @@ Pria itu mengangkat tangan, siap menampar revana
 leave --All-- [animation="Fade Out"]
 [background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
 [wait time="3.0"]
-label Minigame tap tap warga (rescue revana)
-do Minigamehandler.playtaptapwarga()
-label Minigame tap tap warga keluar (rescue revana)
-[background arg="res://assets/backgrounds/tepi_sungai.png" fade="0.5"]
 {namauser} akhirnya berhasil memegang tangan pria itu, dan menghentikan nya.
 [wait time="1.0"]
 [background arg="res://assets/backgrounds/tepi_sungai.png" fade="1.0"]
@@ -147,8 +141,7 @@ label [CHOICE]
 	label Minigame kumpul sampah
 	mc: (Berusaha mengumpulkan sampah-sampah plastik yang mengapung.)
 	mc: (Lumpur menodai pakaiannya, namun ia tetap bergerak.)
-	do Minigamehandler.playkumpulsampah()
-	label Minigame kumpul sampah keluar
+	label Minigame keluar
 	revana: (Menatap {namauser} dari atas jembatan, matanya membesar penuh rasa kagum.)
 	revana: Jujur aja yaa, aku udah jarang banget melihat cowo seperti dia yang peduli ama lingkungan (bergumam).
 	revana: Orang ini... aneh. Tapi... hatinya tulus (bergumam).
@@ -205,13 +198,11 @@ Setelah semua sampah dikumpulkan dan diangkat, status window berbunyi.
 label [STATUS WINDOW]
 mc: Sekarang... waktunya.
 - PURIFY
-label Minigame slash bakteri
-do Minigamehandler.playslashbakteri()
+label Minigame dimulai
 [background fade="0.5"]
 Bakteri-bakteri berevolusi muncul, lebih besar dan cepat dari sebelumnya.
 mc: Lebih kuat...
 Tapi gue juga udah siap!
-label Minigame slash bakteri keluar
 [wait time="1.0"]
 revana: (Menatap {namauser} dengan ekspresi bingung.)
 revana: Kenapa dia... geser-geser udara...?
