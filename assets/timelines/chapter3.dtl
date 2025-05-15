@@ -1,26 +1,25 @@
-jump pabrik
+jump pagi
 label pagi
 [background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
 [music path="res://assets/sounds/music/chill night.mp3" fade="0.0" volume="0.0"]
 [wait time="2.0"]
 [background fade="0.0"]
-[wait time="2.0"]
-Pagi itu, cuaca cerah. {namauser} tengah bersiap-siap untuk pergi ke sekolah.
-Suara TV terdengar dari ruang tamu.
+[speed=1.3]Pagi itu, cuaca cerah. {namauser} tengah bersiap-siap untuk pergi ke sekolah.
+[speed=1.3]Suara TV terdengar dari ruang tamu.
 join reportertv center
-reportertv: Kembali kami laporkan, dalam beberapa hari terakhir, banyak warga kota mengalami gejala aneh.
-reportertv: Demam tinggi, muntah, dan pusing. Para ahli masih menyelidiki penyebab utamanya.
+reportertv: [speed=1.3]Kembali kami laporkan, dalam beberapa hari terakhir, banyak warga kota mengalami gejala aneh.
+reportertv: [speed=1.3]Demam tinggi, muntah, dan pusing. Para ahli masih menyelidiki penyebab utamanya.
 leave reportertv
 join mc center
-mc: Gejalanya... mirip banget sama yang dialami Aika dulu.
-Pikirannya langsung berputar.
-mc: Ini pasti ada hubungannya dengan sumber air.
+mc: [speed=1.3]Gejalanya- mirip banget sama yang dialami Aika dulu.
+[speed=1.3]Pikirannya langsung berputar.
+mc: [speed=1.3]Ini pasti ada hubungannya dengan sumber air.
 [music fade="0.0" volume="0.0"]
 label kelas
-[background arg="res://assets/backgrounds/pitch_white.png" fade="0.0"]
+[background arg="pitch_white.png" fade="2.0"]
 [music path="res://assets/sounds/music/cozy night.mp3" fade="0.0" volume="0.0"]
 [wait time="2.0"]
-[background fade="0.0"]
+[background fade="2.0"]
 [music path="res://assets/sound/suara kelas.mp3" channel="1" fade="0.0" volume="0.0"]
 Di sela waktu istirahat, {namauser} duduk di samping Revana yang tengah membaca buku.
 join mc center
@@ -62,8 +61,8 @@ STATUS WINDOW muncul.
 	mc: (Menekan tombol PURIFY.)
 	status_window: AKSI TIDAK DAPAT DILAKUKAN\
 SUMBER PENCEMARAN TERDETEKSI
-	mc: Eh?
-	mc: Jangan-jangan...
+mc: Eh?
+mc: Jangan-jangan...
 update mc left [move_time="1.0"]
 revana: (Berjalan mendekat.)
 join revana right
