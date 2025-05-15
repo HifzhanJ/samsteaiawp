@@ -19,7 +19,7 @@
 &"portraits": {
 "Normal": {
 "export_overrides": {
-"image": "\"res://assets/char_img/Cashier.png\""
+"image": "\"res://assets/char_img/kasir.png\""
 },
 "mirror": true,
 "offset": Vector2(50, -200),

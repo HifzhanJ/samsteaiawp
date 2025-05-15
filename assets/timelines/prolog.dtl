@@ -1,4 +1,4 @@
-jump [Scene: Jalanan Malam - Langit Berbintang]
+jump [Scene: Luar angkasa - Meteor Tabrakan]
 label [Scene: Luar angkasa - Meteor Tabrakan]
 [background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
 [wait time="2.0"]

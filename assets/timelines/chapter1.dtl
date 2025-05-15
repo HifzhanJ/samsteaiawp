@@ -209,7 +209,7 @@ join status_window (popupunlock) center [animation="Zoom Center In"]
 [style]
 leave status_window [animation="Zoom Out"]
 mc-smp: (Menekan tombol PURIFY.)
-label Minigame mulai
+label Minigame mulai bakteri
 label Minigame selesai
 [music fade="0.0" volume="0.0"]
 [music path="res://assets/sound/flashbang.wav" channel="1" fade="8.0" volume="0.0"]

@@ -135,7 +135,7 @@ join status_window (popupunlock) center [animation="Zoom Center In"]
 	leave status_window [animation="Zoom Center Out"]
 	mc (normal): (Menekan tombol PURIFY.)
 	[wait_input]
-	label Minigame mulai
+	label Minigame boss bakteri mulai
 	label Minigame keluar
 	[background arg="res://assets/backgrounds/pabrik before.jpg" fade="2.0"]
 	revana: (Memperhatikan {namauser} yang lagi "bermain udara" dengan ekspresi bingung tapi juga kagum.)
