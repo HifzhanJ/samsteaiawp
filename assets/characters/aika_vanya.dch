@@ -19,7 +19,7 @@
 &"portraits": {
 "normal": {
 "export_overrides": {
-"image": "\"res://assets/char_img/petcare1.jpg\""
+"image": "\"res://assets/char_img/aika.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
