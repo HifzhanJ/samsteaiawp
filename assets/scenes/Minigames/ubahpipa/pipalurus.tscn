@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ck1n4ndlw3lcv"]
+
+[ext_resource type="Script" uid="uid://br0fuqfudlrou" path="res://assets/scenes/Minigames/ubahpipa/pipa.gd" id="1_tcvtx"]
+[ext_resource type="Texture2D" uid="uid://bx7kop82ghcnn" path="res://assets/images/minigames/ubahpipa/pipalurus.png" id="2_tcvtx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ypym6"]
+size = Vector2(125, 125)
+
+[node name="pipa1" type="Area2D"]
+script = ExtResource("1_tcvtx")
+
+[node name="pipa" type="Sprite2D" parent="."]
+texture = ExtResource("2_tcvtx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ypym6")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

@@ -1,0 +1,23 @@
+[gd_scene load_steps=7 format=3 uid="uid://j01e6stdhjqo"]
+
+[ext_resource type="Script" uid="uid://0gx42xmx8xmv" path="res://assets/scripts/minigames/ubahpipa/ubahpipa.gd" id="1_p8ceh"]
+[ext_resource type="Script" uid="uid://68pqcxvk1edt" path="res://assets/scripts/minigames/ubahpipa/pipapipa.gd" id="2_lycsw"]
+[ext_resource type="PackedScene" uid="uid://ck1n4ndlw3lcv" path="res://assets/scenes/Minigames/ubahpipa/pipalurus.tscn" id="3_8gjxw"]
+[ext_resource type="PackedScene" uid="uid://waf5jxm1jmc4" path="res://assets/scenes/Minigames/ubahpipa/pipabengkok.tscn" id="4_7wovf"]
+[ext_resource type="PackedScene" uid="uid://7x3pleudahlh" path="res://assets/scenes/Minigames/ubahpipa/batu.tscn" id="4_ltksf"]
+[ext_resource type="PackedScene" uid="uid://beig34vm8krwx" path="res://assets/scenes/Minigames/ubahpipa/tanah.tscn" id="5_8nhty"]
+
+[node name="ubahpipa" type="Node2D"]
+script = ExtResource("1_p8ceh")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="pipapipa" type="Node2D" parent="."]
+position = Vector2(675, 261)
+script = ExtResource("2_lycsw")
+pipa = Array[PackedScene]([ExtResource("3_8gjxw"), ExtResource("4_7wovf")])
+batu = ExtResource("4_ltksf")
+tanah = ExtResource("5_8nhty")
+gridsize = Vector2i(5, 5)
+posisipipabaru = Vector2(128, 128)

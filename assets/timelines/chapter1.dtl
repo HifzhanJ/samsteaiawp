@@ -17,7 +17,7 @@ mc: (Berjalan cepat, sedikit khawatir.)
 [background fade="0.0"]
 Di sekolah, suasana terasa berbeda. {namauser} mencari sosok yang biasa menyapanya setiap pagi.\
 mc\: Mana dia? Biasanya juga udah teriak-teriak dari tadi...
-audio -
+audio "-"
 (Bel masuk.)
 [background fade="0.0"]
 (Setelah pelajaran pertama selesai.)

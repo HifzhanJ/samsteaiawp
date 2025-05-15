@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://b4aic1euap87a"]
+
+[ext_resource type="FontFile" uid="uid://dc3pohtr5s0cy" path="res://assets/fonts/Gravity-Bold.otf" id="1_chter"]
+[ext_resource type="Script" uid="uid://df84vaf0ljgpi" path="res://assets/scripts/chapterbuttons.gd" id="1_ua32s"]
+[ext_resource type="AudioStream" uid="uid://cghgh5eol7maf" path="res://assets/sounds/sfx/button_hover.mp3" id="2_chter"]
+[ext_resource type="AudioStream" uid="uid://rqs2uwigmu5s" path="res://assets/sounds/sfx/click_confirm.mp3" id="4_d07q1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_chter"]
+bg_color = Color(0.165656, 0.165656, 0.165656, 1)
+
+[sub_resource type="Theme" id="Theme_d07q1"]
+Button/styles/hover = SubResource("StyleBoxFlat_chter")
+
+[node name="chapterbuttons" type="Button"]
+custom_minimum_size = Vector2(480, 270)
+offset_right = 8.0
+offset_bottom = 8.0
+theme = SubResource("Theme_d07q1")
+theme_override_fonts/font = ExtResource("1_chter")
+theme_override_font_sizes/font_size = 100
+text = "Chapter 1"
+script = ExtResource("1_ua32s")
+
+[node name="hover" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_chter")
+bus = &"SFX"
+
+[node name="hit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_d07q1")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

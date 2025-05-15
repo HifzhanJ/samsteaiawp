@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://waf5jxm1jmc4"]
+
+[ext_resource type="Script" uid="uid://br0fuqfudlrou" path="res://assets/scenes/Minigames/ubahpipa/pipa.gd" id="1_hnxag"]
+[ext_resource type="Texture2D" uid="uid://bruaaqpwndb0r" path="res://assets/images/minigames/ubahpipa/pipabengkok.png" id="2_hnxag"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ypym6"]
+size = Vector2(125, 125)
+
+[node name="pipa1" type="Area2D"]
+script = ExtResource("1_hnxag")
+
+[node name="pipa" type="Sprite2D" parent="."]
+texture = ExtResource("2_hnxag")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ypym6")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
