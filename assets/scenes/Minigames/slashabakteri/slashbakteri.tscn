@@ -102,7 +102,6 @@ anchor_mode = 0
 
 [node name="losetimer" type="Timer" parent="."]
 wait_time = 10.0
-autostart = true
 
 [node name="slash" type="Line2D" parent="."]
 width_curve = SubResource("Curve_b6xeb")

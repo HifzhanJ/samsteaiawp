@@ -1,4 +1,4 @@
-jump 
+jump Minigame dimulai [Slash Bakteri]
 [background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
 [wait time="2.0"]
 [background arg="res://assets/backgrounds/ch2.png" fade="2.0"]

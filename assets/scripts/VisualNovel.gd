@@ -1,7 +1,6 @@
 extends CanvasLayer
 
 func _ready():
-	print(Dialogic.signal_event.connect(_on_dialogic_signal))
 	if Dialogic.event_handled.is_connected(_on_dialogic_text):
 		Dialogic.event_handled.disconnect(_on_dialogic_text)
 	Dialogic.event_handled.connect(_on_dialogic_text)
@@ -9,9 +8,8 @@ func _ready():
 func _on_dialogic_text(event):
 	if event is DialogicTextEvent:
 		print("dialogic text signal")
-		var character_name = event.character.display_name if event.character else ""
+		var character_name = event.character.display_name if event.character else "-"
 		$chathistoryui/chathistory.add_to_history(character_name, event.text)
-		print($chathistoryui/chathistory.chat_history)
 
 func _on_dialogic_signal(argument:String):
 	print("signal")

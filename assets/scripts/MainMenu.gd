@@ -5,7 +5,6 @@ func _ready() -> void:
 
 func _on_lanjut_pressed() -> void:
 	$AudioManager.playbuttonclick()
-	Dialogic.History.save_visited_history()
 
 func _on_mulai_pressed() -> void:
 	$AudioManager.playbuttonclick()

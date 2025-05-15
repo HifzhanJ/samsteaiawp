@@ -6,13 +6,15 @@ var bakteri = preload("res://assets/scenes/Enemy/bakteri.tscn")
 @onready var enemynode = $enemy
 @onready var summonpoint = $summonpoint
 @onready var slash_line = $slash
-@export var targetscore = 50
-@export var losetimer = 60
+@export var targetscore = 30
+@export var losetimer = 30
 var summonsize = 300
 
 func _ready() -> void:
 	$CanvasLayer/Control.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 	$losetimer.wait_time = losetimer
+	$losetimer.start()
+	print($losetimer.wait_time)
 
 func spawnbakteri(jumlah):
 	var bakteriinstance = bakteri.instantiate()

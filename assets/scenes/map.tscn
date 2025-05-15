@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://d1s6hhby2tkjq" path="res://map.gd" id="1_bnucp"]
 [ext_resource type="Texture2D" uid="uid://cn6ctrw14y23n" path="res://assets/backgrounds/mainmenu.png" id="3_07t7k"]
-[ext_resource type="Texture2D" uid="uid://mc5mk3116bhp" path="res://assets/backgrounds/Screenshot (4).png" id="4_07t7k"]
-[ext_resource type="Texture2D" uid="uid://cyb71g1bay6nl" path="res://assets/backgrounds/highschool_outside.jpg" id="5_jroha"]
-[ext_resource type="Texture2D" uid="uid://ofwryp8dh7qt" path="res://assets/backgrounds/sungai.png" id="6_lphgc"]
-[ext_resource type="Texture2D" uid="uid://bycw7gy81m1xc" path="res://assets/backgrounds/tepi_sungai.png" id="7_lphgc"]
+[ext_resource type="Texture2D" uid="uid://lntc74fyjhnq" path="res://assets/backgrounds/living-room-bg-cc0.jpg" id="4_lphgc"]
+[ext_resource type="Texture2D" uid="uid://b68u7e04knotd" path="res://assets/backgrounds/takashi-miyazaki-feFI3Ws__PI-unsplash.jpg" id="5_g2dpn"]
+[ext_resource type="Texture2D" uid="uid://bqhlj14ehtj38" path="res://assets/backgrounds/ruangkelas.jpg" id="6_lphgc"]
+[ext_resource type="Texture2D" uid="uid://bkvrsi8dhp4c5" path="res://assets/backgrounds/tbc_done.png" id="7_g2dpn"]
 [ext_resource type="PackedScene" uid="uid://b4aic1euap87a" path="res://assets/scenes/chapterbuttons.tscn" id="8_g2dpn"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_45j4w"]
@@ -40,16 +40,16 @@ bg_color = Color(0.6, 0.6, 0.6, 0)
 texture = ExtResource("3_07t7k")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ofj3e"]
-texture = ExtResource("4_07t7k")
+texture = ExtResource("4_lphgc")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4rs11"]
-texture = ExtResource("5_jroha")
+texture = ExtResource("5_g2dpn")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hbrwi"]
-texture = ExtResource("7_lphgc")
+texture = ExtResource("6_lphgc")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_468dr"]
-texture = ExtResource("6_lphgc")
+texture = ExtResource("7_g2dpn")
 
 [node name="Map" type="Control"]
 layout_mode = 3
