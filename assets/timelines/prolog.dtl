@@ -1,3 +1,4 @@
+jump [Scene: Rumah Sakit - Kamar Rawat]
 label [Scene: Luar angkasa - Meteor Tabrakan]
 [background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
 [wait time="2.0"]
@@ -23,7 +24,7 @@ label [Scene: Luar angkasa - Meteor Tabrakan]
 [speed=1.3]Sebuah awal dari cerita yang tak disadari siapa pun...
 [speed=1.3]Termasuk seorang remaja biasa, yang tak tahu bahwa hidupnya akan berubah selamanya.
 label [Scene: Kota - Malam Hari - Minimarket]
-[background arg="res://assets/backgrounds/☆.jpeg" fade="1.0"]
+[background arg="res://assets/backgrounds/night_street.jpg" fade="1.0"]
 [music path="res://assets/sound/windy__night.mp3" fade="1.5" volume="0.0"]
 [wait time="3.0"]
 Suatu malam yang tenang, angin berhembus lembut menyusuri jalanan kota kecil.
@@ -113,7 +114,7 @@ label [Scene: Rumah Sakit - Kamar Rawat]
 [wait time="2.0"]
 Keesokan harinya...
 {namauser} membuka mata, terbaring di ranjang rumah sakit
-[background arg="res://assets/backgrounds/patient_room.jpg" fade="1.0" transition="Simple Fade"]
+[background arg="res://assets/backgrounds/patient_room_fix.jpg" fade="1.0" transition="Simple Fade"]
 [music path="res://assets/sound/room-71897.mp3" channel="1" fade="1.0" volume="0.0"]
 [wait time="2.0"]
 mc: [speed=3]Ugh...
@@ -139,7 +140,12 @@ Suster tersenyum dan meletakkan segelas air di meja. Lalu keluar ruangan.
 {namauser} mengambil gelas air...
 Tiba-tiba layar jendela status transparan muncul di atasnya
 label [STATUS WINDOW]
+[wait time="1.0"]
+[background arg="res://assets/backgrounds/system_popup.png" fade="2.0"]
+[wait time="5.0"]
 # Status window menunjukkan "The Water has been Contaminated"
+[background arg="res://assets/backgrounds/patient_room.jpg" fade="2.0"]
+[wait time="3.0"]
 join mc center [animation="Fade In Up" length="0.8" wait="true"]
 mc: Hah?! [pause=1]Apaan ini?!
 update mc center [animation="Shake X"]
