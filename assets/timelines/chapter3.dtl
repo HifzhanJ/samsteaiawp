@@ -1,7 +1,14 @@
+[background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/ch3.png" fade="2.0"]
+[wait time="3.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
+[wait time="3.0"]
 [background fade="0.0"]
+[wait time="2.0"]
 Pagi itu, cuaca cerah. {namauser} tengah bersiap-siap untuk pergi ke sekolah.
 (Suara TV terdengar dari ruang tamu.)
-reportertv: Kembali kami laporkan, dalam beberapa hari terakhir, banyak warga kota mengalami gejala aneh. 
+reportertv: Kembali kami laporkan, dalam beberapa hari terakhir, banyak warga kota mengalami gejala aneh.
 reportertv: Demam tinggi, muntah, dan pusing. Para ahli masih menyelidiki penyebab utamanya.
 mc: Gejalanya... mirip banget sama yang dialami Aika dulu.
 mc: (Pikirannya langsung berputar.)
@@ -23,7 +30,7 @@ Setelah jam sekolah berakhir, {namauser} dan Revana bergegas menuju pinggiran ko
 (Mereka berdiri di tepi sungai besar, airnya terlihat kusam dan berbusa.)
 Pemandangan itu membuat {namauser} merasa tidak enak.
 Tiba-tiba—
- STATUS WINDOW muncul.
+STATUS WINDOW muncul.
 - PURIFY
 mc: Sama kayak waktu itu... tapi ini lebih parah.
 revana: (Berjalan mendekat, menatap air dengan prihatin.)
@@ -62,3 +69,13 @@ revana: Kamu... luar biasa.
 mc: (Menggaruk kepalanya, sedikit malu.)
 mc: Aku cuma... ngelakuin apa yang bisa kulakuin.
 Namun, di balik keberhasilan ini, {namauser} tahu... ini baru permulaan. Ada sesuatu yang jauh lebih besar menunggu di balik semua ini.
+label Chapter 3 done - Back to Choose Chapter
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/ch3_done.png" fade="2.0"]
+[wait time="3.0"]
+[background arg="res://assets/backgrounds/pitch_black.png" fade="2.0"]
+[wait time="2.0"]
+[background fade="0.0"]
+[end_timeline]

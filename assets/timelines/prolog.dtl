@@ -185,12 +185,14 @@ leave mc [animation="Fade Out" length="1.0"]
 mc: Aghh....[pause=0.5] anjirlah...
 [wait time="1.5"]
 {namauser} menyadari kekuatan barunya dan masih tidak percaya dengan apa yang dialaminya
+label Prolog done - Back to Choose Chapter
 [music fade="1.0" volume="0.0"]
 [music channel="1" fade="1.0" volume="0.0"]
 [background arg="res://assets/backgrounds/pitch_white.png" fade="1.0"]
 [wait time="2.0"]
 [background arg="res://assets/backgrounds/prolog_completed.png" fade="1.0"]
 [wait time="2.0"]
-[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
+[background arg="res://assets/backgrounds/pitch_black.png" fade="2.0"]
 [wait time="2.0"]
+[background fade="0.0"]
 [end_timeline]

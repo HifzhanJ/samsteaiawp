@@ -1,3 +1,9 @@
+[background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/ch1.png" fade="2.0"]
+[wait time="3.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
+[wait time="3.0"]
 [background arg="res://assets/backgrounds/Screenshot (4).png" fade="0.0"]
 Cahaya matahari menyelinap lewat jendela, membangunkan MC dari tidurnya.
 join mc leftmost
@@ -76,3 +82,13 @@ warga1: Aneh ya, airnya tiba-tiba jernih lagi!
 warga2: Kayaknya mujizat deh, hahaha!
 mc: (Lewat, hanya tersenyum kecil.)
 mc: Mereka nggak perlu tahu... Tapi gue harus siap. Ini baru permulaan.
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/ch1_done.png" fade="2.0"]
+[wait time="3.0"]
+[background arg="res://assets/backgrounds/pitch_black.png" fade="2.0"]
+[wait time="3.0"]
+label Chapter 1 Done - Back to Choose Chapter
+[background fade="0.0"]
+[end_timeline]
