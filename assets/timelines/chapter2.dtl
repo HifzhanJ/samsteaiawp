@@ -1,75 +1,44 @@
-jump Minigames Mulai [Tap - tap warga]
-[background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
-[wait time="2.0"]
-[background arg="res://assets/backgrounds/ch2.png" fade="2.0"]
-[wait time="3.0"]
-[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
-[wait time="3.0"]
-label [Scene: Highschool - Pagi Hari]
-[background arg="res://assets/backgrounds/takashi-miyazaki-feFI3Ws__PI-unsplash.jpg" fade="1.0"]
-[music path="res://assets/sounds/music/chill night.mp3" fade="2.0" volume="0.0"]
-[wait time="2.0"]
+label [Scene: Kelas Baru - Pagi Hari]
+jump chapter2/
+[background arg="res://assets/backgrounds/highschool_outside.jpg" fade="0.5"]
 Tahun ajaran baru dimulai. Langit biru bersih seolah menyambut lembaran baru bagi setiap siswa.
 Di seluruh penjuru sekolah, suara langkah kaki dan tawa mengisi udara pagi.
 Di sebuah kelas baru, sinar matahari menyelinap masuk lewat jendela, memantul di lantai keramik yang mengkilap.
 Meja-meja perlahan terisi oleh murid-murid yang tampak gugup namun antusias.
-[wait time="1.0"]
-label [Scene: Kelas Baru - Pagi Hari]
 [background arg="res://assets/backgrounds/highschool_class.jpg" fade="0.5"]
-[music path="res://assets/sound/classroom_ambience.wav" channel="1" fade="2.0" volume="-15.0"]
-[wait time="2.0"]
 {namauser} melangkah masuk, menarik napas dalam.
-Ia langsung menempati tempat duduk yang berada di pojok dekat jendela.
-[wait time="1.0"]
-Hari ini bukan hanya tentang bertemu teman baru…
+Hari ini bukan hanya tentang bertemu teman baru.
 Tapi juga tentang menata ulang hidupnya setelah semua kejadian aneh yang belum lama ia alami.
-[wait time="1.0"]
-[music path="res://assets/sound/bell_sound.mp3" channel="2" fade="1.0" volume="0.0" loop="false"]
-[wait time="1.0"]
-Bel berdering, menandakan bahwa pelajaran pertama segera di mulai dan guru pun memasuki ruangan kelas.
-[music channel="2" fade="1.0" volume="0.0"]
-Seorang guru wanita berdiri dengan senyum hangat, menyambut setiap siswa. Suasana terasa segar namun penuh rasa penasaran.
-[music channel="1" fade="1.5" volume="0.0"]
-join guru center [animation="Slide In Right" length="1.0" wait="true"]
-[wait time="1.0"]
-guru: Selamat pagi anak-anak!, [pause=1]perkenalkan saya Miranda.
-guru: Saya ditugaskan untuk mengajari pelajaran Sejarah pada jam pelajaran pertama, dan sekaligus sebagai wali kelas kalian untuk satu semester ke depan.
-guru: Sebelum kita mulai pelajaran, mari kita berkenalan satu per satu.
-guru: Untuk jumlah siswa di kelas ini ada 30 yaa..
-guru: Baik, kita mulai dari absen pertama dulu... [pause=1]silakan dimulai
+Di depan kelas, seorang guru berdiri dengan senyum hangat, menyambut setiap siswa. Suasana terasa segar namun penuh rasa penasaran.
+join guru center
+guru: Baik, sebelum kita mulai pelajaran, mari kita berkenalan satu per satu.
 leave guru [animation="Fade Out"]
-[wait time="2.0"]
-Perkenalan pun dimulai oleh seluruh siswa, [pause=2]hingga pada bagian akhir tiba giliran {namauser} memperkenalkan dirinya.
-[wait time="1.0"]
-{namauser} Berdiri dari kursinya.
-join mc (sma) center [animation="Fade In Up"]
+[wait time="0.5"]
+({namauser} berdiri dari kursinya.)
+join mc center [animation="Fade In Up"]
 [wait time="1.5"]
-mc: Nama saya {namauser}. [pause=0.5]Senang bertemu dengan kalian semua. [pause=1]Mohon bimbingannya.
+mc: Nama saya {namauser}. Senang bertemu dengan kalian semua. Mohon bimbingannya.
 [wait time="1.0"]
 leave mc [animation="Fade Out Down"]
-Siswa-siswa lain mengangguk ramah. {namauser} pun duduk kembali.
-{namauser} merasa biasa saja...[pause=2] Sampai giliran orang di sebelahnya.
+Siswa-siswa lain mengangguk ramah.  {namauser} pun duduk kembali.
+{namauser} merasa biasa saja...
+sampai giliran orang di sebelahnya.
 [wait time="1.0"]
-Seorang gadis berparas cantik berdiri. [pause=1]Semua mata di kelas tertuju padanya.
+Seorang gadis berparah cantik berdiri. Semua mata di kelas tertuju padanya.
 [wait time="1.0"]
 join revana center [animation="Fade In Up"]
 [wait time="1.0"]
 revana: Aku Revana Putri.
 revana: Senang berkenalan dengan kalian semua.
-Dengan wajah yang begitu cantik dan aura yang lembut, Revana langsung menarik perhatian semua orang...[pause=1] termasuk {namauser},
+Dengan wajah yang begitu cantik dan aura yang lembut, Revana langsung menarik perhatian semua orang... termasuk {namauser},
 leave revana [animation="Fade Out Down"]
 [wait time="1.0"]
-mc: Dia cantik...[pause=1] tapi...
-mc: Ngapain sih udah lah gausah berharap lebih.
+mc: cantik banget... tapi...
+mc: ngapain sih udah lah gausah berharap lebih.
 mc: (Menggeleng pelan, mencoba fokus kembali.)
-[wait time="1.5"]
-Setelah semuanya selesai berkenalan, akhirnya {namauser} memulai pelajaran pertamanya di tahun ajaran baru.
-[wait time="2.0"]
+[wait time="1.0"]
 label [Scene: Jalanan Kota - Sore Hari]
-[music fade="1.0" volume="0.0"]
-[background arg="res://assets/backgrounds/tepi_sungai.jpg" fade="2.0"]
-[wait time="3.0"]
-[music path="res://assets/sound/car_passing_by.mp3" fade="1.0" volume="0.0"]
+[background arg="res://assets/backgrounds/tepi_sungai.png" fade="1.0"]
 Setelah sekolah berakhir, {namauser} berjalan santai di tepi jembatan.
 Tiba-tiba terdengar suara ribut dari arah sungai.
 [wait time="1.5"]
@@ -90,31 +59,23 @@ update revana [animation="Shake X"]
 Pria itu mengangkat tangan, siap menampar revana
 [wait time="1.0"]
 {namauser} berlari dengan cepat mendekati mereka berdua
-leave --All-- [animation="Fade Out"]
-[background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
-[wait time="1.0"]
-label Minigames Mulai [Tap - tap warga]
-do Minigamehandler.playtaptapwarga()
-label Minigames Selesai [Tap - tap warga]
-[wait time="2.0"]
-[background arg="res://assets/backgrounds/tepi_sungai.jpg" fade="1.0"]
-[wait time="2.0"]
+label Minigame tap tap (rescue revana)
+[background fade="0.5"]
+[wait time="5.0"]
+label Minigame keluar (rescue revana)
+[background arg="res://assets/backgrounds/tepi_sungai.png" fade="0.5"]
 {namauser} akhirnya berhasil memegang tangan pria itu, dan menghentikan nya.
-[wait time="2.0"]
-join revana right [animation="Fade In"]
-join warga_sampah center [animation="Fade In"]
-[wait time="1.0"]
-join mc (sma) center [animation="Slide In Right"]
+join mc center [animation="Slide From Right"]
 update warga_sampah left [animation="Shake X" move_time="0.2" move_ease="in" move_trans="linear"]
 [wait time="1.5"]
 mc: Lu pikir bisa seenaknya mukul orang?!
-mc: Apa lu nggak mikir, air sungai ini buat siapa?!
+Apa lu nggak mikir, air sungai ini buat siapa?!
 warga_sampah: Aighhhhh
 update warga_sampah [animation="Shake Y"]
 Pria itu ketakutan karena merasakan aura dingin dan tatapan tajam dari {namauser}
 dengan panik pria itu segera melepaskan diri dari genggaman {namauser} dan kabur terburu-buru
 update warga_sampah [animation="Shake X"]
-leave warga_sampah [animation="Slide Out Left" length="0.3"]
+leave warga_sampah [animation="Slide To Left" length="0.3"]
 [wait time="2.0"]
 update mc left [mirrored="true" move_time="0.5" move_ease="in" move_trans="linear"]
 Revana menatap {namauser}, matanya melebar karena terkejut.
@@ -123,80 +84,64 @@ revana: Tapi... lihat, sampahnya…
 leave revana [animation="Fade Out"]
 leave mc [animation="Fade Out"]
 [wait time="1.0"]
-[background arg="res://assets/backgrounds/sungai.jpg" fade="1.0"]
+[background arg="res://assets/backgrounds/sungai.png" fade="1.0"]
 label [CHOICE]
 - Biar aku bersihkan.
 	label [Scene: Sungai - Bawah Jembatan]
-	[background arg="res://assets/backgrounds/pov_kesungai.jpg" fade="1.0"]
-	[music path="res://assets/sound/wave_01_cc0-11505__transitking__wavesound.mp3" fade="1.0" volume="0.0"]
+	[background arg="res://assets/backgrounds/pov_kesungai.png" fade="0.5"]
 	mc: (Menatap ke arah sungai, memperhatikan air sungai yang keruh.)
 	Tiba-tiba, sebuah status window berwarna merah menyala di hadapannya
 	label [STATUS WINDOW]
-	[wait time="2.0"]
-	[background arg="res://assets/backgrounds/system_popup_waste.png" fade="1.0"]
-	[wait time="3.0"]
-	[background arg="res://assets/backgrounds/pov_kesungai.png" fade="1.0"]
-	[wait time="2.0"]
 	mc: Terkunci...?
 	Karena sampah itu?!
 	[wait time="1.0"]
 	revana: (Berdiri di samping {namauser}, mendesah pelan.)
 	revana: Sungai ini...
-	revana: Beberapa bagian kota pakai buat sumber air minum.
+	revana: beberapa bagian kota pakai buat sumber air minum.
 	revana: Kalau makin parah... bisa bahaya.
 	mc: (Teringat wajah teman masa kecilnya yang sakit.)
 	mc: Gua nggak bisa diem aja.
 	mc: (Melompat turun ke tepian sungai.)
 	revana: H-Hey! Kamu ngapain?!
-	[wait time="1.0"]
+	[background fade="0.5"]
 	label [Scene: Sungai - Air Keruh]
-	label Minigame Mulai [kumpul sampah]
-	do Minigamehandler.playkumpulsampah()
-	label Minigame Keluar [Kumpul Sampah]
+	label Minigame kumpul sampah
 	mc: (Berusaha mengumpulkan sampah-sampah plastik yang mengapung.)
 	mc: (Lumpur menodai pakaiannya, namun ia tetap bergerak.)
+	label Minigame keluar
 	revana: (Menatap {namauser} dari atas jembatan, matanya membesar penuh rasa kagum.)
-	revana: Jujur aja yaa, aku udah jarang banget melihat cowo seperti dia yang peduli ama lingkungan (bergumam).
+	revana: jujur aja yaa, aku udah jarang banget melihat cowo seperti dia yang peduli ama lingkungan (bergumam).
 	revana: Orang ini... aneh. Tapi... hatinya tulus (bergumam).
-	[music fade="0.0" volume="0.0"]
 
 - Kita bisa bersihin bareng kalau kamu mau.
 	label [Scene: Sungai - Bawah Jembatan]
-	[background arg="res://assets/backgrounds/pov_kesungai.jpg" fade="1.0"]
-	[music path="res://assets/sound/wave_01_cc0-11505__transitking__wavesound.mp3" fade="1.0" volume="0.0"]
+	[background arg="pov_kesungai.png" fade="0.5"]
 	mc: (Menatap ke arah sungai, memperhatikan air sungai yang keruh.)
-	Tiba-tiba, sebuah status window berlabel hitam menyala di hadapannya.
-	label [STATUS WINDOW]
-	[wait time="2.0"]
-	[background arg="res://assets/backgrounds/Chapter - 2.png" fade="1.0"]
-	[wait time="3.0"]
-	[background arg="res://assets/backgrounds/pov_kesungai.jpg" fade="1.0"]
-	[wait time="2.0"]
-	mc: Terkunci...?
-	mc: Karena sampah itu?!
-	[wait time="1.0"]
-	revana: (Berdiri di samping {namauser}, mendesah pelan.)
-	revana: Sungai ini...
-	revana: Beberapa bagian kota pakai buat sumber air minum.
-	revana: Kalau makin parah... bisa bahaya.
-	mc: (Teringat wajah teman masa kecilnya yang sakit.)
-	mc: Gua nggak bisa diem aja.
-	mc: (Melompat turun ke tepian sungai.)
-	revana: H-Hey!!! Kamu ngapain?! (kaget)
-	[wait time="1.0"]
-	label [Scene: Sungai - Air Keruh]
-	label Minigame Mulai [kumpul sampah]
-	do Minigamehandler.playkumpulsampah()
-	label Minigame keluar  [Kumpul Sampah]
-	mc: (Berusaha mengumpulkan sampah-sampah plastik yang mengapung.)
-	(Tanpa pikir panjang... Revana ikut lompat turun dari atas jembatan, membantu mc semampunya.)
-	Lumpur menodai pakaian mereka, namun mereka berdua tetap bergerak.
-	[wait time="1.0"]
-	Mereka berdua pun kembali ke atas tepi jalan jembatan dengan pakaian setengah basah dan kotor
-	[music fade="0.0" volume="0.0"]
+	Tiba-tiba, sebuah status window berwarna merah menyala di hadapannya.
+label [STATUS WINDOW]
+mc: Terkunci...?
+mc: Karena sampah itu?!
 [wait time="1.0"]
-[background arg="res://assets/backgrounds/sungai.jpg" fade="0.5"]
-join mc (sma) center [animation="Fade In Up" mirrored="true"]
+revana: (Berdiri di samping {namauser}, mendesah pelan.)
+revana: Sungai ini...
+revana: beberapa bagian kota pakai buat sumber air minum.
+revana: Kalau makin parah... bisa bahaya.
+mc: (Teringat wajah teman masa kecilnya yang sakit.)
+mc: Gua nggak bisa diem aja.
+mc: (Melompat turun ke tepian sungai.)
+revana: H-Hey!!! Kamu ngapain?! (kaget)
+label [Scene: Sungai - Air Keruh]
+label Minigame kumpul sampah
+[background fade="0.5"]
+mc: (Berusaha mengumpulkan sampah-sampah plastik yang mengapung.)
+(Tanpa pikir panjang... Revana ikut lompat turun dari atas jembatan, membantu mc semampunya.)
+Lumpur menodai pakaian mereka, namun mereka berdua tetap bergerak.
+label Minigame keluar
+[wait time="1.0"]
+mereka berdua pun kembali ke atas tepi jalan jembatan dengan pakaian setengah basah dan kotor
+[wait time="1.0"]
+[background arg="res://assets/backgrounds/sungai.png" fade="0.5"]
+join mc center [animation="Fade In Up" mirrored="true"]
 [wait time="1.0"]
 mc: makasih ya udah mau membantu gua membersihkan sampah nya
 mc: baju lu jadi kotor lumpur gitu, aman kah?
@@ -212,45 +157,32 @@ update revana center [move_time="0.5" move_ease="in" move_trans="linear"]
 revana: Orang ini... aneh. Tapi... hatinya tulus (bergumam).
 leave revana [animation="Fade Out"]
 [wait time="2.0"]
+[background arg="res://assets/backgrounds/sungai.png" fade="0.5"]
 Setelah semua sampah dikumpulkan dan diangkat, status window berbunyi.
 label [STATUS WINDOW]
-[wait time="2.0"]
-[background arg="res://assets/backgrounds/Chapter - 2-1.png" fade="1.0"]
-[wait time="3.0"]
-[background arg="res://assets/backgrounds/sungai.jpg" fade="1.0"]
-[wait time="2.0"]
 mc: Sekarang... waktunya.
-- ╚════▣◎PURIFY◎▣════╗
-	label Minigame dimulai [Slash Bakteri]
-	do Minigamehandler.playslashbakteri()
-	label Minigame Selesai [Slash Bakteri]
-[wait time="1.0"]
-[background arg="res://assets/backgrounds/sungai.png" fade="2.0"]
-[wait time="2.0"]
+- PURIFY
+label Minigame dimulai
+[background fade="0.5"]
 Bakteri-bakteri berevolusi muncul, lebih besar dan cepat dari sebelumnya.
-[wait time="1.0"]
-mc: Bakterinya... [pause=0.5]lebih kuat
-Tapi.... [pause=0.5]Nah I'd Win
+mc: Lebih kuat...
+Tapi gue juga udah siap!
 [wait time="1.0"]
 revana: (Menatap {namauser} dengan ekspresi bingung.)
-revana: Kenapa dia... [pause=0.5]geser-geser udara...?
-[wait time="2.0"]
+revana: Kenapa dia... geser-geser udara...?
 label [Scene: Sungai - Setelah Purifikasi]
 [background arg="res://assets/backgrounds/tepi_sungai.png" fade="1.0"]
+Setelah semua bakteri musnah, sungai berubah perlahan. Airnya menjadi jernih, memantulkan cahaya sore.
 [wait time="2.0"]
-Setelah semua bakteri musnah, sungai berubah perlahan. [pause=0.5]Airnya menjadi jernih, memantulkan cahaya sore.
-[music path="res://assets/sounds/music/chill night.mp3" fade="1.0" volume="0.0"]
-[wait time="2.0"]
-[music path="res://assets/sound/car_passing_by.mp3" channel="1" fade="1.0" volume="0.0"]
-join mc (sma) left [animation="Fade In Up" mirrored="true"]
-mc (sma): (Menghela napas lega.)
+join mc left [animation="Fade In Up" mirrored="true"]
+mc: (Menghela napas lega.)
 join revana right [animation="Fade In Up"]
 revana: K-Kamu... barusan... apa yang kamu lakukan?
-mc (sma): U-uh, ini... gimana jelasinnya ya...
-mc (sma): (Berusaha menjelaskan tentang status window, bakteri, dan kemampuannya memurnikan air.)
+mc: U-uh, ini... gimana jelasinnya ya...
+mc: (Berusaha menjelaskan tentang status window, bakteri, dan kemampuannya memurnikan air.)
 revana: Kamu... serius?
-mc (sma): (Menunjuk ke sungai yang kini jernih.)
-mc (sma): Kalau nggak percaya... liat sendiri, kan?
+mc: (Menunjuk ke sungai yang kini jernih.)
+mc: Kalau nggak percaya... liat sendiri, kan?
 revana: (Terdiam, menatap air sungai yang sekarang jauh lebih bersih dan mengalir jernih.)
 revana: Kamu aneh.
 revana: (Menatap {namauser}, dengan senyum heran sambil tertawa kecil dan ada rasa kagum di matanya.)
@@ -259,12 +191,3 @@ leave mc [animation="Fade Out"]
 [wait time="1.5"]
 Di bawah sinar matahari sore, tanpa sadar sebuah ikatan kecil mulai tumbuh di antara dua orang yang sama-sama "berbeda".
 [wait time="2.0"]
-[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
-[wait time="2.0"]
-[background arg="res://assets/backgrounds/ch2_done.png" fade="0.0"]
-[wait time="2.0"]
-[background arg="res://assets/backgrounds/pitch_black.png" fade="2.0"]
-[wait time="2.0"]
-label Chapter 2 done - Back to Choose Chapter
-[background fade="0.0"]
-[end_timeline]

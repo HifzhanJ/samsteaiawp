@@ -14,7 +14,7 @@ Pagi itu, {namauser} tengah bersiap-siap untuk berangkat ke sekolah seperti bias
 Suara TV terdengar dari ruang tamu.
 {namauser} berada di depan televisi sambil menyeruput teh hangat.
 label [Scene: Rumah MC - Pagi Hari]
-[background arg="res://assets/backgrounds/living-room-bg-cc0.jpg" fade="2.0"]
+[background arg="res://assets/backgrounds/ruangtamu.jpeg" fade="2.0"]
 [music path="res://assets/sound/room-tone-cc0.wav" channel="1" fade="1.0" volume="6.0"]
 [wait time="2.0"]
 join mc right [animation="Slide In Right" wait="true"]

@@ -3,7 +3,7 @@ label pagi hari
 [background arg="res://assets/backgrounds/pitch_white.png" fade="1.0"]
 [wait time="2.0"]
 [music path="res://assets/sounds/music/chill night.mp3" fade="-2.0" volume="0.0"]
-[background arg="res://assets/backgrounds/living-room-bg-cc0.jpg" fade="0.5" transition="Simple Fade"]
+[background arg="res://assets/backgrounds/ruangtamusmp.jpeg" fade="0.5" transition="Simple Fade"]
 [wait time="3.0"]
 Cahaya matahari menyelinap lewat jendela, membangunkan {namauser} dari tidurnya.
 join mc center

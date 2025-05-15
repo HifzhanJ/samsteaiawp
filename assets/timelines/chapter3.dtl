@@ -3,7 +3,7 @@ label pagi
 [background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
 [music path="res://assets/sounds/music/chill night.mp3" fade="0.0" volume="0.0"]
 [wait time="2.0"]
-[background arg="res://assets/backgrounds/living-room-bg-cc0.jpg" fade="2.0"]
+[background arg="res://assets/backgrounds/ruangtamu.jpeg" fade="2.0"]
 [speed=1.3]Pagi itu, cuaca cerah. {namauser} tengah bersiap-siap untuk pergi ke sekolah.
 [speed=1.3]Suara TV terdengar dari ruang tamu.
 join reportertv center
