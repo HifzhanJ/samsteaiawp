@@ -34,7 +34,7 @@ leave reportertv [animation="Fade Out" wait="true"]
 mc: (Tersenyum.)
 mc: Syukurlah... [pause=0.5]setidaknya kota ini aman untuk sekarang.
 [wait time="1.0"]
-{namauser} mengambil tasnya, siap untuk berangkat ke sekolah
+{namauser} mengambil tasnya, siap untuk berangkat ke sekolah.
 leave mc [animation="Slide Out Left" length="1.0"]
 [wait time="2.0"]
 join reportertv left [animation="Fade In"]
@@ -45,7 +45,7 @@ leave reportertv [animation="Fade Out" wait="true"]
 join mc center [animation="Instant In" wait="true"]
 update mc [animation="Shake X" wait="true"]
 mc: (seketika terhenti langkahnya.)
-mc: Pandangannya kosong, [pause=0.5]namun [pause=0.5]sorot matanya mulai berubah
+mc: Pandangannya kosong, [pause=0.5]namun [pause=0.5]sorot matanya mulai berubah.
 [wait time="1.5"]
 mc: Jadi... [pause=0.5]ini belum berakhir.
 [wait time="1.5"]
