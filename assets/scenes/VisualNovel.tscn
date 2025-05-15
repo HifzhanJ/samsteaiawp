@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b0l3eblj4pj2o" path="res://assets/scenes/Setting.tscn" id="2_br4us"]
 [ext_resource type="PackedScene" uid="uid://b6niiik6tafh8" path="res://assets/scenes/SavePanel.tscn" id="4_vu3i3"]
 [ext_resource type="PackedScene" uid="uid://c0vosddejbfhe" path="res://assets/scenes/LoadPanel.tscn" id="5_u1qf8"]
-[ext_resource type="PackedScene" path="res://assets/scenes/chathistoryui.tscn" id="6_u1qf8"]
+[ext_resource type="PackedScene" uid="uid://bk50kxcjh0yln" path="res://assets/scenes/chathistoryui.tscn" id="6_u1qf8"]
 
 [node name="VisualNovel" type="CanvasLayer"]
 script = ExtResource("1_3jsea")
