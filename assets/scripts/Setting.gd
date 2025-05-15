@@ -5,6 +5,7 @@ var MusicIdx = AudioServer.get_bus_index("Music")
 var SfxIdx = AudioServer.get_bus_index("SFX")
 
 const DisplayMode = ["Full Screen","Windowed"]
+
 const ResolutionDictionary = {
 	"1920x1280":Vector2i(1920,1080),
 	"1280x720":Vector2i(1280,720),

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dw0jv83mmnbcb"]
+
+[ext_resource type="Texture2D" uid="uid://cvlfpj8tymgnn" path="res://assets/char_img/enemy/bakteripartikelhit.png" id="1_r3jap"]
+[ext_resource type="Script" uid="uid://bu1mrixhf10iy" path="res://assets/scripts/bacteriajuice.gd" id="2_rq1qb"]
+
+[node name="juice" type="Sprite2D"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_r3jap")
+script = ExtResource("2_rq1qb")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -68,6 +68,7 @@ size_flags_horizontal = 3
 [node name="BackButton" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 8
+theme_override_font_sizes/font_size = 55
 text = "Back"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
