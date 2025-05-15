@@ -5,7 +5,7 @@
 [background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
 [wait time="3.0"]
 label [Scene: Highschool - Pagi Hari]
-[background arg="res://assets/backgrounds/highschool_outside.jpg" fade="1.0"]
+[background arg="res://assets/backgrounds/takashi-miyazaki-feFI3Ws__PI-unsplash.jpg" fade="1.0"]
 [music path="res://assets/sounds/music/chill night.mp3" fade="2.0" volume="0.0"]
 [wait time="2.0"]
 Tahun ajaran baru dimulai. Langit biru bersih seolah menyambut lembaran baru bagi setiap siswa.
@@ -66,7 +66,8 @@ Setelah semuanya selesai berkenalan, akhirnya {namauser} memulai pelajaran perta
 [wait time="2.0"]
 label [Scene: Jalanan Kota - Sore Hari]
 [music fade="1.0" volume="0.0"]
-[background arg="res://assets/backgrounds/tepi_sungai.png" fade="1.0"]
+[background arg="res://assets/backgrounds/tepi_sungai.jpg" fade="2.0"]
+[wait time="3.0"]
 [music path="res://assets/sound/car_passing_by.mp3" fade="1.0" volume="0.0"]
 Setelah sekolah berakhir, {namauser} berjalan santai di tepi jembatan.
 Tiba-tiba terdengar suara ribut dari arah sungai.
@@ -93,7 +94,8 @@ leave --All-- [animation="Fade Out"]
 [wait time="3.0"]
 {namauser} akhirnya berhasil memegang tangan pria itu, dan menghentikan nya.
 [wait time="1.0"]
-[background arg="res://assets/backgrounds/tepi_sungai.png" fade="1.0"]
+[background arg="res://assets/backgrounds/tepi_sungai.jpg" fade="1.0"]
+[wait time="1.0"]
 join revana right [animation="Fade In"]
 join warga_sampah center [animation="Fade In"]
 [wait time="1.0"]
@@ -116,15 +118,20 @@ revana: Tapi... lihat, sampahnya…
 leave revana [animation="Fade Out"]
 leave mc [animation="Fade Out"]
 [wait time="1.0"]
-[background arg="res://assets/backgrounds/sungai.png" fade="1.0"]
+[background arg="res://assets/backgrounds/sungai.jpg" fade="1.0"]
 label [CHOICE]
 - Biar aku bersihkan.
 	label [Scene: Sungai - Bawah Jembatan]
-	[background arg="res://assets/backgrounds/pov_kesungai.png" fade="0.5"]
+	[background arg="res://assets/backgrounds/pov_kesungai.jpg" fade="1.0"]
 	[music path="res://assets/sound/wave_01_cc0-11505__transitking__wavesound.mp3" fade="1.0" volume="0.0"]
 	mc: (Menatap ke arah sungai, memperhatikan air sungai yang keruh.)
 	Tiba-tiba, sebuah status window berwarna merah menyala di hadapannya
 	label [STATUS WINDOW]
+	[wait time="2.0"]
+	[background arg="res://assets/backgrounds/system_popup_waste.png" fade="1.0"]
+	[wait time="3.0"]
+	[background arg="res://assets/backgrounds/pov_kesungai.png" fade="1.0"]
+	[wait time="2.0"]
 	mc: Terkunci...?
 	Karena sampah itu?!
 	[wait time="1.0"]
@@ -136,8 +143,9 @@ label [CHOICE]
 	mc: Gua nggak bisa diem aja.
 	mc: (Melompat turun ke tepian sungai.)
 	revana: H-Hey! Kamu ngapain?!
-	[background fade="0.5"]
+	[wait time="1.0"]
 	label [Scene: Sungai - Air Keruh]
+	[background fade="0.5"]
 	label Minigame kumpul sampah
 	mc: (Berusaha mengumpulkan sampah-sampah plastik yang mengapung.)
 	mc: (Lumpur menodai pakaiannya, namun ia tetap bergerak.)
@@ -149,22 +157,28 @@ label [CHOICE]
 
 - Kita bisa bersihin bareng kalau kamu mau.
 	label [Scene: Sungai - Bawah Jembatan]
-	[background arg="res://assets/backgrounds/pov_kesungai.png" fade="0.5"]
+	[background arg="res://assets/backgrounds/pov_kesungai.jpg" fade="1.0"]
 	[music path="res://assets/sound/wave_01_cc0-11505__transitking__wavesound.mp3" fade="1.0" volume="0.0"]
 	mc: (Menatap ke arah sungai, memperhatikan air sungai yang keruh.)
-	Tiba-tiba, sebuah status window berwarna merah menyala di hadapannya.
+	Tiba-tiba, sebuah status window berlabel hitam menyala di hadapannya.
 	label [STATUS WINDOW]
+	[wait time="2.0"]
+	[background arg="res://assets/backgrounds/Chapter - 2.png" fade="1.0"]
+	[wait time="3.0"]
+	[background arg="res://assets/backgrounds/pov_kesungai.jpg" fade="1.0"]
+	[wait time="2.0"]
 	mc: Terkunci...?
 	mc: Karena sampah itu?!
 	[wait time="1.0"]
 	revana: (Berdiri di samping {namauser}, mendesah pelan.)
 	revana: Sungai ini...
-	revana: B		eberapa bagian kota pakai buat sumber air minum.
+	revana: Beberapa bagian kota pakai buat sumber air minum.
 	revana: Kalau makin parah... bisa bahaya.
 	mc: (Teringat wajah teman masa kecilnya yang sakit.)
 	mc: Gua nggak bisa diem aja.
 	mc: (Melompat turun ke tepian sungai.)
 	revana: H-Hey!!! Kamu ngapain?! (kaget)
+	[wait time="1.0"]
 	label [Scene: Sungai - Air Keruh]
 	label Minigame kumpul sampah
 	[background fade="0.5"]
@@ -176,7 +190,7 @@ label [CHOICE]
 	Mereka berdua pun kembali ke atas tepi jalan jembatan dengan pakaian setengah basah dan kotor
 	[music fade="0.0" volume="0.0"]
 [wait time="1.0"]
-[background arg="res://assets/backgrounds/sungai.png" fade="0.5"]
+[background arg="res://assets/backgrounds/sungai.jpg" fade="0.5"]
 join mc center [animation="Fade In Up" mirrored="true"]
 [wait time="1.0"]
 mc: makasih ya udah mau membantu gua membersihkan sampah nya
@@ -193,21 +207,31 @@ update revana center [move_time="0.5" move_ease="in" move_trans="linear"]
 revana: Orang ini... aneh. Tapi... hatinya tulus (bergumam).
 leave revana [animation="Fade Out"]
 [wait time="2.0"]
-[background arg="res://assets/backgrounds/sungai.png" fade="0.5"]
 Setelah semua sampah dikumpulkan dan diangkat, status window berbunyi.
 label [STATUS WINDOW]
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/Chapter - 2-1.png" fade="1.0"]
+[wait time="3.0"]
+[background arg="res://assets/backgrounds/sungai.jpg" fade="1.0"]
+[wait time="2.0"]
 mc: Sekarang... waktunya.
-- PURIFY
-label Minigame dimulai
-[background fade="0.5"]
+- ╚════▣◎PURIFY◎▣════╗
+	label Minigame dimulai
+	[background fade="0.5"]
+[wait time="1.0"]
+[background arg="res://assets/backgrounds/sungai.png" fade="2.0"]
+[wait time="2.0"]
 Bakteri-bakteri berevolusi muncul, lebih besar dan cepat dari sebelumnya.
-mc: Lebih kuat...
-Tapi gue juga udah siap!
+[wait time="1.0"]
+mc: Bakterinya... [pause=0.5]lebih kuat
+Tapi.... [pause=0.5]Nah I'd Win
 [wait time="1.0"]
 revana: (Menatap {namauser} dengan ekspresi bingung.)
-revana: Kenapa dia... geser-geser udara...?
+revana: Kenapa dia... [pause=0.5]geser-geser udara...?
+[wait time="2.0"]
 label [Scene: Sungai - Setelah Purifikasi]
 [background arg="res://assets/backgrounds/tepi_sungai.png" fade="1.0"]
+[wait time="2.0"]
 Setelah semua bakteri musnah, sungai berubah perlahan. [pause=0.5]Airnya menjadi jernih, memantulkan cahaya sore.
 [music path="res://assets/sounds/music/chill night.mp3" fade="1.0" volume="0.0"]
 [wait time="2.0"]
