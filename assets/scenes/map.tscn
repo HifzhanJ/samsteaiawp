@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d1s6hhby2tkjq" path="res://map.gd" id="1_bnucp"]
 [ext_resource type="Texture2D" uid="uid://cn6ctrw14y23n" path="res://assets/backgrounds/mainmenu.png" id="3_07t7k"]
-[ext_resource type="Texture2D" uid="uid://lntc74fyjhnq" path="res://assets/backgrounds/living-room-bg-cc0.jpg" id="4_lphgc"]
+[ext_resource type="Texture2D" uid="uid://c7n18mslfjjq7" path="res://assets/backgrounds/kelassmp.jpg" id="4_g2dpn"]
 [ext_resource type="Texture2D" uid="uid://b68u7e04knotd" path="res://assets/backgrounds/takashi-miyazaki-feFI3Ws__PI-unsplash.jpg" id="5_g2dpn"]
 [ext_resource type="Texture2D" uid="uid://bqhlj14ehtj38" path="res://assets/backgrounds/ruangkelas.jpg" id="6_lphgc"]
 [ext_resource type="Texture2D" uid="uid://bkvrsi8dhp4c5" path="res://assets/backgrounds/tbc_done.png" id="7_g2dpn"]
@@ -41,7 +41,7 @@ bg_color = Color(0.6, 0.6, 0.6, 0)
 texture = ExtResource("3_07t7k")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ofj3e"]
-texture = ExtResource("4_lphgc")
+texture = ExtResource("4_g2dpn")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4rs11"]
 texture = ExtResource("5_g2dpn")

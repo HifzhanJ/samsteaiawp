@@ -1,3 +1,4 @@
+jump Minigame Mulai [kumpul sampah]
 label [Scene: Highschool - Pagi Hari]
 [background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
 [wait time="2.0"]
