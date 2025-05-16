@@ -23,12 +23,21 @@ func playtaptapwarga():
 	Dialogic.paused = true
 	add_child(load("res://assets/scenes/Minigames/taptapwarga/taptapwarga.tscn").instantiate())
 
+func playslashbosbakteri():
+	Dialogic.paused = true
+	add_child(load("res://assets/scenes/Minigames/bosbakteri/slashbosbakteri.tscn").instantiate())
+
 func playpipa():
 	Dialogic.paused = true
 	add_child(load("res://assets/scenes/Minigames/ubahpipa/ubahpipa.tscn").instantiate())
 
 func slashbakterimenang():
 	get_node("slashbakteri").queue_free()
+	visualnovel()
+	Dialogic.paused = false
+
+func slashbosbakterimenang():
+	get_node("slashbosbakteri").queue_free()
 	visualnovel()
 	Dialogic.paused = false
 

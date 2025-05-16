@@ -1,4 +1,3 @@
-jump [Scene: Highschool - Pagi Hari]
 label [Scene: Highschool - Pagi Hari]
 [background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
 [wait time="2.0"]
@@ -153,9 +152,9 @@ label [CHOICE]
 	revana (kaget): H-Hey! Kamu ngapain?!
 	[wait time="1.0"]
 	label [Scene: Sungai - Air Keruh]
-	label Minigame Mulai [kumpul sampah]
+	label Minigame Mulai [kumpul sampah ] 2
 	do Minigamehandler.playkumpulsampah()
-	label Minigame Keluar [Kumpul Sampah]
+	label Minigame Keluar [Kumpul Sampah ] 2
 	mc: (Berusaha mengumpulkan sampah-sampah plastik yang mengapung.)
 	mc: (Lumpur menodai pakaiannya, namun ia tetap bergerak.)
 	revana (Normal): (Menatap {namauser} dari atas jembatan, matanya membesar penuh rasa kagum.)
@@ -190,7 +189,7 @@ label [CHOICE]
 	mc: (Teringat wajah teman masa kecilnya yang sakit.)
 	mc: Gue nggak bisa diem aja.
 	mc: (Melompat turun ke tepian sungai.)
-	revana (kaget): H-Hey!!! Kamu ngapain?! 
+	revana (kaget): H-Hey!!! Kamu ngapain?!
 	leave --All--
 	[wait time="1.0"]
 	label [Scene: Sungai - Air Keruh]

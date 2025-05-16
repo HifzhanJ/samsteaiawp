@@ -8,7 +8,11 @@ var dragging: bool = false
 func get_jenis() -> String:
 	return jenis
 
+func _input(event: InputEvent) -> void:
+	print("test")
+
 func _unhandled_input(event: InputEvent) -> void:
+	print("test")
 	if event is InputEventMouseButton and mouseentered:
 		dragging = event.button_index == MOUSE_BUTTON_LEFT and event.pressed
 		get_viewport().set_input_as_handled()

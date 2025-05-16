@@ -7,34 +7,32 @@ var bakteri = preload("res://assets/scenes/Enemy/bakteri.tscn")
 @onready var summonpoint = $summonpoint
 @onready var slash_line = $slash
 @export var targetscore = 30
-@export var losetimer = 30
+@export var losetimer = 100
 var summonsize = 300
 
 func _ready() -> void:
 	$CanvasLayer/Control.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 	$losetimer.wait_time = losetimer
 	$losetimer.start()
-	print($losetimer.wait_time)
 
-func spawnbakteri(jumlah):
-	var bakteriinstance = bakteri.instantiate()
+func movebosbakteri():
+	var bosbakteri = $enemy/bosbakteri
 	var posisi = Vector2(
 		randf_range(summonpoint.global_position.x-summonsize,summonpoint.global_position.x+summonsize),
 		randf_range(summonpoint.global_position.y-summonsize,summonpoint.global_position.y+summonsize)
 	)
 	
-	bakteriinstance.position = posisi
-	bakteriinstance.rotation = deg_to_rad(randf_range(-360,360))
-	enemynode.add_child(bakteriinstance)
+	bosbakteri.position = posisi
+	bosbakteri.rotation = deg_to_rad(randf_range(-360,360))
 
 func _on_timer_timeout() -> void:
-	spawnbakteri(1)
+	movebosbakteri()
 
 func addscore(newscore):
 	score+=newscore
 	updatescore()
 	if score>=targetscore:
-		get_parent().slashbakterimenang()
+		get_parent().slashbosbakterimenang()
 		print("menang")
 
 func updatescore():
