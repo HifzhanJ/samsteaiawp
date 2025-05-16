@@ -16,4 +16,4 @@ func spawnsampah(jumlah):
 		var sampahinstance = sampah.pick_random().instantiate()
 		sampahinstance.position = randlocation
 		sampahinstance.z_index = i
-		get_parent().add_child.call_deferred(sampahinstance)
+		get_parent().get_node("sampah").add_child.call_deferred(sampahinstance)

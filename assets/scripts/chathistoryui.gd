@@ -5,7 +5,6 @@ func display_history():
 	show()
 	var history = $chathistory.get_history()
 	for entry in history:
-		print("entry in history")
 		$MarginContainer/TextEdit.text = $MarginContainer/TextEdit.text + entry.character + " : " + entry.text + "\n"
 
 func hide_history():

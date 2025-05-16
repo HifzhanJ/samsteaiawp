@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://1if48nl8d473"]
+[gd_scene load_steps=6 format=3 uid="uid://7kiexb0xb3e7"]
 
-[ext_resource type="Script" uid="uid://cjv65l8ia4ska" path="res://assets/scripts/tapbakteri.gd" id="1_dptgs"]
-[ext_resource type="FontFile" uid="uid://cocjm6mgh03yn" path="res://assets/fonts/ZF2334 After a Rain.otf" id="2_sueyp"]
+[ext_resource type="Script" uid="uid://bgu1285gg7dyw" path="res://assets/scripts/minigames/slashbosbakteri/slashbosbakteri.gd" id="1_l7q88"]
+[ext_resource type="FontFile" uid="uid://cocjm6mgh03yn" path="res://assets/fonts/ZF2334 After a Rain.otf" id="3_6og61"]
+[ext_resource type="PackedScene" uid="uid://cvojmse4foqrn" path="res://assets/scenes/Enemy/bosbakteri.tscn" id="4_vc3qw"]
 
 [sub_resource type="Curve" id="Curve_b6xeb"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
@@ -9,8 +10,9 @@ point_count = 2
 
 [sub_resource type="AudioStreamMP3" id="AudioStreamMP3_b6xeb"]
 
-[node name="slashbakteri" type="Node2D"]
-script = ExtResource("1_dptgs")
+[node name="slashbosbakteri" type="Node2D"]
+script = ExtResource("1_l7q88")
+targetscore = 1
 
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false
@@ -49,7 +51,7 @@ theme_override_constants/margin_bottom = 50
 [node name="score" type="Label" parent="CanvasLayer/Control/MarginContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_sueyp")
+theme_override_fonts/font = ExtResource("3_6og61")
 theme_override_font_sizes/font_size = 50
 text = "Score : 0"
 
@@ -89,7 +91,7 @@ text = "Kalah"
 autostart = true
 
 [node name="summonpoint" type="Node2D" parent="."]
-position = Vector2(956, 488)
+position = Vector2(565, 310)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
@@ -97,6 +99,9 @@ anchor_mode = 0
 [node name="juice" type="Node" parent="."]
 
 [node name="enemy" type="Node" parent="."]
+
+[node name="bosbakteri" parent="enemy" instance=ExtResource("4_vc3qw")]
+position = Vector2(956, 488)
 
 [node name="losetimer" type="Timer" parent="."]
 wait_time = 10.0

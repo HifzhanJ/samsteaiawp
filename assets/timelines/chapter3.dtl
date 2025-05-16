@@ -1,4 +1,3 @@
-jump pagi
 label pagi
 [background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
 [wait time="2.0"]
@@ -136,6 +135,7 @@ join status_window (popupunlock) center [animation="Zoom Center In"]
 	mc (normal): (Menekan tombol PURIFY.)
 	[wait_input]
 	label Minigame boss bakteri mulai
+	do Minigamehandler.playslashbosbakteri()
 	label Minigame keluar
 	[background arg="res://assets/backgrounds/pabrik before.jpg" fade="2.0"]
 	revana: (Memperhatikan {namauser} yang lagi "bermain udara" dengan ekspresi bingung tapi juga kagum.)

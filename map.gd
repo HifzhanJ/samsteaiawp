@@ -13,3 +13,6 @@ func _gui_input(event: InputEvent) -> void:
 	if (event is InputEventMouseMotion and mouse_button_down == true):
 		print(event.velocity)
 		scroll_container.scroll_horizontal -= event.velocity.x*SCROLL_SENSITIVITY
+
+func _on_mainmenu_pressed() -> void:
+	get_tree().change_scene_to_file("res://assets/scenes/MainMenu.tscn")

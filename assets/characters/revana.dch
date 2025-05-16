@@ -31,7 +31,7 @@
 "image": "\"res://assets/char_img/Revana/revanabingung.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(0, 150),
 "scale": 1,
 "scene": ""
 },
@@ -40,7 +40,7 @@
 "image": "\"res://assets/char_img/Revana/revanakaget.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(0, 150),
 "scale": 1,
 "scene": ""
 },
@@ -49,7 +49,7 @@
 "image": "\"res://assets/char_img/Revana/revanamarah.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(0, 150),
 "scale": 1,
 "scene": ""
 },
@@ -58,7 +58,7 @@
 "image": "\"res://assets/char_img/Revana/revanasenyum.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(0, 150),
 "scale": 1,
 "scene": ""
 },
@@ -67,7 +67,7 @@
 "image": "\"res://assets/char_img/Revana/revanaserius.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(0, 150),
 "scale": 1,
 "scene": ""
 },
@@ -76,7 +76,7 @@
 "image": "\"res://assets/char_img/Revana/revanatakjub.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(0, 150),
 "scale": 1,
 "scene": ""
 }

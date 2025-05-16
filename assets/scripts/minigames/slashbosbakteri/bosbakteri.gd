@@ -3,13 +3,15 @@ extends Area2D
 @onready var anim = $anim
 @onready var hitsfx = $hit
 var juice = preload("res://assets/scenes/bacteriajuice.tscn")
-@export var HEALTH = 100
+var HEALTH = 500
 
 func _ready() -> void:
+	$healthbar.value = HEALTH
 	$GPUParticles2D.emitting=true
 
 func damage(dp):
 	HEALTH-=dp
+	$healthbar.value = HEALTH
 	hitsfx.play()
 	var juiceinstance = juice.instantiate()
 	juiceinstance.position = position

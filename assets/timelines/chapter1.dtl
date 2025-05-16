@@ -1,4 +1,3 @@
-jump pagi hari
 label pagi hari
 [background arg="res://assets/backgrounds/pitch_black.png" fade="1.0"]
 [wait time="2.0"]
@@ -210,6 +209,7 @@ join status_window (popupunlock) center [animation="Zoom Center In"]
 leave status_window [animation="Zoom Out"]
 mc-smp: (Menekan tombol PURIFY.)
 label Minigame mulai bakteri
+do Minigamehandler.playslashbakteri()
 label Minigame selesai
 [music fade="0.0" volume="0.0"]
 [music path="res://assets/sound/flashbang.wav" channel="1" fade="8.0" volume="0.0"]
@@ -265,7 +265,8 @@ join status_window (popupboss) center [animation="Zoom Center In"]
 leave status_window [animation="Instant Out"]
 mc-smp: (Menekan tombol PURIFY.)
 label Minigame boss
-label Minigame boss
+do Minigamehandler.playslashbosbakteri()
+label Minigame keluar boss
 [style]
 [music fade="0.0" volume="0.0"]
 [music path="res://assets/sound/flashbang.wav" channel="1" fade="8.0" volume="0.0"]

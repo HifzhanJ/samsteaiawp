@@ -133,6 +133,7 @@ grow_horizontal = 0
 grow_vertical = 0
 
 [node name="Lanjut" type="Button" parent="MarginContainer/Middle/HBoxContainer"]
+visible = false
 layout_mode = 2
 theme = ExtResource("5_an4tj")
 text = "Lanjut"
