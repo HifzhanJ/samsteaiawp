@@ -190,7 +190,7 @@ label [CHOICE]
 	mc: (Teringat wajah teman masa kecilnya yang sakit.)
 	mc: Gue nggak bisa diem aja.
 	mc: (Melompat turun ke tepian sungai.)
-	revana (kaget): H-Hey!!! Kamu ngapain?! 
+	revana (kaget): H-Hey!!! Kamu ngapain?!
 	leave --All--
 	[wait time="1.0"]
 	label [Scene: Sungai - Air Keruh]
