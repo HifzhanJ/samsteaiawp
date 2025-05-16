@@ -81,7 +81,6 @@ grow_vertical = 2
 texture = ExtResource("4_an4tj")
 
 [node name="Judul" type="Label" parent="."]
-visible = false
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 8
