@@ -168,7 +168,7 @@ join status_window (popupunlock) center [animation="Zoom Center In"]
 	leave status_window [animation="Zoom Out"]
 	mc-smp: (Menekan tombol PURIFY.)
 	[wait time="2.0"]
-	label [Minigames dimulai]
+	label [Minigames slash bakteri dimulai]
 	# Pemain masuk ke minigames untuk membasmi semua bakteri
 	# menyentuh bakteri → mati satu per satu. Setelah selesai, status berubah: "The Water has been Purified"
 	[wait time="2.0"]

@@ -159,7 +159,7 @@ join status_window (popupunlock) center [animation="Zoom Center In"]
 	mc: [speed=1.3](Menggaruk kepalanya, sedikit malu.)
 	update revana right
 	join mc left
-	mc (senyum): [speed=1.3]Gue cuma ngelakuin apa yang bisa kulakuin.
+	mc (senyum): [speed=1.3]Gue cuma ngelakuin apa yang bisa gue lakuin.
 	mc: [speed=1.3]Dah sore nih, karena masalah sudah diatasi.
 	mc: [speed=1.3]Yuk pulang, gue yakin nanti masalah penyakit ini bisa reda kayak kasus Aika dulu.
 	revana (senyum): [speed=1.3](Menganguk.)
@@ -173,7 +173,7 @@ join status_window (popupunlock) center [animation="Zoom Center In"]
 	[music path="res://assets/sound/flashbang.wav" fade="0.0" volume="0.0"]
 	[background arg="res://assets/backgrounds/pitch_white.png" fade="2.0"]
 	[wait time="2.0"]
-	[background arg="res://assets/backgrounds/ch2_done.png" fade="0.0"]
+	[background arg="res://assets/backgrounds/ch3_done.png" fade="0.0"]
 	[wait time="2.0"]
 	[background arg="res://assets/backgrounds/pitch_black.png" fade="2.0"]
 	[wait time="2.0"]

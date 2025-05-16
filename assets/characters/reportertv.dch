@@ -15,7 +15,7 @@
 &"display_name": "Reporter TV",
 &"mirror": false,
 &"nicknames": [""],
-&"offset": Vector2(0, 0),
+&"offset": Vector2(-50, 200),
 &"portraits": {
 "normal": {
 "export_overrides": {
@@ -27,5 +27,5 @@
 "scene": "res://addons/dialogic/Modules/Character/default_portrait.tscn"
 }
 },
-&"scale": 1.0
+&"scale": 2.3
 }

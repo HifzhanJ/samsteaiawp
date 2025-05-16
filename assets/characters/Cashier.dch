@@ -12,10 +12,10 @@
 },
 &"default_portrait": "Normal",
 &"description": "",
-&"display_name": "Mbak Kasir",
+&"display_name": "Mas Kasir",
 &"mirror": false,
 &"nicknames": [""],
-&"offset": Vector2(0, 0),
+&"offset": Vector2(0, 260),
 &"portraits": {
 "Normal": {
 "export_overrides": {
@@ -27,5 +27,5 @@
 "scene": "res://addons/dialogic/Modules/Character/default_portrait.tscn"
 }
 },
-&"scale": 1.0
+&"scale": 1.5
 }

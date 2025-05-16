@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lntc74fyjhnq"
-path="res://.godot/imported/living-room-bg-cc0.jpg-03c91ec5dda95bbbff83106b6af6fd0e.ctex"
+uid="uid://m7kmu3og1kok"
+path="res://.godot/imported/statuswindowunlock.png-7a8ee36502e1af8459c0146623aeef55.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/living-room-bg-cc0.jpg"
-dest_files=["res://.godot/imported/living-room-bg-cc0.jpg-03c91ec5dda95bbbff83106b6af6fd0e.ctex"]
+source_file="res://assets/char_img/statuswindowunlock.png"
+dest_files=["res://.godot/imported/statuswindowunlock.png-7a8ee36502e1af8459c0146623aeef55.ctex"]
 
 [params]
 

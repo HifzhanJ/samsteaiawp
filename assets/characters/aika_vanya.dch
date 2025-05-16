@@ -7,7 +7,7 @@
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
-"style": "visualnovel",
+"style": "style_visualnoveldefault",
 "suffix": ""
 },
 &"default_portrait": "normal",
@@ -15,7 +15,7 @@
 &"display_name": "Aika Vanya",
 &"mirror": false,
 &"nicknames": ["Aika"],
-&"offset": Vector2(0, 0),
+&"offset": Vector2(0, 100),
 &"portraits": {
 "normal": {
 "export_overrides": {
@@ -25,16 +25,7 @@
 "offset": Vector2(0, 0),
 "scale": 1.0,
 "scene": ""
-},
-"sedih": {
-"export_overrides": {
-"image": "\"res://assets/char_img/tungtungsahur.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
 }
 },
-&"scale": 1.0
+&"scale": 0.75
 }

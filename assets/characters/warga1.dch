@@ -15,11 +15,20 @@
 &"display_name": "Warga",
 &"mirror": false,
 &"nicknames": ["Warga"],
-&"offset": Vector2(0, 0),
+&"offset": Vector2(0, 150),
 &"portraits": {
+"": {
+"export_overrides": {
+"image": ""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "normal": {
 "export_overrides": {
-"image": "\"res://assets/char_img/warga-buang-sampah.png\""
+"image": "\"res://assets/char_img/kasir.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

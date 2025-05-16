@@ -15,7 +15,7 @@
 &"display_name": "Warga",
 &"mirror": false,
 &"nicknames": ["Warga"],
-&"offset": Vector2(0, 0),
+&"offset": Vector2(0, 150),
 &"portraits": {
 "normal": {
 "export_overrides": {

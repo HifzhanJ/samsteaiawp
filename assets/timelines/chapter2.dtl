@@ -15,7 +15,7 @@ Di sebuah kelas baru, sinar matahari menyelinap masuk lewat jendela, memantul di
 Meja-meja perlahan terisi oleh murid-murid yang tampak gugup namun antusias.
 [wait time="1.0"]
 label [Scene: Kelas Baru - Pagi Hari]
-[background arg="res://assets/backgrounds/highschool_class.jpg" fade="0.5"]
+[background arg="res://assets/backgrounds/ruangkelas.jpg" fade="0.5"]
 [music path="res://assets/sound/classroom_ambience.wav" channel="1" fade="2.0" volume="-15.0"]
 [wait time="2.0"]
 {namauser} melangkah masuk, menarik napas dalam.

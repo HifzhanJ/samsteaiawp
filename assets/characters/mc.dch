@@ -15,14 +15,14 @@
 &"display_name": "{namauser}",
 &"mirror": false,
 &"nicknames": ["{namauser}"],
-&"offset": Vector2(0, 0),
+&"offset": Vector2(0, 150),
 &"portraits": {
 "bingung": {
 "export_overrides": {
 "image": "\"res://assets/char_img/McSMA/mcbingung.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(0, 150),
 "scale": 1,
 "scene": ""
 },
@@ -31,7 +31,7 @@
 "image": "\"res://assets/char_img/McSMA/mckaget.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(0, 150),
 "scale": 1,
 "scene": ""
 },
@@ -40,7 +40,7 @@
 "image": "\"res://assets/char_img/McSMA/mcmarah.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(0, 150),
 "scale": 1,
 "scene": ""
 },
@@ -58,7 +58,7 @@
 "image": "\"res://assets/char_img/McSMA/mctersenyum.png\""
 },
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(0, 150),
 "scale": 1,
 "scene": ""
 }
