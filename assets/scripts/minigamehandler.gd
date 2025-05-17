@@ -1,5 +1,9 @@
 extends Node
 
+var backgrounds = [
+	preload("res://assets/backgrounds/airracun.jpg")
+]
+
 func _ready() -> void:
 	Dialogic.timeline_ended.connect(_on_timeline_ended)
 
@@ -13,11 +17,11 @@ func minigamestart():
 
 func playslashbakteri():
 	Dialogic.paused = true
-	add_child(load("res://assets/scenes/Minigames/slashabakteri/slashbakteri.tscn").instantiate())
+	add_child(load("res://assets/scenes/Minigames/taptapwarga/slashbakteri.tscn").instantiate())
 
 func playkumpulsampah():
 	Dialogic.paused = true
-	add_child(load("res://assets/scenes/Minigames/kumpulsampah/kumpulsampah.tscn").instantiate())
+	add_child(load("res://assets/scenes/Minigames/taptapwarga/kumpulsampah.tscn").instantiate())
 
 func playtaptapwarga():
 	Dialogic.paused = true
@@ -32,6 +36,7 @@ func playpipa():
 	add_child(load("res://assets/scenes/Minigames/ubahpipa/ubahpipa.tscn").instantiate())
 
 func slashbakterimenang():
+	self.get_children()
 	get_node("slashbakteri").queue_free()
 	visualnovel()
 	Dialogic.paused = false

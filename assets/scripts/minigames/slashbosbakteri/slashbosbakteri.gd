@@ -7,13 +7,10 @@ var bakteri = preload("res://assets/scenes/Enemy/bakteri.tscn")
 @onready var summonpoint = $summonpoint
 @onready var slash_line = $slash
 @export var targetscore = 30
-@export var losetimer = 100
 var summonsize = 300
 
 func _ready() -> void:
 	$CanvasLayer/Control.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
-	$losetimer.wait_time = losetimer
-	$losetimer.start()
 
 func movebosbakteri():
 	var bosbakteri = $enemy/bosbakteri
@@ -37,13 +34,6 @@ func addscore(newscore):
 
 func updatescore():
 	%score.text = "Score : "+str(score)
-
-func _on_losetimer_timeout() -> void:
-	if score<=targetscore:
-		pass
-		#%Kalah.show()
-		#await get_tree().create_timer(3)
-		#get_parent().minigamestart()
 
 var slash_path = [] # Store the points of the slash
 var is_slashing = false

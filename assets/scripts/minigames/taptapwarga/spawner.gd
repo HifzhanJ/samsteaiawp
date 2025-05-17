@@ -2,7 +2,7 @@ extends Node2D
 
 @export var sampah : Array[PackedScene]
 
-@export var spawnersize = 500
+@export var spawnersize = 300
 
 func _ready() -> void:
 	pass

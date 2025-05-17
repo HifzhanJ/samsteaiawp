@@ -1,4 +1,3 @@
-jump [Scene: After Story - White Blank]
 label [Scene: After Story - White Blank]
 [background arg="res://assets/backgrounds/pitch_white.png" fade="1.0"]
 [wait time="3.0"]

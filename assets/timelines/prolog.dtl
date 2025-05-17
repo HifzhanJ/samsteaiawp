@@ -171,7 +171,6 @@ join status_window (popupunlock) center [animation="Zoom Center In"]
 	# Pemain masuk ke minigames untuk membasmi semua bakteri
 	# menyentuh bakteri → mati satu per satu. Setelah selesai, status berubah: "The Water has been Purified"
 	do Minigamehandler.playslashbakteri()
-	[background fade="1.0"]
 	mc: Apa ini?!
 	mc: Ughhh....[pause=0.5] bentuknya aneh sekali
 	mc: Bakteri?... [pause=0.5]virus?!!

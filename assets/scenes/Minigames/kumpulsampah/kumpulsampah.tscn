@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://cb1q0skh4qnov"]
+[gd_scene load_steps=11 format=3 uid="uid://cb1q0skh4qnov"]
 
 [ext_resource type="Script" uid="uid://vfoy25b2kxui" path="res://assets/scripts/minigames/kumpulsampah/kumpulsampah.gd" id="1_6ws1p"]
 [ext_resource type="Script" uid="uid://cerl71sorrppg" path="res://assets/scripts/minigames/kumpulsampah/spawner.gd" id="1_jiso0"]
 [ext_resource type="PackedScene" uid="uid://cn4quhj5bx5f6" path="res://assets/scenes/Minigames/kumpulsampah/sampahbotolplastik.tscn" id="2_35xd6"]
+[ext_resource type="Texture2D" uid="uid://dgmg8xckxi3l6" path="res://assets/backgrounds/kumpulsampahbg.png" id="2_gbacp"]
 [ext_resource type="PackedScene" uid="uid://c1a4cro8m1v2n" path="res://assets/scenes/Minigames/kumpulsampah/sampahapel.tscn" id="3_enrt5"]
 [ext_resource type="PackedScene" uid="uid://1c1uty10yk7e" path="res://assets/scenes/Minigames/kumpulsampah/sampahbaterai.tscn" id="4_j8rlt"]
 [ext_resource type="PackedScene" uid="uid://qusocnugrbyl" path="res://assets/scenes/Minigames/kumpulsampah/tongsampahorganik.tscn" id="5_wudby"]
@@ -11,10 +12,21 @@
 [ext_resource type="FontFile" uid="uid://cocjm6mgh03yn" path="res://assets/fonts/ZF2334 After a Rain.otf" id="9_5u52x"]
 
 [node name="kumpulsampah" type="Node2D"]
+top_level = true
 script = ExtResource("1_6ws1p")
 
+[node name="CenterContainer" type="CenterContainer" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="background" type="TextureRect" parent="CenterContainer"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 2
+texture = ExtResource("2_gbacp")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Control" type="Control" parent="CanvasLayer"]
 layout_mode = 3
